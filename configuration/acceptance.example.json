@@ -1,0 +1,27 @@
+{
+  "nginx": {
+    "binary": "C:/CartIQ-staging/nginx/nginx.exe",
+    "configuration": "conf/cartiq-staging.conf",
+    "directory": "C:/CartIQ-staging/nginx"
+  },
+  "https": {
+    "origin": "https://localhost:18443",
+    "httpPort": 18081,
+    "ca": "C:/CartIQ-staging/tls/ca.pem",
+    "forecastPort": 18933
+  },
+  "isolatedMysql": {
+    "binDirectory": "C:/CartIQ-staging/mysql/bin",
+    "artifact": "C:/CartIQ-staging/artifacts/smartcart-api-0.2.0.jar",
+    "outputDirectory": "C:/CartIQ-staging/disposable-runs"
+  },
+  "artifacts": [
+    {
+      "component": "backend",
+      "file": "C:/CartIQ-staging/artifacts/smartcart-api-0.2.0.jar",
+      "version": "0.2.0",
+      "sha256": "REPLACE_WITH_INDEPENDENTLY_APPROVED_SHA256"
+    }
+  ],
+  "priorEvidence": []
+}

@@ -1,0 +1,1570 @@
+{
+  "title": "India product identity and listing benchmark",
+  "labelledOn": "2026-11-14",
+  "protocol": "Single manual annotation pass completed before running any scorer on these cases. Match labels use independently published sources or exact observed pack evidence. Distinct requires a confirmed pack, brand, flavour or formulation difference; materially ambiguous relationships stay unresolved. Information missing from a source stays missing unless an explicit packaging annotation is recorded in the item's evidence.",
+  "limits": "Convenience sample of India-market grocery catalogue records, independently published product evidence and controlled input variants. It is not a licensed Blinkit, Zepto or Instamart feed, probabilistic calibration sample, independent human consensus, or production accuracy estimate. Some corpus records share Open Food Facts sources. Train and validation are reserved. Controlled rows modify the input only and do not expand observed ground truth.",
+    "historyOverlap": "No shared family or GTIN with the preceding 47-pair benchmark. Six Open Food Facts codes appeared in the earlier 21-pair archive evaluation. These codes belong to the Everest blends and Kissan sauces and are confined to the training split here.",
+    "annotationSpotCheck": "A second reviewer independently checked the three observed holdout positive labels and the separate Britannia Bourbon multipack listing before scoring. The rest had one annotator.",
+  "sources": {
+    "Open Food Facts": {
+      "url": "https://world.openfoodfacts.org/",
+      "licence": "ODbL 1.0 database, DbCL 1.0 contents, CC BY-SA 3.0 images",
+      "attribution": "Open Food Facts contributors",
+      "archives": "November 14, 2026 category-quality raw API pages with explicit en:india sales-market tags. Product URLs, image references, original archive paths and SHA-256 are included per record."
+    },
+    "Brand and shop pages": {
+      "usage": "Link-only manual product identification evidence. No page or photo redistribution, API ingest, prices, availability, or permission to reuse a feed. Matter-of-fact brand, pack, count and barcode transcriptions only."
+    },
+    "GS1": {
+      "url": "https://ref.gs1.org/standards/gtin-management/",
+      "usage": "Product identity and pack levels context."
+    },
+    "Supporting brand references": [
+      "https://www.paragmilkfoods.com/gowardhan-ghee.php",
+      "https://www.everestspices.com/products/chaat-masala/",
+      "https://www.everestspices.com/products/sambhar-masala/",
+      "https://www.tataconsumer.com/brands/foods/tata-sampann",
+      "https://www.parleproducts.com/brands/happy-happy",
+      "https://www.coca-cola.com/in/en/brands/kinley/product-kinley",
+      "https://www.parleagro.com/brand/16",
+      "https://suhana.com/products/suhana-sambar-masala-200g-pouch-2",
+      "https://www.chitaledairy.com/about"
+    ]
+  },
+  "items": {
+    "gow-200": {
+      "family": "gowardhan-cow-ghee",
+      "market": "India",
+      "sourceRecord": "off:08906001023050",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8906001023050/gowardhan-pure-cow-ghee",
+      "evidence": "India-tagged archival record. Pack photo reads Gowardhan Pure Cow Ghee and 200 mL.",
+      "identity": {
+        "gtin": "8906001023050",
+        "name": "Gowardhan pure cow ghee",
+        "brand": "Gowardhan",
+        "pack": "200ml",
+        "variant": null,
+        "formulation": null
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/dairy.json",
+      "archiveSha256": "3ffa1923a8f0bce8cc83c2345361ecda6ec7c3dc8ed2adef730a3b679017c184",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/600/102/3050/front_en.9.400.jpg"
+    },
+    "gow-local-200": {
+      "family": "gowardhan-cow-ghee",
+      "market": "India",
+      "sourceRecord": "saisupermarket:8906001023050",
+      "sourceUrl": "https://saisupermarket.in/product-detail.php?cat=1.3&mid=8906001023050",
+      "evidence": "Independent catalogue shows same EAN and 200 mL jar. Owner separately confirms the 200 mL and 500 mL jars.",
+      "identity": {
+        "gtin": "8906001023050",
+        "name": "GW.COW GHEE 200ML (J)",
+        "brand": "Gowardhan",
+        "pack": "200 mL",
+        "variant": null,
+        "formulation": null
+      },
+      "sourceType": "link_only_label_reference",
+      "reuse": "Individually checked identification facts only. No permission to reuse the underlying feed, page, image, price or stock."
+    },
+    "gow-owner-500": {
+      "family": "gowardhan-cow-ghee",
+      "market": "India",
+      "sourceRecord": "paragmilkfoods:gowardhan-pure-cow-ghee-jar-500ml",
+      "sourceUrl": "https://www.paragmilkfoods.com/gowardhan-ghee.php",
+      "evidence": "Owner explicitly lists a 500 mL jar. No GTIN visible for this pack.",
+      "identity": {
+        "gtin": null,
+        "name": "Gowardhan Ghee",
+        "brand": "Gowardhan",
+        "pack": "500 mL",
+        "variant": null,
+        "formulation": null
+      },
+      "sourceType": "link_only_label_reference",
+      "reuse": "Individually checked identification facts only. No permission to reuse the underlying feed, page, image, price or stock."
+    },
+    "everest-chaat": {
+      "family": "everest-spice-blends",
+      "market": "India",
+      "sourceRecord": "off:08901786060504",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8901786060504/chaat-masala-everest",
+      "evidence": "The front photo names Chaat Masala. Manufacturer packaging list includes 50 g.",
+      "identity": {
+        "gtin": "8901786060504",
+        "name": "Chaat Masala",
+        "brand": "Everest",
+        "pack": "50 g",
+        "variant": "Chaat",
+        "formulation": "Mixed spice powder"
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/spices.json",
+      "archiveSha256": "9acfdcebb61852778e6af08fb4cc4db77a2d0b475448de3291773ace51d97ec5",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/178/606/0504/front_en.15.400.jpg"
+    },
+    "everest-pav": {
+      "family": "everest-spice-blends",
+      "market": "India",
+      "sourceRecord": "off:08901786070503",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8901786070503/pav-bhaji-masala-everest",
+      "evidence": "Archived box reads Pav Bhaji Masala with 50 g in the source quantity.",
+      "identity": {
+        "gtin": "8901786070503",
+        "name": "Pav bhaji masala",
+        "brand": "Everest",
+        "pack": "50g",
+        "variant": "Pav Bhaji",
+        "formulation": "Mixed spice powder"
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/spices.json",
+      "archiveSha256": "9acfdcebb61852778e6af08fb4cc4db77a2d0b475448de3291773ace51d97ec5",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/178/607/0503/front_en.5.400.jpg"
+    },
+    "everest-sambhar": {
+      "family": "everest-spice-blends",
+      "market": "India",
+      "sourceRecord": "off:08901786080502",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8901786080502/everest-sambhar-masala",
+      "evidence": "The front photo names Sambhar Masala. Manufacturer packaging list includes 50 g.",
+      "identity": {
+        "gtin": "8901786080502",
+        "name": "Everest Sambhar Masala",
+        "brand": "Everest",
+        "pack": "50 g",
+        "variant": "Sambhar",
+        "formulation": "Mixed spice powder"
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/spices.json",
+      "archiveSha256": "9acfdcebb61852778e6af08fb4cc4db77a2d0b475448de3291773ace51d97ec5",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/178/608/0502/front_en.13.400.jpg"
+    },
+    "suhana-sambar": {
+      "family": "suhana-spice-blends",
+      "market": "India",
+      "sourceRecord": "off:08901662024798",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8901662024798/suhana-sambar-masal",
+      "evidence": "Product title identifies Suhana sambar masal, with 100 g and no separate brand field.",
+      "identity": {
+        "gtin": "8901662024798",
+        "name": "suhana sambar masal",
+        "brand": null,
+        "pack": "100g",
+        "variant": null,
+        "formulation": null
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/spices.json",
+      "archiveSha256": "9acfdcebb61852778e6af08fb4cc4db77a2d0b475448de3291773ace51d97ec5",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/166/202/4798/front_en.4.400.jpg"
+    },
+    "suhana-paneer": {
+      "family": "suhana-spice-blends",
+      "market": "India",
+      "sourceRecord": "off:08901662036524",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8901662036524/suhana-paneer-masala",
+      "evidence": "Source title and brand identify the paneer spice blend. Quantity is missing.",
+      "identity": {
+        "gtin": "8901662036524",
+        "name": "Suhana Paneer Masala",
+        "brand": "Suhana",
+        "pack": null,
+        "variant": "Paneer",
+        "formulation": null
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/spices.json",
+      "archiveSha256": "9acfdcebb61852778e6af08fb4cc4db77a2d0b475448de3291773ace51d97ec5",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/166/203/6524/front_en.4.400.jpg"
+    },
+    "kissan-fresh-850": {
+      "family": "kissan-sauces",
+      "market": "India",
+      "sourceRecord": "off:08901030902932",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8901030902932/fresh-tomato-ketchup-kissan",
+      "evidence": "The archive distinguishes Fresh Tomato Ketchup 850 g.",
+      "identity": {
+        "gtin": "8901030902932",
+        "name": "Fresh Tomato Ketchup",
+        "brand": "Kissan",
+        "pack": "850 g",
+        "variant": "Fresh Tomato",
+        "formulation": "Classic tomato ketchup"
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/sauces.json",
+      "archiveSha256": "7e9a325da49d2395b63c05853bff8c4611a9f6a4d0f7597b599c7506054f4fc7",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/103/090/2932/front_en.5.400.jpg"
+    },
+    "kissan-spicy-850": {
+      "family": "kissan-sauces",
+      "market": "India",
+      "sourceRecord": "off:08901030953217",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8901030953217/kissan-sweet-spicy-sauce",
+      "evidence": "Archived title documents Sweet and Spicy Sauce at the same 850 g size.",
+      "identity": {
+        "gtin": "8901030953217",
+        "name": "Kissan Sweet & Spicy Sauce",
+        "brand": "Kissan",
+        "pack": "850 g",
+        "variant": "Sweet & Spicy",
+        "formulation": "Sweet chilli tomato sauce"
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/sauces.json",
+      "archiveSha256": "7e9a325da49d2395b63c05853bff8c4611a9f6a4d0f7597b599c7506054f4fc7",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/103/095/3217/front_en.3.400.jpg"
+    },
+    "kissan-fresh-90": {
+      "family": "kissan-sauces",
+      "market": "India",
+      "sourceRecord": "off:08901030897542",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8901030897542/kissan-fresh-tomato",
+      "evidence": "India-tagged 90 g pack of Fresh Tomato Ketchup.",
+      "identity": {
+        "gtin": "8901030897542",
+        "name": "kissan fresh tomato",
+        "brand": "Kissan",
+        "pack": "90g",
+        "variant": "Fresh Tomato",
+        "formulation": "Classic tomato ketchup"
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/sauces.json",
+      "archiveSha256": "7e9a325da49d2395b63c05853bff8c4611a9f6a4d0f7597b599c7506054f4fc7",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/103/089/7542/front_en.22.400.jpg"
+    },
+    "kissan-unitless": {
+      "family": "kissan-sauces",
+      "market": "India",
+      "sourceRecord": "off:08901030921667",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8901030921667/kissan",
+      "evidence": "Structured quantity is unitless and archived package images and category tags disagree.",
+      "identity": {
+        "gtin": "8901030921667",
+        "name": "kissan",
+        "brand": "Kissan",
+        "pack": "1",
+        "variant": null,
+        "formulation": null
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/sauces.json",
+      "archiveSha256": "7e9a325da49d2395b63c05853bff8c4611a9f6a4d0f7597b599c7506054f4fc7",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/103/092/1667/front_en.39.400.jpg"
+    },
+    "veeba-ketchup": {
+      "family": "veeba-tomato-ketchup",
+      "market": "India",
+      "sourceRecord": "off:08906069403412",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8906069403412/chef-s-special-tomato-ketchup-veeba",
+      "evidence": "Chef's Special Tomato Ketchup by Veeba in a 900 g pack.",
+      "identity": {
+        "gtin": "8906069403412",
+        "name": "Chef's Special Tomato Ketchup",
+        "brand": "VEEBA",
+        "pack": "900g",
+        "variant": null,
+        "formulation": null
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/sauces.json",
+      "archiveSha256": "7e9a325da49d2395b63c05853bff8c4611a9f6a4d0f7597b599c7506054f4fc7",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/606/940/3412/front_en.15.400.jpg"
+    },
+    "delmonte-ketchup": {
+      "family": "delmonte-tomato-ketchup",
+      "market": "India",
+      "sourceRecord": "off:08901246005373",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8901246005373/tomato-ketchup-classic-blend-del-monte",
+      "evidence": "Classic Blend tomato ketchup is a separate 900 g Del Monte item.",
+      "identity": {
+        "gtin": "8901246005373",
+        "name": "TOMATO KETCHUP CLASSIC BLEND",
+        "brand": "Del Monte",
+        "pack": "900 g",
+        "variant": null,
+        "formulation": null
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/sauces.json",
+      "archiveSha256": "7e9a325da49d2395b63c05853bff8c4611a9f6a4d0f7597b599c7506054f4fc7",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/124/600/5373/front_en.20.400.jpg"
+    },
+    "tomato-unknown": {
+      "family": "temptin-tomato-ketchup",
+      "market": "India",
+      "sourceRecord": "off:08903553851377",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8903553851377/temptin-tomato-ketchup",
+      "evidence": "Title suggests the Temptin line, with missing brand and size fields.",
+      "identity": {
+        "gtin": "8903553851377",
+        "name": "Temptin  TOMATO KETCHUP",
+        "brand": null,
+        "pack": null,
+        "variant": null,
+        "formulation": null
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/sauces.json",
+      "archiveSha256": "7e9a325da49d2395b63c05853bff8c4611a9f6a4d0f7597b599c7506054f4fc7",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/355/385/1377/front_en.3.400.jpg"
+    },
+    "masti-off": {
+      "family": "amul-masti-buttermilk",
+      "market": "India",
+      "sourceRecord": "off:08901262200196",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8901262200196/amul-masti-spiced-buttermilk-200ml",
+      "evidence": "The matching archived image prints this barcode and bilingual Amul Masti Masala Chhach. A same-item nutrition panel declares one 200 mL serving and ingredients support spiced cultured buttermilk.",
+      "identity": {
+        "gtin": "8901262200196",
+        "name": "Amul Masti Spiced Buttermilk 200ml",
+        "brand": "Amul",
+        "pack": "200mL",
+        "variant": "Spiced",
+        "formulation": "Cultured buttermilk"
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/dairy.json",
+      "archiveSha256": "3ffa1923a8f0bce8cc83c2345361ecda6ec7c3dc8ed2adef730a3b679017c184",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/126/220/0196/front_en.54.400.jpg"
+    },
+    "masti-sai": {
+      "family": "amul-masti-buttermilk",
+      "market": "India",
+      "sourceRecord": "saisupermarket:3805",
+      "sourceUrl": "https://www.saisupermarket.in/product-detail.php?cat=2.d&mid=8901262200196",
+      "evidence": "Exact listing title shows 200 mL and a corroborating EAN.",
+      "identity": {
+        "gtin": "8901262200196",
+        "name": "AMUL MASTI SPICED BUTTER MILK 200ML",
+        "brand": "Amul",
+        "pack": "200 mL",
+        "variant": "Spiced",
+        "formulation": null
+      },
+      "sourceType": "link_only_label_reference",
+      "reuse": "Individually checked identification facts only. No permission to reuse the underlying feed, page, image, price or stock."
+    },
+    "masti-single": {
+      "family": "amul-masti-buttermilk",
+      "market": "India",
+      "sourceRecord": "hyperpure:amul-masti-buttermilk-200-ml",
+      "sourceUrl": "https://www.hyperpure.com/in/amul-masti-buttermilk-200-ml",
+      "evidence": "Single-piece listing, same Masti 200 mL spiced product. Page omits GTIN. The exact offer identity is supported by the package and independent same-code single-pack listing.",
+      "identity": {
+        "gtin": null,
+        "name": "Amul - Masti Buttermilk, 200 ml",
+        "brand": "Amul",
+        "pack": "200 mL",
+        "variant": "Spiced",
+        "formulation": null
+      },
+      "sourceType": "link_only_label_reference",
+      "reuse": "Individually checked identification facts only. No permission to reuse the underlying feed, page, image, price or stock."
+    },
+    "masti-case": {
+      "family": "amul-masti-buttermilk",
+      "market": "India",
+      "sourceRecord": "hyperpure:amul-masti-buttermilk-200-ml-pack-of-30",
+      "sourceUrl": "https://www.hyperpure.com/in/amul-masti-buttermilk-200-ml-pack-of-30",
+      "evidence": "Distinct 30-piece orderable pack at 200 mL each. This listing does not publish an outer GTIN.",
+      "identity": {
+        "gtin": null,
+        "name": "Amul - Masti Buttermilk, 200 ml (Pack of 30)",
+        "brand": "Amul",
+        "pack": "30 x 200 mL",
+        "variant": "Spiced",
+        "formulation": null
+      },
+      "sourceType": "link_only_label_reference",
+      "reuse": "Individually checked identification facts only. No permission to reuse the underlying feed, page, image, price or stock."
+    },
+    "masti-500": {
+      "family": "amul-masti-buttermilk",
+      "market": "India",
+      "sourceRecord": "off:08901262200004",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8901262200004/butter-milk-amul",
+      "evidence": "Source calls product Buttermilk Amul and records 500 mL. Masti subtype remains unspecified.",
+      "identity": {
+        "gtin": "8901262200004",
+        "name": "Butter milk amul",
+        "brand": "Amul",
+        "pack": "500ml",
+        "variant": null,
+        "formulation": null
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/dairy.json",
+      "archiveSha256": "3ffa1923a8f0bce8cc83c2345361ecda6ec7c3dc8ed2adef730a3b679017c184",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/126/220/0004/front_en.3.400.jpg"
+    },
+    "masti-protein-case": {
+      "family": "amul-masti-buttermilk",
+      "market": "India",
+      "sourceRecord": "amul:BTMCP11_30",
+      "sourceUrl": "https://shop.amul.com/en/product/amul-high-protein-buttermilk-200-ml-or-pack-of-30",
+      "evidence": "Maker declares 30 units at 200 mL and a formulation enriched with 15 g dairy protein per unit.",
+      "identity": {
+        "gtin": null,
+        "name": "Amul High Protein Buttermilk",
+        "brand": "Amul",
+        "pack": "30 x 200 mL",
+        "variant": "High Protein",
+        "formulation": "Protein enriched"
+      },
+      "sourceType": "link_only_label_reference",
+      "reuse": "Individually checked identification facts only. No permission to reuse the underlying feed, page, image, price or stock."
+    },
+    "amul-lassi-200": {
+      "family": "amul-lassi",
+      "market": "India",
+      "sourceRecord": "off:08901262200189",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8901262200189/amul-lassi-200ml",
+      "evidence": "Separate sweet lassi with rose flavouring according to ingredient text.",
+      "identity": {
+        "gtin": "8901262200189",
+        "name": "Amul Lassi 200ml",
+        "brand": "Amul",
+        "pack": "200mL",
+        "variant": "Rose",
+        "formulation": "Sweetened lassi"
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/dairy.json",
+      "archiveSha256": "3ffa1923a8f0bce8cc83c2345361ecda6ec7c3dc8ed2adef730a3b679017c184",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/126/220/0189/front_en.26.400.jpg"
+    },
+    "amul-lassi-250": {
+      "family": "amul-lassi",
+      "market": "India",
+      "sourceRecord": "off:08901262151696",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8901262151696/amul-lassi-250-ml",
+      "evidence": "Source reports 250 mL, versus the other 200 mL lassi.",
+      "identity": {
+        "gtin": "8901262151696",
+        "name": "Amul Lassi 250 ml",
+        "brand": "Amul",
+        "pack": "250 ml",
+        "variant": null,
+        "formulation": null
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/dairy.json",
+      "archiveSha256": "3ffa1923a8f0bce8cc83c2345361ecda6ec7c3dc8ed2adef730a3b679017c184",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/126/215/1696/front_en.43.400.jpg"
+    },
+    "amul-paneer": {
+      "family": "amul-malai-paneer",
+      "market": "India",
+      "sourceRecord": "off:08901262180115",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8901262180115/malai-paneer-fresh-amul",
+      "evidence": "Archived front reads Amul Malai Paneer Fresh. Nutrition declares four 50 g servings.",
+      "identity": {
+        "gtin": "8901262180115",
+        "name": "malai paneer fresh",
+        "brand": "Amul",
+        "pack": "200g",
+        "variant": null,
+        "formulation": null
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/dairy.json",
+      "archiveSha256": "3ffa1923a8f0bce8cc83c2345361ecda6ec7c3dc8ed2adef730a3b679017c184",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/126/218/0115/front_en.6.400.jpg"
+    },
+    "amul-paneer-local": {
+      "family": "amul-malai-paneer",
+      "market": "India",
+      "sourceRecord": "fetchnbuy:amul-fresh-malai-paneer-200g",
+      "sourceUrl": "https://fetchnbuy.in/products/amul-fresh-malai-paneer-200g",
+      "evidence": "Published actual item name, 200 g and exact displayed EAN.",
+      "identity": {
+        "gtin": "8901262180115",
+        "name": "Amul Fresh Malai Paneer",
+        "brand": "Amul",
+        "pack": "200 g",
+        "variant": null,
+        "formulation": null
+      },
+      "sourceType": "link_only_label_reference",
+      "reuse": "Individually checked identification facts only. No permission to reuse the underlying feed, page, image, price or stock."
+    },
+    "amul-butter-100": {
+      "family": "amul-pasteurized-butter",
+      "market": "India",
+      "sourceRecord": "off:08901262010016",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8901262010016/amul-pasteurized-butter",
+      "evidence": "Pack front confirms Amul pasteurised salted butter and net 100 g.",
+      "identity": {
+        "gtin": "8901262010016",
+        "name": "Amul Pasteurized Butter",
+        "brand": "Amul",
+        "pack": "100.0 g",
+        "variant": "Salted",
+        "formulation": null
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/dairy.json",
+      "archiveSha256": "3ffa1923a8f0bce8cc83c2345361ecda6ec7c3dc8ed2adef730a3b679017c184",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/126/201/0016/front_en.53.400.jpg"
+    },
+    "amul-butter-200": {
+      "family": "amul-pasteurized-butter",
+      "market": "India",
+      "sourceRecord": "off:08901262010320",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8901262010320/amul-butter",
+      "evidence": "Separate source case shows 200gm in its quantity. The broader salted/unsalted subtype is not inferred.",
+      "identity": {
+        "gtin": "8901262010320",
+        "name": "Amul Butter",
+        "brand": "Amul",
+        "pack": "200gm",
+        "variant": null,
+        "formulation": null
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/dairy.json",
+      "archiveSha256": "3ffa1923a8f0bce8cc83c2345361ecda6ec7c3dc8ed2adef730a3b679017c184",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/126/201/0320/front_en.3.400.jpg"
+    },
+    "gokul-milk-incomplete": {
+      "family": "gokul-full-cream-milk",
+      "market": "India",
+      "sourceRecord": "off:08908000794023",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8908000794023/pasteurised-full-cream-milk-gokul",
+      "evidence": "Gokul pasteurised full cream milk with missing pack size.",
+      "identity": {
+        "gtin": "8908000794023",
+        "name": "Pasteurised full cream milk",
+        "brand": "Gokul",
+        "pack": null,
+        "variant": null,
+        "formulation": null
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/dairy.json",
+      "archiveSha256": "3ffa1923a8f0bce8cc83c2345361ecda6ec7c3dc8ed2adef730a3b679017c184",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/800/079/4023/front_en.3.400.jpg"
+    },
+    "chitale-milk-500": {
+      "family": "chitale-pasteurized-cow-milk",
+      "market": "India",
+      "sourceRecord": "off:08906009501031",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8906009501031/pasteurised-cow-milk-chitale",
+      "evidence": "Source title and size identify Chitale pasteurised cow milk 500 mL.",
+      "identity": {
+        "gtin": "8906009501031",
+        "name": "Pasteurised Cow Milk",
+        "brand": "Chitale",
+        "pack": "500 ml",
+        "variant": null,
+        "formulation": null
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/dairy.json",
+      "archiveSha256": "3ffa1923a8f0bce8cc83c2345361ecda6ec7c3dc8ed2adef730a3b679017c184",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/600/950/1031/front_en.5.400.jpg"
+    },
+    "smoodh-chocolate": {
+      "family": "parle-agro-smoodh",
+      "market": "India",
+      "sourceRecord": "off:08902579002299",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8902579002299/smoodh-chocolate-parle-agro",
+      "evidence": "Parlé Agro product range corroborates the Chocolate flavour. Archived size is 80 mL.",
+      "identity": {
+        "gtin": "8902579002299",
+        "name": "Smoodh chocolate",
+        "brand": "Parle Agro",
+        "pack": "80ml",
+        "variant": "Chocolate",
+        "formulation": "Flavoured milk"
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/dairy.json",
+      "archiveSha256": "3ffa1923a8f0bce8cc83c2345361ecda6ec7c3dc8ed2adef730a3b679017c184",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/257/900/2299/front_en.14.400.jpg"
+    },
+    "parle-happy-off": {
+      "family": "parle-happy-happy",
+      "market": "India",
+      "sourceRecord": "off:08901719129988",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8901719129988/happy-happy-parl-parle",
+      "evidence": "Source title is incomplete. Barcode-linked packet and serving declaration support the 31.5 g Choco-Chip variant.",
+      "identity": {
+        "gtin": "8901719129988",
+        "name": "Happy happy - Parl",
+        "brand": "Parle",
+        "pack": "31.5 g",
+        "variant": null,
+        "formulation": null
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/cookies.json",
+      "archiveSha256": "ef53974043cc1932c404cb30311f68aa19d648cb06eac77ebaeef49b90523a3f",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/171/912/9988/front_en.14.400.jpg"
+    },
+    "parle-happy-sai": {
+      "family": "parle-happy-happy",
+      "market": "India",
+      "sourceRecord": "saisupermarket:4001",
+      "sourceUrl": "https://www.saisupermarket.in/product-detail.php?cat=3.1&mid=8901719129988",
+      "evidence": "Independent Solapur catalogue shows exactly 31.5GM and the same EAN. Parle confirms Choco-Chip product family.",
+      "identity": {
+        "gtin": "8901719129988",
+        "name": "PARLE HAPPY CHOCO-CHIP COOKIES 31.5GM",
+        "brand": "Parle",
+        "pack": "31.5gm",
+        "variant": "Choco-Chip",
+        "formulation": null
+      },
+      "sourceType": "link_only_label_reference",
+      "reuse": "Individually checked identification facts only. No permission to reuse the underlying feed, page, image, price or stock."
+    },
+    "bourbon-off": {
+      "family": "britannia-bourbon",
+      "market": "India",
+      "sourceRecord": "off:08901063139329",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8901063139329/bourbon-britannia",
+      "evidence": "The source has a shortened Bourbon name and 50 g. Physical product family is chocolate-cream sandwich biscuit.",
+      "identity": {
+        "gtin": "8901063139329",
+        "name": "bourbon",
+        "brand": "Britannia",
+        "pack": "50g",
+        "variant": null,
+        "formulation": null
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/cookies.json",
+      "archiveSha256": "ef53974043cc1932c404cb30311f68aa19d648cb06eac77ebaeef49b90523a3f",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/106/313/9329/front_en.14.400.jpg"
+    },
+    "bourbon-local": {
+      "family": "britannia-bourbon",
+      "market": "India",
+      "sourceRecord": "fetchnbuy:bourbon-50-g-pouch",
+      "sourceUrl": "https://fetchnbuy.in/products/britannia-bourbon-chocolate-cream-biscuits-50-g-pouch",
+      "evidence": "Catalogue displays Britannia Bourbon Chocolate Cream Biscuits, 50 g and exact EAN.",
+      "identity": {
+        "gtin": "8901063139329",
+        "name": "Britannia Bourbon Chocolate Cream Biscuits",
+        "brand": "Britannia",
+        "pack": "50 g",
+        "variant": null,
+        "formulation": null
+      },
+      "sourceType": "link_only_label_reference",
+      "reuse": "Individually checked identification facts only. No permission to reuse the underlying feed, page, image, price or stock."
+    },
+    "bourbon-other-ean": {
+      "family": "britannia-bourbon",
+      "market": "India",
+      "sourceRecord": "saisupermarket:8901063139374",
+      "sourceUrl": "https://saisupermarket.in/product-detail.php?cat=3.1&mid=8901063139374",
+      "evidence": "50 g Bourbon listing tied to another publisher-reported EAN. Recipe or outer coding relationship unverified.",
+      "identity": {
+        "gtin": "8901063139374",
+        "name": "BRI.BOURBON BISCUITS 50GM",
+        "brand": "Britannia",
+        "pack": "50gm",
+        "variant": null,
+        "formulation": null
+      },
+      "sourceType": "link_only_label_reference",
+      "reuse": "Individually checked identification facts only. No permission to reuse the underlying feed, page, image, price or stock."
+    },
+    "bourbon-multi": {
+      "family": "britannia-bourbon",
+      "market": "India",
+      "sourceRecord": "saisupermarket:8901063139350",
+      "sourceUrl": "https://saisupermarket.in/product-detail.php?cat=3.1&mid=8901063139350",
+      "evidence": "Publisher defines five 100 g packs. Retain count separately from aggregate weight.",
+      "identity": {
+        "gtin": "8901063139350",
+        "name": "BRI.BOURBON BISCUITS 100GM X 5PCS",
+        "brand": "Britannia",
+        "pack": "5 x 100 gm",
+        "variant": null,
+        "formulation": null
+      },
+      "sourceType": "link_only_label_reference",
+      "reuse": "Individually checked identification facts only. No permission to reuse the underlying feed, page, image, price or stock."
+    },
+    "dark-bourbon": {
+      "family": "sunfeast-dark-fantasy-bourbon",
+      "market": "India",
+      "sourceRecord": "off:08901725016258",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8901725016258/dark-fantasy-bourbon-sunfeast",
+      "evidence": "Dark Fantasy Bourbon is Sunfeast-branded despite a similar Bourbon title. The archive has no quantity.",
+      "identity": {
+        "gtin": "8901725016258",
+        "name": "Dark fantasy bourbon",
+        "brand": "Sunfeast",
+        "pack": null,
+        "variant": null,
+        "formulation": null
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/cookies.json",
+      "archiveSha256": "ef53974043cc1932c404cb30311f68aa19d648cb06eac77ebaeef49b90523a3f",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/172/501/6258/front_en.20.400.jpg"
+    },
+    "kinley-off": {
+      "family": "kinley-drinking-water",
+      "market": "India",
+      "sourceRecord": "off:08901764082405",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8901764082405/kinley-mineral-water-1ltr",
+      "evidence": "Archived product title says 1ltr but unqualified quantity says 6. The photographed package separately verifies 1 L and exact barcode.",
+      "identity": {
+        "gtin": "8901764082405",
+        "name": "Kinley Mineral Water 1ltr",
+        "brand": "Kinley",
+        "pack": "6",
+        "variant": null,
+        "formulation": null
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/prior-market.json",
+      "archiveSha256": "665a8b8e29221b331b642e49ee076fcfe89b8b597680c56e70175d35a8903ab6",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/176/408/2405/front_en.40.400.jpg"
+    },
+    "kinley-local": {
+      "family": "kinley-drinking-water",
+      "market": "India",
+      "sourceRecord": "fetchnbuy:kinley-drinking-water-1l",
+      "sourceUrl": "https://fetchnbuy.in/products/kinley-drinking-water-1l",
+      "evidence": "Independent 1 L water identification shows matching EAN to photographed Indian pack.",
+      "identity": {
+        "gtin": "8901764082405",
+        "name": "Kinley Drinking Water",
+        "brand": "Kinley",
+        "pack": "1 L",
+        "variant": null,
+        "formulation": "Packaged drinking water"
+      },
+      "sourceType": "link_only_label_reference",
+      "reuse": "Individually checked identification facts only. No permission to reuse the underlying feed, page, image, price or stock."
+    },
+    "tata-toor": {
+      "family": "tata-sampann-toor-dal",
+      "market": "India",
+      "sourceRecord": "off:08904043926216",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8904043926216/unpolished-toor-dal-tata-sampann",
+      "evidence": "India-market archive and pack front identify unpolished Toor (Arhar) Dal.",
+      "identity": {
+        "gtin": "8904043926216",
+        "name": "Unpolished Toor Dal",
+        "brand": "Tata Sampann",
+        "pack": "1 kg",
+        "variant": null,
+        "formulation": "Unpolished Toor"
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/pulses-alt.json",
+      "archiveSha256": "b838d6c8918e25ddeb28807799204198eed559630d730c2f1eb6e1e92d9c76c0",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/404/392/6216/front_en.5.400.jpg"
+    },
+    "organic-toor": {
+      "family": "organic-tattva-dal",
+      "market": "India",
+      "sourceRecord": "off:08906055440704",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8906055440704/organic-tattva-organic-arhar-tur-dal-1kg",
+      "evidence": "India-market archive title identifies a separate Organic Tattva organic Arhar (Tur) Dal 1 kg.",
+      "identity": {
+        "gtin": "8906055440704",
+        "name": "Organic tattva organic Arhar (Tur) dal 1kg",
+        "brand": "Organic Tattva",
+        "pack": "1 kg",
+        "variant": null,
+        "formulation": "Organic Toor"
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/pulses-alt.json",
+      "archiveSha256": "b838d6c8918e25ddeb28807799204198eed559630d730c2f1eb6e1e92d9c76c0",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/605/544/0704/front_en.3.400.jpg"
+    },
+    "organic-masoor": {
+      "family": "organic-tattva-dal",
+      "market": "India",
+      "sourceRecord": "off:08906055440858",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8906055440858/masoor-dal-organic-tattva",
+      "evidence": "Separate 1 kg Organic Tattva Masoor entry.",
+      "identity": {
+        "gtin": "8906055440858",
+        "name": "Masoor dal",
+        "brand": "Organic tattva",
+        "pack": "1 kg",
+        "variant": null,
+        "formulation": "Masoor"
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/pulses-alt.json",
+      "archiveSha256": "b838d6c8918e25ddeb28807799204198eed559630d730c2f1eb6e1e92d9c76c0",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/605/544/0858/front_en.10.400.jpg"
+    },
+    "vedaka-toor": {
+      "family": "vedaka-dal",
+      "market": "India",
+      "sourceRecord": "off:08903023005736",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8903023005736/vedaka-toor-dal",
+      "evidence": "India-market archive declares Vedaka Toor dal 1 kg.",
+      "identity": {
+        "gtin": "8903023005736",
+        "name": "Vedaka Toor dal",
+        "brand": "Vedaka",
+        "pack": "1 kg",
+        "variant": null,
+        "formulation": "Toor"
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/pulses-alt.json",
+      "archiveSha256": "b838d6c8918e25ddeb28807799204198eed559630d730c2f1eb6e1e92d9c76c0",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/302/300/5736/front_en.3.400.jpg"
+    },
+    "vedaka-incomplete": {
+      "family": "vedaka-dal",
+      "market": "India",
+      "sourceRecord": "off:08903023005743",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8903023005743/vedaka-toor-arhar-dal",
+      "evidence": "Same brand and Toor/Arhar name with distinct source code and missing pack quantity.",
+      "identity": {
+        "gtin": "8903023005743",
+        "name": "Vedaka Toor / Arhar dal",
+        "brand": "Vedaka",
+        "pack": null,
+        "variant": null,
+        "formulation": "Toor"
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/pulses-alt.json",
+      "archiveSha256": "b838d6c8918e25ddeb28807799204198eed559630d730c2f1eb6e1e92d9c76c0",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/302/300/5743/front_en.3.400.jpg"
+    },
+    "vedaka-masoor": {
+      "family": "vedaka-dal",
+      "market": "India",
+      "sourceRecord": "off:08903023005996",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8903023005996/vedaka-red-masoor-dal-split",
+      "evidence": "Separate Vedaka Red Masoor split product at 1 kg.",
+      "identity": {
+        "gtin": "8903023005996",
+        "name": "Vedaka Red Masoor dal Split",
+        "brand": "Vedaka",
+        "pack": "1 kg",
+        "variant": null,
+        "formulation": "Split Red Masoor"
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/pulses-alt.json",
+      "archiveSha256": "b838d6c8918e25ddeb28807799204198eed559630d730c2f1eb6e1e92d9c76c0",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/302/300/5996/front_en.3.400.jpg"
+    },
+    "daily-whole": {
+      "family": "daily-good-dal",
+      "market": "India",
+      "sourceRecord": "off:08909177016109",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8909177016109/daily-good-red-masoor-whole",
+      "evidence": "Known Daily Good whole red masoor 1 kg.",
+      "identity": {
+        "gtin": "8909177016109",
+        "name": "Daily Good Red Masoor Whole",
+        "brand": "Daily Good",
+        "pack": "1 kg",
+        "variant": null,
+        "formulation": null
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/pulses-alt.json",
+      "archiveSha256": "b838d6c8918e25ddeb28807799204198eed559630d730c2f1eb6e1e92d9c76c0",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/917/701/6109/front_en.3.400.jpg"
+    },
+    "daily-incomplete": {
+      "family": "daily-good-dal",
+      "market": "India",
+      "sourceRecord": "off:08909177015508",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8909177015508/masoor-dal-daily-good",
+      "evidence": "Source title and raw multi-label brand field resemble the Daily Good line. Pack is missing.",
+      "identity": {
+        "gtin": "8909177015508",
+        "name": "Masoor Dal",
+        "brand": "Daily Good, kiranakart",
+        "pack": null,
+        "variant": null,
+        "formulation": null
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/pulses-alt.json",
+      "archiveSha256": "b838d6c8918e25ddeb28807799204198eed559630d730c2f1eb6e1e92d9c76c0",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/917/701/5508/front_en.3.400.jpg"
+    },
+    "24mantra-tur": {
+      "family": "24-mantra-dal",
+      "market": "India",
+      "sourceRecord": "off:08904083505808",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8904083505808/tur-dal-24-mantra-organic",
+      "evidence": "The 24 Mantra Organic archive entry uses the Tur transliteration for pigeon peas and declares 1 kg.",
+      "identity": {
+        "gtin": "8904083505808",
+        "name": "Tur dal",
+        "brand": "24 Mantra Organic",
+        "pack": "1 kg",
+        "variant": null,
+        "formulation": "Tur Dal"
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/pulses-alt.json",
+      "archiveSha256": "b838d6c8918e25ddeb28807799204198eed559630d730c2f1eb6e1e92d9c76c0",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/408/350/5808/front_en.5.400.jpg"
+    },
+    "24mantra-masoor": {
+      "family": "24-mantra-dal",
+      "market": "India",
+      "sourceRecord": "off:08904083514091",
+      "sourceUrl": "https://in.openfoodfacts.org/product/8904083514091/organic-masoor-malka-500g-24-mantra",
+      "evidence": "Archive explicitly labels Organic Masoor Malka, 500 g.",
+      "identity": {
+        "gtin": "8904083514091",
+        "name": "Organic Masoor Malka-500g",
+        "brand": "24 Mantra",
+        "pack": "500g",
+        "variant": null,
+        "formulation": "Masoor Malka"
+      },
+      "archive": "2026-11-14-catalogue-quality/raw-pages/pulses-alt.json",
+      "archiveSha256": "b838d6c8918e25ddeb28807799204198eed559630d730c2f1eb6e1e92d9c76c0",
+      "sourceType": "licensed_catalogue",
+      "imageEvidenceUrl": "https://images.openfoodfacts.org/images/products/890/408/351/4091/front_en.7.400.jpg"
+    }
+  },
+  "pairs": [
+    {
+      "reference": "in-tr-01",
+      "split": "train",
+      "left": "gow-200",
+      "right": "gow-local-200",
+      "label": "SAME_VARIANT",
+      "scenario": "exact_same",
+      "cohort": "observed",
+      "reason": "Published Solapur EAN and 200 mL jar agree with the Indian source row and photographed pack."
+    },
+    {
+      "reference": "in-tr-02",
+      "split": "train",
+      "left": "gow-200",
+      "right": "gow-owner-500",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "different_pack_missing_gtin",
+      "cohort": "observed",
+      "reason": "200 mL and 500 mL Gowardhan jars are different sellable pack sizes."
+    },
+    {
+      "reference": "in-tr-03",
+      "split": "train",
+      "left": "everest-chaat",
+      "right": "everest-pav",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "flavour",
+      "cohort": "observed",
+      "reason": "Owner-recognized Chaat and Pav Bhaji recipes are different 50 g blends."
+    },
+    {
+      "reference": "in-tr-04",
+      "split": "train",
+      "left": "everest-chaat",
+      "right": "everest-sambhar",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "flavour",
+      "cohort": "observed",
+      "reason": "Manufacturer recognizes separate Chaat and Sambhar blends. Photos and sizes corroborate."
+    },
+    {
+      "reference": "in-tr-05",
+      "split": "train",
+      "left": "everest-pav",
+      "right": "everest-sambhar",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "flavour",
+      "cohort": "observed",
+      "reason": "Pav Bhaji and Sambhar are different named recipes at equal nominal size."
+    },
+    {
+      "reference": "in-tr-06",
+      "split": "train",
+      "left": "everest-sambhar",
+      "right": "suhana-sambar",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "regional_brand_and_similar_name",
+      "cohort": "observed",
+      "reason": "Different brand, size and reported GTIN. Titles use Sambhar/Sambar variants."
+    },
+    {
+      "reference": "in-tr-07",
+      "split": "train",
+      "left": "suhana-sambar",
+      "right": "suhana-paneer",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "formulation",
+      "cohort": "observed",
+      "reason": "Sambar and paneer blends differ irrespective of the unavailable paneer net quantity."
+    },
+    {
+      "reference": "in-tr-08",
+      "split": "train",
+      "left": "kissan-fresh-850",
+      "right": "kissan-fresh-90",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "pack_size",
+      "cohort": "observed",
+      "reason": "Both Fresh Tomato, but 850 g and 90 g sizes have separate codes."
+    },
+    {
+      "reference": "in-tr-09",
+      "split": "train",
+      "left": "kissan-fresh-850",
+      "right": "kissan-spicy-850",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "formulation",
+      "cohort": "observed",
+      "reason": "Sweet & Spicy sauce and Fresh Tomato Ketchup have different source formulations at equal net weight."
+    },
+    {
+      "reference": "in-tr-10",
+      "split": "train",
+      "left": "kissan-unitless",
+      "right": "kissan-fresh-90",
+      "label": "UNCERTAIN",
+      "scenario": "incomplete_listing",
+      "cohort": "observed",
+      "reason": "The unitless Kissan entry has inconsistent packaging evidence. Closest Fresh Tomato product cannot establish size."
+    },
+    {
+      "reference": "in-tr-11",
+      "split": "train",
+      "left": "veeba-ketchup",
+      "right": "delmonte-ketchup",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "different_brand_similar",
+      "cohort": "observed",
+      "reason": "Same weight and similar title remain distinct across Veeba and Del Monte labels."
+    },
+    {
+      "reference": "in-tr-12",
+      "split": "train",
+      "left": "veeba-ketchup",
+      "right": "tomato-unknown",
+      "label": "UNCERTAIN",
+      "scenario": "incomplete_listing",
+      "cohort": "observed",
+      "reason": "Similar product category alone cannot identify shortened listing with missing brand and size."
+    },
+    {
+      "reference": "in-tr-c1",
+      "split": "train",
+      "left": "gow-200",
+      "right": "gow-local-200",
+      "label": "SAME_VARIANT",
+      "scenario": "missing_gtin",
+      "cohort": "controlled",
+      "reason": "Withhold one catalogue code to measure barcode-optional review. Underlying researched package remains identical.",
+      "overrides": {
+        "right": {
+          "gtin": null
+        }
+      }
+    },
+    {
+      "reference": "in-tr-c2",
+      "split": "train",
+      "left": "gow-200",
+      "right": "gow-local-200",
+      "label": "SAME_VARIANT",
+      "scenario": "invalid_gtin",
+      "cohort": "controlled",
+      "reason": "Change one final digit to a checksum failure. This is deliberate input noise, and the underlying independently matched item stays the same.",
+      "overrides": {
+        "right": {
+          "gtin": "8906001023051"
+        }
+      }
+    },
+    {
+      "reference": "in-tr-c3",
+      "split": "train",
+      "left": "everest-chaat",
+      "right": "everest-pav",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "conflicting_gtin",
+      "cohort": "controlled",
+      "reason": "Replace Pav Bhaji listing code with Chaat code to test shared-code flavour conflicts. This barcode assertion is deliberately false.",
+      "overrides": {
+        "right": {
+          "gtin": "8901786060504"
+        }
+      }
+    },
+    {
+      "reference": "in-tr-c4",
+      "split": "train",
+      "left": "kissan-fresh-850",
+      "right": "kissan-spicy-850",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "missing_gtin",
+      "cohort": "controlled",
+      "reason": "Remove Sweet & Spicy barcode while preserving declared formulation and weight.",
+      "overrides": {
+        "right": {
+          "gtin": null
+        }
+      }
+    },
+    {
+      "reference": "in-va-01",
+      "split": "validation",
+      "left": "masti-off",
+      "right": "masti-sai",
+      "label": "SAME_VARIANT",
+      "scenario": "exact_same",
+      "cohort": "observed",
+      "reason": "Matching printed barcode and 200 mL spiced product corroborated independently."
+    },
+    {
+      "reference": "in-va-02",
+      "split": "validation",
+      "left": "masti-off",
+      "right": "masti-single",
+      "label": "SAME_VARIANT",
+      "scenario": "missing_gtin",
+      "cohort": "observed",
+      "reason": "The single-piece 200 mL Masti listing lacks GTIN but matches the photographed carton, flavour and same-code catalogue."
+    },
+    {
+      "reference": "in-va-03",
+      "split": "validation",
+      "left": "masti-sai",
+      "right": "masti-case",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "multipack_vs_single",
+      "cohort": "observed",
+      "reason": "The observed trade items are a single 200 mL carton and a 30 × 200 mL case."
+    },
+    {
+      "reference": "in-va-04",
+      "split": "validation",
+      "left": "masti-single",
+      "right": "masti-case",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "multipack_vs_single",
+      "cohort": "observed",
+      "reason": "Publisher explicitly assigns separate SKU pages to one unit and the case."
+    },
+    {
+      "reference": "in-va-05",
+      "split": "validation",
+      "left": "masti-case",
+      "right": "masti-protein-case",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "formulation",
+      "cohort": "observed",
+      "reason": "Both have 30 × 200 mL packs. Separate Masti spiced and High Protein lines carry explicit product identity differences."
+    },
+    {
+      "reference": "in-va-06",
+      "split": "validation",
+      "left": "masti-off",
+      "right": "masti-500",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "pack_size",
+      "cohort": "observed",
+      "reason": "Matching brand and buttermilk family do not collapse 200 mL and 500 mL net contents."
+    },
+    {
+      "reference": "in-va-07",
+      "split": "validation",
+      "left": "masti-off",
+      "right": "amul-lassi-200",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "formulation",
+      "cohort": "observed",
+      "reason": "Salted spiced buttermilk and sweet rose lassi are clearly distinct dairy drinks with equal nominal volume."
+    },
+    {
+      "reference": "in-va-08",
+      "split": "validation",
+      "left": "amul-lassi-200",
+      "right": "amul-lassi-250",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "pack_size",
+      "cohort": "observed",
+      "reason": "Independently reported 200 mL and 250 mL volumes remain distinct even when formulation is not populated."
+    },
+    {
+      "reference": "in-va-09",
+      "split": "validation",
+      "left": "amul-paneer",
+      "right": "amul-paneer-local",
+      "label": "SAME_VARIANT",
+      "scenario": "exact_same",
+      "cohort": "observed",
+      "reason": "The independent EAN and 200 g retail item agree with the archive front and quantity."
+    },
+    {
+      "reference": "in-va-10",
+      "split": "validation",
+      "left": "amul-butter-100",
+      "right": "amul-butter-200",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "pack_size",
+      "cohort": "observed",
+      "reason": "Two branded butter packs record 100 g and 200 g."
+    },
+    {
+      "reference": "in-va-11",
+      "split": "validation",
+      "left": "gokul-milk-incomplete",
+      "right": "chitale-milk-500",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "different_brand_similar",
+      "cohort": "observed",
+      "reason": "Known distinct brands despite broadly related dairy products, even though the Gokul quantity is absent."
+    },
+    {
+      "reference": "in-va-12",
+      "split": "validation",
+      "left": "masti-off",
+      "right": "smoodh-chocolate",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "formulation",
+      "cohort": "observed",
+      "reason": "Chocolate flavoured milk is different from spiced cultured buttermilk."
+    },
+    {
+      "reference": "in-va-c1",
+      "split": "validation",
+      "left": "masti-off",
+      "right": "masti-sai",
+      "label": "SAME_VARIANT",
+      "scenario": "native_script",
+      "cohort": "controlled",
+      "reason": "Replace the independent publication's English title with the exact Hindi title from the photographed Amul label, अमूल मस्ती मसाला छाछ.",
+      "overrides": {
+        "right": {
+          "name": "अमूल मस्ती मसाला छाछ"
+        }
+      }
+    },
+    {
+      "reference": "in-va-c2",
+      "split": "validation",
+      "left": "masti-off",
+      "right": "masti-sai",
+      "label": "SAME_VARIANT",
+      "scenario": "native_script_missing_gtin",
+      "cohort": "controlled",
+      "reason": "Stress case with the printed Hindi title from the archive and a suppressed listing code.",
+      "overrides": {
+        "right": {
+          "name": "अमूल मस्ती मसाला छाछ",
+          "gtin": null
+        }
+      }
+    },
+    {
+      "reference": "in-va-c3",
+      "split": "validation",
+      "left": "masti-off",
+      "right": "masti-sai",
+      "label": "SAME_VARIANT",
+      "scenario": "roman_transliteration",
+      "cohort": "controlled",
+      "reason": "Use a Roman transliteration of the printed Hindi Amul product title. It is an alternate input, not an observed listing title.",
+      "overrides": {
+        "right": {
+          "name": "Amul Masti Masala Chhach",
+          "gtin": null
+        }
+      }
+    },
+    {
+      "reference": "in-va-c4",
+      "split": "validation",
+      "left": "masti-single",
+      "right": "masti-case",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "flattened_multipack",
+      "cohort": "controlled",
+      "reason": "Suppress the constituent count on the case and present total volume as 6 L as an input stress; identity is still a distinct trade item.",
+      "overrides": {
+        "right": {
+          "pack": "6 L"
+        }
+      }
+    },
+    {
+      "reference": "in-va-c5",
+      "split": "validation",
+      "left": "amul-paneer",
+      "right": "amul-paneer-local",
+      "label": "SAME_VARIANT",
+      "scenario": "incomplete_listing",
+      "cohort": "controlled",
+      "reason": "Remove barcode and render only a shortened source name and weight in the alternate test input.",
+      "overrides": {
+        "right": {
+          "gtin": null,
+          "name": "Fresh Malai"
+        }
+      }
+    },
+    {
+      "reference": "in-va-c6",
+      "split": "validation",
+      "left": "masti-case",
+      "right": "masti-protein-case",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "incomplete_listing",
+      "cohort": "controlled",
+      "reason": "Withhold the variant and shorten the higher-protein line title, while preserving the observed explicit formulation.",
+      "overrides": {
+        "right": {
+          "variant": null,
+          "name": "Amul Buttermilk"
+        }
+      }
+    },
+    {
+      "reference": "in-te-01",
+      "split": "test",
+      "left": "parle-happy-off",
+      "right": "parle-happy-sai",
+      "label": "SAME_VARIANT",
+      "scenario": "exact_same",
+      "cohort": "observed",
+      "reason": "Independent EAN, exact 31.5 g and archived physical label establish the same variant despite its shortened source title."
+    },
+    {
+      "reference": "in-te-02",
+      "split": "test",
+      "left": "bourbon-off",
+      "right": "bourbon-local",
+      "label": "SAME_VARIANT",
+      "scenario": "exact_same",
+      "cohort": "observed",
+      "reason": "Catalogued EAN and 50 g weight agree for a named Britannia Bourbon trade item."
+    },
+    {
+      "reference": "in-te-03",
+      "split": "test",
+      "left": "bourbon-local",
+      "right": "bourbon-other-ean",
+      "label": "UNCERTAIN",
+      "scenario": "conflicting_gtin",
+      "cohort": "observed",
+      "reason": "Different marketplace codes for nominally 50 g Bourbon require barcode-linked packaging or formulation before any equivalence."
+    },
+    {
+      "reference": "in-te-04",
+      "split": "test",
+      "left": "bourbon-local",
+      "right": "bourbon-multi",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "multipack_vs_single",
+      "cohort": "observed",
+      "reason": "Five 100 g packages are distinct from one 50 g pouch."
+    },
+    {
+      "reference": "in-te-05",
+      "split": "test",
+      "left": "bourbon-off",
+      "right": "dark-bourbon",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "different_brand_similar",
+      "cohort": "observed",
+      "reason": "Common Bourbon wording does not bridge clearly different labels Britannia and Sunfeast."
+    },
+    {
+      "reference": "in-te-06",
+      "split": "test",
+      "left": "kinley-off",
+      "right": "kinley-local",
+      "label": "SAME_VARIANT",
+      "scenario": "exact_same_unitless_pack",
+      "cohort": "observed",
+      "reason": "Printed bottle code and 1 L declaration resolve identity against the exact-code retailer reference. The source's unitless quantity 6 remains unaltered as an actual quality problem."
+    },
+    {
+      "reference": "in-te-07",
+      "split": "test",
+      "left": "tata-toor",
+      "right": "organic-toor",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "different_brand_similar",
+      "cohort": "observed",
+      "reason": "Known Tata Sampann and Organic Tattva brands are distinct despite equivalent pulse terms and 1 kg."
+    },
+    {
+      "reference": "in-te-08",
+      "split": "test",
+      "left": "organic-toor",
+      "right": "organic-masoor",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "formulation",
+      "cohort": "observed",
+      "reason": "Arhar/Toor pigeon peas and Masoor lentils are different products at the same 1 kg weight."
+    },
+    {
+      "reference": "in-te-09",
+      "split": "test",
+      "left": "vedaka-toor",
+      "right": "vedaka-incomplete",
+      "label": "UNCERTAIN",
+      "scenario": "incomplete_listing",
+      "cohort": "observed",
+      "reason": "Same Vedaka Toor/Arhar base term, with distinct code and missing pack. Obtain full packaging before assigning equivalence."
+    },
+    {
+      "reference": "in-te-10",
+      "split": "test",
+      "left": "vedaka-toor",
+      "right": "vedaka-masoor",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "formulation",
+      "cohort": "observed",
+      "reason": "Pigeon pea Toor and red split Masoor are different 1 kg products from the same brand."
+    },
+    {
+      "reference": "in-te-11",
+      "split": "test",
+      "left": "daily-whole",
+      "right": "daily-incomplete",
+      "label": "UNCERTAIN",
+      "scenario": "incomplete_listing",
+      "cohort": "observed",
+      "reason": "Multiple brand labels and absent pack leave the Daily Good whole-versus-unspecified Masoor identity uncertain."
+    },
+    {
+      "reference": "in-te-12",
+      "split": "test",
+      "left": "organic-toor",
+      "right": "24mantra-tur",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "regional_brand_and_similar_name",
+      "cohort": "observed",
+      "reason": "Organic Tattva and 24 Mantra Organic are distinct brands using different Tur/Arhar transliterations for the pulse."
+    },
+    {
+      "reference": "in-te-13",
+      "split": "test",
+      "left": "vedaka-toor",
+      "right": "24mantra-tur",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "regional_brand_and_similar_name",
+      "cohort": "observed",
+      "reason": "Same 1 kg pulse uses Toor/Tur, but Vedaka and 24 Mantra Organic are distinct brands."
+    },
+    {
+      "reference": "in-te-14",
+      "split": "test",
+      "left": "24mantra-tur",
+      "right": "24mantra-masoor",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "formulation",
+      "cohort": "observed",
+      "reason": "Same regional organic brand, different pulse and package amount."
+    },
+    {
+      "reference": "in-te-c1",
+      "split": "test",
+      "left": "parle-happy-off",
+      "right": "parle-happy-sai",
+      "label": "SAME_VARIANT",
+      "scenario": "missing_gtin",
+      "cohort": "controlled",
+      "reason": "Suppress the catalogue's observed valid EAN.",
+      "overrides": {
+        "right": {
+          "gtin": null
+        }
+      }
+    },
+    {
+      "reference": "in-te-c2",
+      "split": "test",
+      "left": "bourbon-off",
+      "right": "bourbon-local",
+      "label": "SAME_VARIANT",
+      "scenario": "missing_gtin",
+      "cohort": "controlled",
+      "reason": "Suppress the exact-code independently confirmed retailer EAN.",
+      "overrides": {
+        "right": {
+          "gtin": null
+        }
+      }
+    },
+    {
+      "reference": "in-te-c3",
+      "split": "test",
+      "left": "bourbon-off",
+      "right": "bourbon-local",
+      "label": "SAME_VARIANT",
+      "scenario": "conflicting_gtin",
+      "cohort": "controlled",
+      "reason": "Substitute the real alternative EAN from the unresolved 50 g source into an otherwise independently confirmed matching input.",
+      "overrides": {
+        "right": {
+          "gtin": "8901063139374"
+        }
+      }
+    },
+    {
+      "reference": "in-te-c4",
+      "split": "test",
+      "left": "bourbon-local",
+      "right": "bourbon-multi",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "conflicting_gtin",
+      "cohort": "controlled",
+      "reason": "Simulate a case listing that repeats the unit pack's EAN. Known original GTINs and observed packaging are part of the ground truth.",
+      "overrides": {
+        "right": {
+          "gtin": "8901063139329"
+        }
+      }
+    },
+    {
+      "reference": "in-te-c5",
+      "split": "test",
+      "left": "tata-toor",
+      "right": "organic-toor",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "hindi_title_missing_gtin",
+      "cohort": "controlled",
+      "reason": "Use a researcher-written Devanagari rendering of Organic Tattva Organic Arhar Dal and suppress its code. Neither change is an observed retailer field.",
+      "overrides": {
+        "right": {
+          "name": "ऑर्गेनिक तत्त्व ऑर्गेनिक अरहर दाल",
+          "gtin": null
+        }
+      }
+    },
+    {
+      "reference": "in-te-c6",
+      "split": "test",
+      "left": "kinley-off",
+      "right": "kinley-local",
+      "label": "SAME_VARIANT",
+      "scenario": "invalid_gtin",
+      "cohort": "controlled",
+      "reason": "Deliberately change the last digit of the corroborating listing's GTIN without modifying the underlying pack.",
+      "overrides": {
+        "right": {
+          "gtin": "8901764082406"
+        }
+      }
+    }
+  ]
+}

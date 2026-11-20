@@ -1,0 +1,117 @@
+services:
+  db:
+    image: mysql:${MYSQL_VERSION:-8.0.44}
+    environment:
+      MYSQL_DATABASE: cartiq
+      MYSQL_USER: ${DB_USERNAME:?Set a local database user}
+      MYSQL_PASSWORD: ${DB_PASSWORD:?Set a local database password}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Set a local root password}
+    volumes:
+      - cartiq-db:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "MYSQL_PWD=\"$$MYSQL_PASSWORD\" mysql --protocol=TCP -h 127.0.0.1 -u \"$$MYSQL_USER\" \"$$MYSQL_DATABASE\" -Nse 'SELECT 1' >/dev/null 2>&1"]
+      interval: 10s
+      timeout: 3s
+      retries: 10
+      start_period: 30s
+    networks: [private]
+
+  migrate:
+    profiles: [migration]
+    build: ./backend
+    entrypoint: ["java", "-Dloader.main=com.smartcart.config.DatabaseMigration", "-cp", "/app/app.jar", "org.springframework.boot.loader.launch.PropertiesLauncher"]
+    command: ["migrate"]
+    environment:
+      DB_URL: 'jdbc:mysql://db:3306/cartiq?connectionTimeZone=UTC&sslMode=REQUIRED'
+      DB_USERNAME: ${MIGRATION_DB_USERNAME:-${DB_USERNAME}}
+      DB_PASSWORD: ${MIGRATION_DB_PASSWORD:-${DB_PASSWORD}}
+    depends_on:
+      db:
+        condition: service_healthy
+    networks: [private]
+
+  backend:
+    build: ./backend
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+      PORT: "8080"
+      DB_URL: 'jdbc:mysql://db:3306/cartiq?connectionTimeZone=UTC&sslMode=REQUIRED'
+      DB_USERNAME: ${DB_USERNAME:?Set DB_USERNAME}
+      DB_PASSWORD: ${DB_PASSWORD:?Set DB_PASSWORD}
+      JWT_SECRET: ${JWT_SECRET:?Set JWT_SECRET}
+      ALLOWED_ORIGINS: ${ALLOWED_ORIGINS:?Set a literal HTTPS origin}
+      CARTIQ_TRUSTED_PROXY_REGEX: '172[.]30[.]44[.]10'
+      BOOTSTRAP_ADMIN_EMAIL: ${BOOTSTRAP_ADMIN_EMAIL:-}
+      BOOTSTRAP_ADMIN_PASSWORD: ${BOOTSTRAP_ADMIN_PASSWORD:-}
+      CARTIQ_GEOCODER_URL: ${CARTIQ_GEOCODER_URL:-}
+      CARTIQ_GEOCODER_CONTACT: ${CARTIQ_GEOCODER_CONTACT:-}
+      CARTIQ_GEOCODER_PUBLIC_REVERSE_POINT: ${CARTIQ_GEOCODER_PUBLIC_REVERSE_POINT:-}
+      CARTIQ_GEOCODER_ALLOW_DEVICE_GPS: ${CARTIQ_GEOCODER_ALLOW_DEVICE_GPS:-false}
+      FIREBASE_ENABLED: ${FIREBASE_ENABLED:-false}
+      FIREBASE_PROJECT_ID: ${FIREBASE_PROJECT_ID:-}
+      CARTIQ_PRICE_FORECAST_ENABLED: ${CARTIQ_PRICE_FORECAST_ENABLED:-false}
+      CARTIQ_APPROVED_FORECAST_ENABLED: ${CARTIQ_APPROVED_FORECAST_ENABLED:-false}
+      AI_SERVICE_URL: http://forecast:8001
+      AI_SERVICE_SECRET: ${AI_SERVICE_SECRET:?Set an internal service secret}
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-T", "3", "-O", "/dev/null", "http://127.0.0.1:8080/actuator/health/readiness"]
+      interval: 10s
+      timeout: 4s
+      retries: 6
+      start_period: 45s
+    networks: [front, private]
+
+  forecast:
+    build: ./ai-service
+    environment:
+      CARTIQ_ENV: production
+      AI_SERVICE_SECRET: ${AI_SERVICE_SECRET:?Set an internal service secret}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8001/health', timeout=2).close()"]
+      interval: 15s
+      timeout: 3s
+      retries: 4
+    networks: [private]
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+      args:
+        EXPO_PUBLIC_FIREBASE_API_KEY: ${EXPO_PUBLIC_FIREBASE_API_KEY:-}
+        EXPO_PUBLIC_FIREBASE_PROJECT_ID: ${EXPO_PUBLIC_FIREBASE_PROJECT_ID:-}
+        EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID: ${EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID:-}
+        EXPO_PUBLIC_FIREBASE_APP_ID: ${EXPO_PUBLIC_FIREBASE_APP_ID:-}
+        EXPO_PUBLIC_FIREBASE_VAPID_KEY: ${EXPO_PUBLIC_FIREBASE_VAPID_KEY:-}
+    ports:
+      - "${HTTPS_BIND:-127.0.0.1}:${HTTPS_PORT:-8443}:443"
+      - "${HTTPS_BIND:-127.0.0.1}:${HTTP_REDIRECT_PORT:-8081}:80"
+    environment:
+      CARTIQ_HTTPS_ORIGIN: ${CARTIQ_HTTPS_ORIGIN:-https://localhost:8443}
+    volumes:
+      - type: bind
+        source: ${CARTIQ_TLS_DIR:-./configuration/tls}
+        target: /etc/cartiq-tls
+        read_only: true
+        bind:
+          create_host_path: false
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      front:
+        ipv4_address: 172.30.44.10
+
+networks:
+  front:
+    ipam:
+      config:
+        - subnet: 172.30.44.0/24
+  private:
+    internal: true
+
+volumes:
+  cartiq-db:

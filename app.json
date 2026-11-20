@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "CartIQ",
+    "slug": "cartiq",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "cartiq",
+    "userInterfaceStyle": "automatic",
+    "icon": "./assets/app-icon.png",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.raydonsolutions.cartiq",
+      "config": {"usesNonExemptEncryption": false}
+    },
+    "android": {
+      "package": "com.raydonsolutions.cartiq",
+      "adaptiveIcon": {"foregroundImage": "./assets/adaptive-icon.png", "backgroundColor": "#174F3D"},
+      "edgeToEdgeEnabled": true,
+      "blockedPermissions": ["android.permission.ACCESS_BACKGROUND_LOCATION", "android.permission.RECORD_AUDIO", "android.permission.READ_EXTERNAL_STORAGE", "android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.SYSTEM_ALERT_WINDOW"]
+    },
+    "web": {"name": "CartIQ", "bundler": "metro"},
+    "plugins": [
+      "expo-secure-store",
+      ["expo-location", {"locationWhenInUsePermission": "Allow CartIQ to use your current location to find grocery prices.", "locationAlwaysAndWhenInUsePermission": false, "locationAlwaysPermission": false}],
+      ["expo-splash-screen", {"image": "./assets/splash.png", "imageWidth": 180, "backgroundColor": "#FFFBEA"}]
+    ]
+  }
+}

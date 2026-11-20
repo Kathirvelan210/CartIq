@@ -1,0 +1,137 @@
+[
+  {
+    "slug": "fruit",
+    "file": "fruit.jpg",
+    "title": "Culinary fruits front view.jpg",
+    "author": "No machine-readable author provided. Ionutzmovie assumed (based on copyright claims).",
+    "license": "CC BY 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Culinary_fruits_front_view.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+  },
+  {
+    "slug": "vegetables",
+    "file": "vegetables.jpg",
+    "title": "Vegetables.jpg",
+    "author": "Photo by Scott Bauer. Image Number K7246-9.",
+    "license": "Public domain",
+    "url": "https://commons.wikimedia.org/wiki/File:Vegetables.jpg",
+    "licenseUrl": ""
+  },
+  {
+    "slug": "dairy",
+    "file": "dairy.jpg",
+    "title": "Milk glass.jpg",
+    "author": "Stefan K\u00fchn",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Milk_glass.jpg",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  {
+    "slug": "grains",
+    "file": "grains.jpg",
+    "title": "Khyma and Basmati rice.jpg",
+    "author": "nagualdesign",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Khyma_and_Basmati_rice.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  {
+    "slug": "pulses",
+    "file": "pulses.png",
+    "title": "3 types of lentil.png",
+    "author": "User:Justinc",
+    "license": "CC BY-SA 2.5",
+    "url": "https://commons.wikimedia.org/wiki/File:3_types_of_lentil.png",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  {
+    "slug": "flour",
+    "file": "flour.jpg",
+    "title": "Wheat flour.jpg",
+    "author": "Oliwier Brzezinski",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Wheat_flour.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "slug": "oil",
+    "file": "oil.png",
+    "title": "OleicSunflowerOil.png",
+    "author": "Itineranttrader",
+    "license": "Public domain",
+    "url": "https://commons.wikimedia.org/wiki/File:OleicSunflowerOil.png",
+    "licenseUrl": ""
+  },
+  {
+    "slug": "snacks",
+    "file": "snacks.jpg",
+    "title": "Potato-Chips.jpg",
+    "author": "Evan-Amos          for those who dont know, this guy wrote this",
+    "license": "Public domain",
+    "url": "https://commons.wikimedia.org/wiki/File:Potato-Chips.jpg",
+    "licenseUrl": ""
+  },
+  {
+    "slug": "beverages",
+    "file": "beverages.jpg",
+    "title": "Orangejuice.jpg",
+    "author": "rawpixel.com",
+    "license": "CC0",
+    "url": "https://commons.wikimedia.org/wiki/File:Orangejuice.jpg",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  {
+    "slug": "biscuits",
+    "file": "biscuits.jpg",
+    "title": "Chocolate chip cookies.jpg",
+    "author": "Rdsmith4",
+    "license": "CC BY-SA 2.5",
+    "url": "https://commons.wikimedia.org/wiki/File:Chocolate_chip_cookies.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  {
+    "slug": "oats",
+    "file": "oats.jpg",
+    "title": "Rolled oats.jpg",
+    "author": "en:user:Hankwang",
+    "license": "Public domain",
+    "url": "https://commons.wikimedia.org/wiki/File:Rolled_oats.jpg",
+    "licenseUrl": ""
+  },
+  {
+    "slug": "personal",
+    "file": "personal.jpg",
+    "title": "Handmade soap cropped and simplified.jpg",
+    "author": "Malene Thyssen, simplified by HLHJ",
+    "license": "CC BY 2.5",
+    "url": "https://commons.wikimedia.org/wiki/File:Handmade_soap_cropped_and_simplified.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5"
+  },
+  {
+    "slug": "household",
+    "file": "household.jpg",
+    "title": "Afwasmiddel.jpg",
+    "author": "M.Minderhoud",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Afwasmiddel.jpg",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  {
+    "slug": "baby",
+    "file": "baby.jpg",
+    "title": "Disposablediaper.JPG",
+    "author": "Coop41",
+    "license": "Public domain",
+    "url": "https://commons.wikimedia.org/wiki/File:Disposablediaper.JPG",
+    "licenseUrl": ""
+  },
+  {
+    "slug": "frozen",
+    "file": "frozen.jpg",
+    "title": "Shelf of packs of frozen vegetables.jpg",
+    "author": "",
+    "license": "Public domain",
+    "url": "https://commons.wikimedia.org/wiki/File:Shelf_of_packs_of_frozen_vegetables.jpg",
+    "licenseUrl": ""
+  }
+]

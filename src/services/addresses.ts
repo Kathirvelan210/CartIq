@@ -1,0 +1,7 @@
+import {Platform} from 'react-native';
+import * as SecureStore from 'expo-secure-store';
+import {Address} from './checkout';
+import {storageOwner} from './storage-scope';
+const webAddresses=new Map<string,Address[]>();
+export async function readAddresses():Promise<Address[]>{const owner=storageOwner();if(Platform.OS==='web')return webAddresses.get(owner)||[];const prefix=`cartiq.${owner}.address.`;const index=JSON.parse(await SecureStore.getItemAsync(prefix+'index')||'[]');if(!Array.isArray(index)||!index.every(id=>typeof id==='string'&&/^[a-zA-Z0-9-]+$/.test(id)))return [];const rows=await Promise.all(index.map(async id=>JSON.parse(await SecureStore.getItemAsync(prefix+id)||'null')));return rows.filter(a=>a&&typeof a.id==='string'&&typeof a.line1==='string'&&typeof a.locationId==='string');}
+export async function writeAddresses(addresses:Address[]){if(addresses.length>8)throw new Error('You can save up to eight addresses on this device.');const owner=storageOwner();if(Platform.OS==='web'){webAddresses.set(owner,addresses);return;}const prefix=`cartiq.${owner}.address.`;const old=JSON.parse(await SecureStore.getItemAsync(prefix+'index')||'[]') as string[];for(const a of addresses)await SecureStore.setItemAsync(prefix+a.id,JSON.stringify(a));await SecureStore.setItemAsync(prefix+'index',JSON.stringify(addresses.map(a=>a.id)));for(const id of old)if(!addresses.some(a=>a.id===id))await SecureStore.deleteItemAsync(prefix+id);}

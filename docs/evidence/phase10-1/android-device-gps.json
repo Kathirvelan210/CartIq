@@ -1,0 +1,58 @@
+{
+  "phase": "10.1",
+  "date": "2026-11-18",
+  "physicalAndroid": true,
+  "os": {
+    "release": "16",
+    "api": 36,
+    "abi": "arm64-v8a"
+  },
+  "runtime": "Expo Go 54.0.8",
+  "transport": "USB / adb reverse",
+  "provider": "Android device location via expo-location",
+  "backend": {
+    "profile": "local",
+    "database": "H2 in memory",
+    "schema": "V20",
+    "method": "PUT",
+    "path": "/api/me/shopping-position",
+    "successfulConfirmedFixes": 4
+  },
+  "permissions": {
+    "deniedExplained": true,
+    "blockedSettingsLinkOpened": true,
+    "whileInUse": true,
+    "approximateOnlyFix": {
+      "fineGranted": false,
+      "coarseGranted": true,
+      "accuracyMetres": 2000
+    },
+    "preciseFixesUiAccuracyMetres": [
+      20,
+      26,
+      25
+    ]
+  },
+  "lastFix": {
+    "uiLocalTime": "2026-11-18T20:30:32+05:30",
+    "backendEvidence": "confirmed-fix.json",
+    "sameDisplayedSecond": true
+  },
+  "resume": {
+    "sameSelection": true,
+    "additionalSubmissions": 0
+  },
+  "coldRestart": {
+    "restoredLocallyBeforeExpiry": true,
+    "additionalSubmissions": 0
+  },
+  "limitations": [
+    "One physical handset and Expo Go runtime",
+    "Fused device location; satellite-only source not established",
+    "Long-expired selection checked with automated tests",
+    "Live PIN lookup excluded"
+  ],
+  "coordinates": "redacted",
+  "providerRequests": 0,
+  "providerCreditsConsumed": 0
+}

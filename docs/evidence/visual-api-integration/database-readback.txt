@@ -1,0 +1,35 @@
+version | description               | success
+18      | controlled retailer pilot | TRUE
+(1 row, 18 ms)
+catalogue_packs
+27
+(1 row, 0 ms)
+local_approved_price_observations
+0
+(1 row, 0 ms)
+local_legacy_price_observations
+0
+(1 row, 0 ms)
+mapping_decisions
+0
+(1 row, 0 ms)
+test_users | bcrypt_rows
+23         | 23
+(1 row, 3 ms)
+actor                     | cart_rows | cart_quantity | pantry_rows | rice_g  | plans | plan_revision
+API Test Shopper          | 0         | null          | 1           | 150.000 | 1     | 1
+Browser Test Shopper 1366 | 0         | null          | 1           | 150.000 | 1     | 1
+Browser Test Shopper 1440 | 0         | null          | 1           | 150.000 | 1     | 1
+Browser Test Shopper 390  | 0         | null          | 1           | 150.000 | 1     | 1
+Cart SQL Control          | 1         | 4             | 0           | null    | 0     | null
+Isolation Test Shopper    | 0         | null          | 0           | null    | 0     | null
+(6 rows, 11 ms)
+duplicate_cart_items
+0
+(1 row, 2 ms)
+duplicate_pantry_rows
+0
+(1 row, 1 ms)
+duplicate_weekly_plans
+0
+(1 row, 1 ms)

@@ -1,0 +1,28 @@
+package com.smartcart.service;
+
+import com.smartcart.dto.Models.*;
+import com.smartcart.repository.Db;
+import com.smartcart.notification.NotificationService;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.scheduling.annotation.Scheduled;
+import java.time.Instant;
+import java.util.*;
+import static com.smartcart.repository.Db.*;
+
+@Service
+public class WatchService {
+    private final Db db;private final CatalogService catalog;private final NotificationService notifications;private final CartService carts;private final DecisionService decisions;
+    public WatchService(Db db,CatalogService catalog,NotificationService notifications,CartService carts,DecisionService decisions){this.db=db;this.catalog=catalog;this.notifications=notifications;this.carts=carts;this.decisions=decisions;}
+    public List<Watch> list(String user){return db.rows("SELECT w.*,p.name,v.pack_label FROM price_watchlists w JOIN product_variants v ON v.id=w.variant_id JOIN products p ON p.id=v.product_id WHERE w.user_id=? ORDER BY w.created_at DESC",user).stream().map(r->{var best=catalog.best(catalog.product(text(r,"variant_id"),text(r,"location_id")));return new Watch(text(r,"id"),text(r,"variant_id"),text(r,"name"),text(r,"pack_label"),text(r,"location_id"),num(r,"target_minor"),best.map(Offer::priceMinor).orElse(null),best.map(Offer::platform).orElse(null),bool(r,"enabled"),catalog.sample());}).toList();}
+    @Transactional public Watch save(String user,WatchInput input){catalog.product(input.productId(),input.locationId());var prior=db.maybe("SELECT id,target_minor FROM price_watchlists WHERE user_id=? AND variant_id=? AND location_id=?",user,input.productId(),input.locationId());String id=prior.map(r->text(r,"id")).orElseGet(Db::id);if(prior.isPresent())db.run("UPDATE price_watchlists SET target_minor=?,enabled=TRUE,last_price_minor=NULL,updated_at=? WHERE id=? AND user_id=?",input.targetMinor(),Instant.now(),id,user);else db.insert("price_watchlists",fields("id",id,"user_id",user,"variant_id",input.productId(),"location_id",input.locationId(),"target_minor",input.targetMinor()));return list(user).stream().filter(w->w.id().equals(id)).findFirst().orElseThrow();}
+    public void remove(String user,String id){db.one("SELECT id FROM price_watchlists WHERE id=? AND user_id=?",id,user);db.run("DELETE FROM price_watchlists WHERE id=? AND user_id=?",id,user);}
+    @Scheduled(fixedDelay=120000) @Transactional public synchronized void scan(){for(var w:db.rows("SELECT * FROM price_watchlists WHERE enabled=TRUE")){try{check(w);}catch(Exception e){org.slf4j.LoggerFactory.getLogger(getClass()).warn("Watch scan deferred: {}",e.getClass().getSimpleName());}}for(var u:db.rows("SELECT DISTINCT c.user_id FROM shopping_carts c JOIN cart_items i ON i.cart_id=c.id JOIN purchase_preferences p ON p.cart_item_id=i.id WHERE p.intent='BULK' AND p.monitor_price=TRUE"))bulk(text(u,"user_id"));}
+    @Transactional public synchronized void scanUser(String user){for(var w:db.rows("SELECT * FROM price_watchlists WHERE enabled=TRUE AND user_id=?",user))check(w);bulk(user);}
+    private void bulk(String user){for(var item:carts.list(user)){if(!"BULK".equals(item.preferences().intent())||!item.preferences().monitorPrice())continue;Decision decision=decisions.decide(item);if("BUY_NOW".equals(decision.action()))notifications.emit(user,(catalog.sample()?"Sample: ":"")+"A useful bulk offer is available",decision.reason(),"BULK",item.id()+":bulk:"+decision.priceMinor(),catalog.sample());}}
+    private void check(Map<String,Object> w){String user=text(w,"user_id"),watchId=text(w,"id");Product product=catalog.product(text(w,"variant_id"),text(w,"location_id"));var current=catalog.best(product);Long previous=number(w,"last_price_minor");Boolean previousAvailable=w.get("last_available")==null?null:bool(w,"last_available");if(current.isEmpty()){boolean measuredOut=product.offers().stream().allMatch(o->"out_of_stock".equals(o.status())&&o.updatedAt().isAfter(Instant.now().minusSeconds(900))&&("VERIFIED".equals(o.verificationStatus())||catalog.sample()&&"SAMPLE".equals(o.verificationStatus())));if(!product.offers().isEmpty()&&measuredOut)db.run("UPDATE price_watchlists SET last_available=FALSE,updated_at=? WHERE id=?",Instant.now(),watchId);return;}
+        Offer offer=current.get();String type=null;if(offer.priceMinor()<=num(w,"target_minor")&&(previous==null||previous>num(w,"target_minor")))type="TARGET";else if(Boolean.FALSE.equals(previousAvailable))type="BACK_IN_STOCK";else if(previous!=null&&offer.priceMinor()<previous)type="PRICE_DROP";else if(previous!=null&&offer.priceMinor()>previous&&notifications.settings(user).priceIncreaseAlerts())type="PRICE_INCREASE";
+        if(type!=null){String key=watchId+":"+type+":"+num(w,"target_minor")+":"+offer.updatedAt().toEpochMilli();String prefix=catalog.sample()?"Sample alert: ":"";String body=type.equals("BACK_IN_STOCK")?product.name()+" is available again.":product.name()+" is ₹"+(offer.priceMinor()/100.0)+" on "+offer.platform()+". Target: ₹"+(num(w,"target_minor")/100.0)+".";if(db.count("SELECT COUNT(*) FROM price_alerts WHERE event_key=?",key)==0){db.insert("price_alerts",fields("id",id(),"watchlist_id",watchId,"event_key",key,"event_type",type,"observed_at",offer.updatedAt()));notifications.emit(user,prefix+(type.equals("TARGET")?"Your target price was reached":type.equals("BACK_IN_STOCK")?"Back in stock":type.equals("PRICE_DROP")?"Price dropped":"Price increased"),body,type,key,catalog.sample());}}
+        db.run("UPDATE price_watchlists SET last_price_minor=?,last_available=TRUE,updated_at=? WHERE id=?",offer.priceMinor(),Instant.now(),watchId);
+    }
+}

@@ -1,0 +1,15 @@
+# CartIQ security review
+
+Production turns off sample data, API docs and startup migration. Session cookies are Secure, Strict and HttpOnly. Successful auth replies are non-cacheable. Existing backend checks cover JWT issuer, expiry and current session version, rotated refresh tokens, BCrypt passwords, logout revocation, authenticated cart ownership and admin-only operations. Repository queries use parameter binding. CORS requires explicit HTTPS origins under `prod`.
+
+The edge overwrites forwarded headers and the API trusts only its configured proxy address. Sensitive auth and location POSTs have per-address application limits. The proxy limits body size and API retries. The app limits are instance-local, so they require a shared edge policy or equivalent coordination before multi-replica rollout.
+
+The staging redirect uses the trusted `CARTIQ_HTTPS_ORIGIN` setting as its authority. The portable Nginx probe sent a different HTTP Host and confirmed the redirect still targeted the configured origin. TLS passed with the staging CA and failed with an untrusted CA or mismatched hostname. HTTPS auth probes verified Secure, HttpOnly, and Strict attributes and rotation of the cookie. The Docker proxy network and production certificate deployment remain separate checks.
+
+Request diagnostics generate a server correlation ID and record a mapped route template, status and latency. Unexpected-exception logs carry only class and correlation ID. Credentials, request bodies, raw URLs and exception messages are excluded from these logs. Leave wire tracing off. Docker build-context allowlists exclude local env files, ledgers and trust material.
+
+Do not use the production template for public retailer results until provider display rights and quota controls are approved. Production MySQL and Firebase require protected credentials. Optional forecast artifacts are executable deserialization inputs, so use only reviewed and integrity-checked artifacts from your own pipeline. No penetration test or third-party security certification was completed here.
+
+The production environment check runs before the application opens a database connection or HTTP listener. It requires explicit HTTPS origins, sufficiently long secrets, a dedicated MySQL identity, TLS with remote certificate identity verification, and disabled schema mutations. The Compose gate checks its fixed project-local MySQL URL and rejects deployment environment overrides that could redirect it. Release smoke and rollback probes only connect to loopback and do not access MySQL directly.
+
+Push registration is authenticated and device-scoped. Remove an individual token at sign-out, permission revocation, or device opt-out. The server drops unregistered tokens and expires devices after 60 days without a refresh. Treat device tokens as sensitive and keep them out of logs. Lock-screen text is generic. Account-level preferences gate push delivery. Per-device delivery receipts are not implemented. Client app configurations are distinct from privileged backend ADC and APNs credentials.

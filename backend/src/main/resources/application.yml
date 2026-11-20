@@ -1,0 +1,57 @@
+server:
+  address: ${SERVER_ADDRESS:127.0.0.1}
+  port: ${PORT:8080}
+  error:
+    include-message: never
+spring:
+  servlet:
+    multipart:
+      max-file-size: 512KB
+      max-request-size: 600KB
+      file-size-threshold: 600KB
+  profiles:
+    default: local
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: true
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  health:
+    redis:
+      enabled: false
+springdoc:
+  swagger-ui:
+    path: /api/docs
+  api-docs:
+    path: /api/openapi
+logging:
+  level:
+    org.apache.hc.client5.http.headers: "OFF"
+    org.apache.hc.client5.http.wire: "OFF"
+smartcart:
+  sample-data: ${SAMPLE_DATA:false}
+  allowed-origins: ${ALLOWED_ORIGINS:http://localhost:8092,http://127.0.0.1:8092,http://localhost:8090,http://127.0.0.1:8090,http://localhost:8081,http://127.0.0.1:8081,http://localhost:8080,http://127.0.0.1:8080}
+  jwt-secret: ${JWT_SECRET:}
+  secure-cookies: ${SECURE_COOKIES:false}
+  ai-url: ${AI_SERVICE_URL:http://127.0.0.1:8001}
+  ai-secret: ${AI_SERVICE_SECRET:}
+  gemini-api-key: ${GEMINI_API_KEY:}
+  gemini-model: ${GEMINI_MODEL:}
+  firebase-enabled: ${FIREBASE_ENABLED:false}
+  firebase-project-id: ${FIREBASE_PROJECT_ID:}
+  price-forecast-enabled: ${CARTIQ_PRICE_FORECAST_ENABLED:false}
+  redis-enabled: ${REDIS_ENABLED:false}
+

@@ -1,0 +1,7 @@
+{
+  "status": 200,
+  "observedAtUtc": "2026-11-18T15:00:32.654Z",
+  "receivedAtUtc": "2026-11-18T15:00:58.679Z",
+  "accuracyMetres": 25.381000518798828,
+  "source": "gps"
+}

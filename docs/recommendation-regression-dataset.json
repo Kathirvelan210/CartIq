@@ -1,0 +1,78 @@
+{
+  "version": "phase7-synthetic-v1",
+  "kind": "SYNTHETIC_REGRESSION",
+  "cases": [
+    {
+      "id": "match-shared-barcode-conflicting-pack",
+      "task": "product_matching",
+      "input": {"canonical": "1 × 500 g", "listing": "2 × 250 g", "sharedGtin": true},
+      "expected": "BLOCK_APPROVAL",
+      "provenance": "Synthetic H2 fixture with a catalogue barcode and reviewed listing evidence",
+      "suite": "com.smartcart.RetailerOperationsTest",
+      "test": "conflictRemainsUnresolvedAndRevisionCannotReassignPriceHistory"
+    },
+    {
+      "id": "match-barcode-registered-elsewhere",
+      "task": "product_matching",
+      "input": {"titlePackAndBrandCompatible": true, "barcodeAssignedToDifferentVariant": true},
+      "expected": "EXCLUDE_FROM_PLAN",
+      "provenance": "Synthetic H2 fixture exercising the current canonical barcode registry",
+      "suite": "com.smartcart.LiveOfferIntegrationTest",
+      "test": "aBarcodeAssignedToADifferentVariantInvalidatesAnOtherwiseApprovedOffer"
+    },
+    {
+      "id": "bulk-verified-larger-pack",
+      "task": "bulk_buy",
+      "input": {"compatibleLargerPack": true, "stockKnown": true, "storageConsumptionExpiryAndBudgetPass": true},
+      "expected": "BUY_LARGER_PACK",
+      "provenance": "Synthetic H2 household and retailer offer fixtures",
+      "suite": "com.smartcart.ShoppingIntelligenceTest",
+      "test": "bulkComparesVerifiedPacksAndProtectsPantryStorageExpiryAndAccount"
+    },
+    {
+      "id": "bulk-missing-stock",
+      "task": "bulk_buy",
+      "input": {"extraPacksNeeded": true, "stockKnown": false},
+      "expected": "INSUFFICIENT_INFORMATION",
+      "provenance": "Synthetic H2 offer stock removed after incompatible formulation check",
+      "suite": "com.smartcart.ShoppingIntelligenceTest",
+      "test": "excludesFormulationConflictsAndNeverUsesUnknownStockForExtraPacks"
+    },
+    {
+      "id": "personal-private-diet",
+      "task": "personalized",
+      "input": {"explicitVegetarianPreference": true, "productDietEvidenceMissing": true, "otherAccountHasFavorite": true},
+      "expected": "EXCLUDE_UNSUPPORTED_PRODUCT_AND_OTHER_ACCOUNT_SIGNAL",
+      "provenance": "Synthetic H2 account and catalogue evidence fixtures",
+      "suite": "com.smartcart.ShoppingIntelligenceTest",
+      "test": "privateRecommendationsRespectPreferencesAndPantry"
+    },
+    {
+      "id": "personal-budget-and-fees",
+      "task": "personalized",
+      "input": {"currency": "INR", "limits": [100, 30], "recordedCompleteTotal": 70},
+      "expected": "SUGGEST_AT_100_ABSTAIN_AT_30",
+      "provenance": "Synthetic H2 current offer and fee fixtures through the assistant route",
+      "suite": "com.smartcart.ShoppingIntelligenceTest",
+      "test": "assistantProposesACompleteBasketWithinBudgetWithoutRemovingExistingItems"
+    },
+    {
+      "id": "recipe-compatible-units",
+      "task": "recipe_mapping",
+      "input": {"ingredient": "basmati rice", "requiredGrams": 540, "pantryGrams": 300, "cataloguePacks": ["500 g", "1 l"]},
+      "expected": "ONE_500G_PACK_AND_EXCLUDE_VOLUME_PACK",
+      "provenance": "Curated recipe plus synthetic ingredient links and offer fixtures in H2",
+      "suite": "com.smartcart.WeeklyShoppingTest",
+      "test": "scalesConsolidatesAndExcludesPantryCoveredItemsAndIncompatibleUnits"
+    },
+    {
+      "id": "recipe-substitution-with-unknown-price",
+      "task": "recipe_mapping",
+      "input": {"reviewedSameUnitSubstitution": true, "freshPriceAvailable": false},
+      "expected": "SCALE_QUANTITY_AND_KEEP_PRICE_UNKNOWN",
+      "provenance": "Synthetic H2 substitution and catalogue fixtures using curated recipes",
+      "suite": "com.smartcart.recipe.RecipeIntelligenceTest",
+      "test": "approvedSubstitutionScalesAndUnknownPriceStaysUnknown"
+    }
+  ]
+}

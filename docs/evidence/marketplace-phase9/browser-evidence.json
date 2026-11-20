@@ -1,0 +1,560 @@
+{
+  "checks": [
+    {
+      "width": 1440,
+      "height": 900,
+      "result": "PASS"
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "result": "PASS"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "result": "PASS"
+    }
+  ],
+  "evidence": [
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/categories",
+      "status": 200,
+      "id": "f2dc7873-68b2-4870-9768-43ccfe7545ae"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/meta",
+      "status": 200,
+      "id": "77fe627d-9564-4252-83ad-2d8ef4c42c36"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/auth/refresh",
+      "status": 401,
+      "id": "91eb2f3a-3611-467e-970b-fa85b82d714c"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/locations",
+      "status": 200,
+      "id": "a27fe1d1-bcd5-4ccd-b8da-20f8c5a37586"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/products",
+      "status": 200,
+      "id": "017edeba-98ae-4add-99f0-1408525ec7ff"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/auth/login",
+      "status": 200,
+      "id": "73e43ec0-5b77-40ab-8254-d245dc3ceaaa"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/me/wishlist",
+      "status": 200,
+      "id": "61cfe9a7-4ffb-4618-b4f9-8ae45039f8a7"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/me/cart",
+      "status": 200,
+      "id": "9306d3ae-8b6b-45a0-a13d-cb1434dd5748"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/location-lookup/pin",
+      "status": 200,
+      "id": "fe13545e-6f25-4610-850e-90fa8927b8f2"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/shopping/retailers/marketplace",
+      "status": 200,
+      "id": "6b3e54a8-348e-4473-ad5a-b23af8ceeb95"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/shopping/retailers/marketplace/search",
+      "status": 200,
+      "id": "b64f17c4-e551-400f-9688-e82842d2848d"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/shopping/retailers/marketplace",
+      "status": 200,
+      "id": "798f7dab-8076-4a5d-b54e-799d72040d42"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/shopping/retailers/marketplace/search",
+      "status": 200,
+      "id": "0aee575d-bf7b-49db-a28b-44d457b8115b"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/shopping/retailers/marketplace",
+      "status": 200,
+      "id": "33a187fe-ee68-4574-a1fb-1552f7d0e699"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/shopping/retailers/marketplace/search",
+      "status": 200,
+      "id": "5cf1aec3-0563-4281-ba35-897babe94e07"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/shopping/retailers/marketplace",
+      "status": 200,
+      "id": "a1423382-6538-43e6-9f3c-0769723cb483"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/shopping/retailers/marketplace/search",
+      "status": 200,
+      "id": "cd41c071-6870-430b-9000-85f9dcaa5c00"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/shopping/retailers/marketplace",
+      "status": 200,
+      "id": "5bd1b515-4ade-4ea0-b225-972ebfa0bcdf"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/shopping/retailers/marketplace/search",
+      "status": 200,
+      "id": "ca9e427d-d5e0-4570-a851-408fd01ad4a2"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/shopping/retailers/marketplace",
+      "status": 200,
+      "id": "8fb8a87f-9aaa-4d37-8487-42551a23da12"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/shopping/retailers/marketplace/cart",
+      "status": 200,
+      "id": "4e547123-228a-477a-9351-206c3f92b6b4"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/me/cart",
+      "status": 200,
+      "id": "24ff7d32-fad1-447e-ba82-183e9e17aeed"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/meta",
+      "status": 200,
+      "id": "56c2bcaf-f1f0-4c46-a21e-73e199796ab3"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/locations",
+      "status": 200,
+      "id": "61df1ba2-b3e6-43da-9592-19c7263d1d3c"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/categories",
+      "status": 200,
+      "id": "595a3c8e-2ccb-4aa8-98f2-09bbad2c8b6c"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/auth/refresh",
+      "status": 200,
+      "id": "28fa4886-8ea1-4657-bd85-85d1dc1d4e11"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/products",
+      "status": 200,
+      "id": "145b684b-f368-4ab7-ae9f-59b92654750f"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "id": "7d57f7c7-62b0-4585-ae5a-7be826d7df5d"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/me/wishlist",
+      "status": 200,
+      "id": "0a130b11-9eaf-460e-b22a-5775c01f6326"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/me/cart",
+      "status": 200,
+      "id": "3cc637ca-3aa7-40bb-b380-5e7198717454"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/shopping/retailers/marketplace",
+      "status": 200,
+      "id": "9b929926-dd2e-4488-a2e1-93de74f483b5"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/me/overview",
+      "status": 200,
+      "id": "5b4b0a60-4b51-4562-b0d2-dfc7085f8dbd"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/me/shopping-intelligence/weekly",
+      "status": 200,
+      "id": "370338bf-459a-460e-a640-e7be8b2c013a"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/me/shopping-intelligence/weekly/preview",
+      "status": 200,
+      "id": "402b57c1-a817-47d6-9cd6-288d0163030a"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/auth/logout",
+      "status": 204,
+      "id": "c3a78081-38f2-473c-aa53-cbfe18227332"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/auth/login",
+      "status": 200,
+      "id": "83e00a1e-25bc-4e97-98e4-b20022acee23"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/me/cart",
+      "status": 200,
+      "id": "cadb435b-5d7f-44f5-90ef-b130570a71f1"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/me/wishlist",
+      "status": 200,
+      "id": "d8685ed4-556a-4dce-8c80-185607eb9308"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/me/overview",
+      "status": 200,
+      "id": "31655944-48a5-4b89-877a-b6acb6b0b33c"
+    },
+    {
+      "width": 1366,
+      "method": "GET",
+      "path": "/api/meta",
+      "status": 200,
+      "id": "7202152b-21b4-4c1a-bb72-0164f7e6e0bb"
+    },
+    {
+      "width": 1366,
+      "method": "GET",
+      "path": "/api/locations",
+      "status": 200,
+      "id": "cb91e4fc-c174-42c8-a55d-363be53f43e9"
+    },
+    {
+      "width": 1366,
+      "method": "POST",
+      "path": "/api/auth/refresh",
+      "status": 401,
+      "id": "8dc24722-43db-4710-bf59-b6088b99543c"
+    },
+    {
+      "width": 1366,
+      "method": "GET",
+      "path": "/api/categories",
+      "status": 200,
+      "id": "11dceaff-fa58-453f-9f41-3a6e7f3b4af2"
+    },
+    {
+      "width": 1366,
+      "method": "GET",
+      "path": "/api/products",
+      "status": 200,
+      "id": "fb38723e-b589-4010-9e45-cafbe4f99c06"
+    },
+    {
+      "width": 1366,
+      "method": "POST",
+      "path": "/api/auth/login",
+      "status": 200,
+      "id": "0bca23c3-3ced-4227-9f1a-b4b7bb2ec829"
+    },
+    {
+      "width": 1366,
+      "method": "GET",
+      "path": "/api/me/wishlist",
+      "status": 200,
+      "id": "6e31c38b-9d53-4731-a13d-86d8eca934b7"
+    },
+    {
+      "width": 1366,
+      "method": "GET",
+      "path": "/api/me/cart",
+      "status": 200,
+      "id": "c17bfffd-de3e-44a3-8667-b71c2b5fb0b0"
+    },
+    {
+      "width": 1366,
+      "method": "POST",
+      "path": "/api/location-lookup/pin",
+      "status": 200,
+      "id": "f07d0057-22e9-4144-a3b9-88922ad9bf5a"
+    },
+    {
+      "width": 1366,
+      "method": "GET",
+      "path": "/api/shopping/retailers/marketplace",
+      "status": 200,
+      "id": "fdf0c557-d3f8-4691-acd5-8048606c7234"
+    },
+    {
+      "width": 1366,
+      "method": "GET",
+      "path": "/api/meta",
+      "status": 200,
+      "id": "28295d88-d36d-4f5f-92dc-839bbe903c0a"
+    },
+    {
+      "width": 1366,
+      "method": "GET",
+      "path": "/api/locations",
+      "status": 200,
+      "id": "726b81b3-8607-4d16-bbd9-040c3fba809e"
+    },
+    {
+      "width": 1366,
+      "method": "GET",
+      "path": "/api/categories",
+      "status": 200,
+      "id": "7ec25db7-5bc8-47ea-b27a-fe3a2c443ca5"
+    },
+    {
+      "width": 1366,
+      "method": "POST",
+      "path": "/api/auth/refresh",
+      "status": 200,
+      "id": "17f575af-1bc8-4df5-86ea-ec201cb06236"
+    },
+    {
+      "width": 1366,
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "id": "79287dc9-edf6-4c0b-94b2-eda93b9a0726"
+    },
+    {
+      "width": 1366,
+      "method": "GET",
+      "path": "/api/products",
+      "status": 200,
+      "id": "c9ac8fa1-decb-40ea-b882-f6d4c06445f4"
+    },
+    {
+      "width": 1366,
+      "method": "GET",
+      "path": "/api/me/wishlist",
+      "status": 200,
+      "id": "e1a4f29d-85ec-4855-b2ec-f9b663c1e42a"
+    },
+    {
+      "width": 1366,
+      "method": "GET",
+      "path": "/api/me/cart",
+      "status": 200,
+      "id": "5d410fc6-f079-4e52-9593-365777711467"
+    },
+    {
+      "width": 1366,
+      "method": "GET",
+      "path": "/api/shopping/retailers/marketplace",
+      "status": 200,
+      "id": "bd8b86df-c885-434c-8d7b-88f7dd5eec17"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/locations",
+      "status": 200,
+      "id": "f45361ec-c564-4977-8a7e-7eca57f866ca"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/meta",
+      "status": 200,
+      "id": "aaac1c8a-f4c2-4de1-9dba-0a12bf86b16f"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/categories",
+      "status": 200,
+      "id": "5883703f-8a34-4297-9e52-260d3b451533"
+    },
+    {
+      "width": 390,
+      "method": "POST",
+      "path": "/api/auth/refresh",
+      "status": 401,
+      "id": "b2d0c74b-dfc2-4d06-86a0-5281066d6681"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/products",
+      "status": 200,
+      "id": "30ff5204-769e-4f6b-bd08-34f39f7c6763"
+    },
+    {
+      "width": 390,
+      "method": "POST",
+      "path": "/api/auth/login",
+      "status": 200,
+      "id": "b782be8b-fe6a-45a1-84c5-242a1109ada0"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/me/wishlist",
+      "status": 200,
+      "id": "81fab7d0-50a8-4969-a711-31b6c0c85ee4"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/me/cart",
+      "status": 200,
+      "id": "75bdd93e-9dac-44a3-9c09-63ba3d09acc5"
+    },
+    {
+      "width": 390,
+      "method": "POST",
+      "path": "/api/location-lookup/pin",
+      "status": 200,
+      "id": "0a006613-b9ef-4836-899f-3588d1b03134"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/shopping/retailers/marketplace",
+      "status": 200,
+      "id": "4fed0834-c4e2-4de4-a2ae-fce82168b306"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/locations",
+      "status": 200,
+      "id": "5b3481fa-d0ce-4138-96ee-af7167c320af"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/meta",
+      "status": 200,
+      "id": "a8313087-984e-488b-a9ef-42aec5505a15"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/categories",
+      "status": 200,
+      "id": "413d9121-a947-4ac0-aeba-31f2203619ed"
+    },
+    {
+      "width": 390,
+      "method": "POST",
+      "path": "/api/auth/refresh",
+      "status": 200,
+      "id": "7b973427-4b50-49e1-863d-b0b561f8844f"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "id": "b00c2c81-e67c-464b-b65d-8e4a158624b8"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/products",
+      "status": 200,
+      "id": "8933dec1-9864-40f1-84cc-93463f41c477"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/me/wishlist",
+      "status": 200,
+      "id": "6cec4c86-135c-4753-82aa-de360cd703de"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/me/cart",
+      "status": 200,
+      "id": "c3085d39-4096-41ed-be80-b4d20e6603cb"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/shopping/retailers/marketplace",
+      "status": 200,
+      "id": "eb3b37b5-c58d-41c2-be6c-d274702cdccb"
+    }
+  ]
+}

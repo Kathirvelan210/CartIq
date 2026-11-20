@@ -1,0 +1,77 @@
+{
+  "timestamp": "2026-11-19T12:29:52.666Z",
+  "chrome": "158.0.8127.36",
+  "origin": "http://localhost:8092",
+  "paidSearches": 0,
+  "paidConfirmations": 0,
+  "milk": {
+    "query": "milk",
+    "http": 200,
+    "selection": {
+      "query": "milk",
+      "latitude": 10.942972,
+      "longitude": 76.953417,
+      "postcode": "641008"
+    },
+    "quote": {
+      "balance": 90,
+      "allowance": 10,
+      "legs": [
+        {
+          "retailer": "blinkit",
+          "platform": "BlinkIt",
+          "duplicate": true
+        },
+        {
+          "retailer": "zepto",
+          "platform": "Zepto",
+          "duplicate": false
+        },
+        {
+          "retailer": "instamart",
+          "platform": "Swiggy",
+          "duplicate": false
+        }
+      ],
+      "blocker": "A retailer has already been searched for this exact request.",
+      "checkedAt": "2026-11-19T12:29:52.095236700Z"
+    },
+    "maximumCredits": 3,
+    "confirmationEnabled": false
+  },
+  "exact": {
+    "query": "Amul Taaza toned milk 1 litre",
+    "http": 200,
+    "selection": {
+      "query": "amul taaza toned milk 1 litre",
+      "latitude": 10.942972,
+      "longitude": 76.953417,
+      "postcode": "641008"
+    },
+    "quote": {
+      "balance": 90,
+      "allowance": 10,
+      "legs": [
+        {
+          "retailer": "blinkit",
+          "platform": "BlinkIt",
+          "duplicate": false
+        },
+        {
+          "retailer": "zepto",
+          "platform": "Zepto",
+          "duplicate": false
+        },
+        {
+          "retailer": "instamart",
+          "platform": "Swiggy",
+          "duplicate": false
+        }
+      ],
+      "blocker": null,
+      "checkedAt": "2026-11-19T12:29:52.507235400Z"
+    },
+    "maximumCredits": 3,
+    "confirmationEnabled": true
+  }
+}

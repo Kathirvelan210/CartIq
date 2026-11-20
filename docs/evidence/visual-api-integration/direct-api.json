@@ -1,0 +1,1147 @@
+[
+  {
+    "label": "health",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/actuator/health",
+    "http": 200,
+    "ms": 51,
+    "requestId": "9f3a1b7c-2d4a-4730-8d2d-0070168d5459",
+    "expected": 200,
+    "body": {
+      "status": "UP"
+    },
+    "check": "UP",
+    "result": "PASS"
+  },
+  {
+    "label": "unauthenticated profile",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/me",
+    "http": 401,
+    "ms": 12,
+    "requestId": "9354d36b-feb4-4f02-bc67-5812892fd368",
+    "expected": 401,
+    "body": {
+      "code": "string",
+      "message": "string"
+    },
+    "result": "PASS"
+  },
+  {
+    "label": "register primary",
+    "method": "POST",
+    "url": "http://127.0.0.1:18080/api/auth/register",
+    "http": 201,
+    "ms": 298,
+    "requestId": "9c4851f6-c7a3-47f1-a93b-02382cea4422",
+    "expected": 201,
+    "body": {
+      "user": {
+        "keys": [
+          "id",
+          "name",
+          "email",
+          "role",
+          "sample"
+        ]
+      }
+    },
+    "check": "Customer created",
+    "result": "PASS"
+  },
+  {
+    "label": "login primary",
+    "method": "POST",
+    "url": "http://127.0.0.1:18080/api/auth/login",
+    "http": 200,
+    "ms": 503,
+    "requestId": "f1e7bf4d-cc61-4b0b-9170-2b94ad74adbe",
+    "expected": 200,
+    "body": {
+      "user": {
+        "keys": [
+          "id",
+          "name",
+          "email",
+          "role",
+          "sample"
+        ]
+      }
+    },
+    "check": "Real JWT issued (omitted)",
+    "result": "PASS"
+  },
+  {
+    "label": "register peer",
+    "method": "POST",
+    "url": "http://127.0.0.1:18080/api/auth/register",
+    "http": 201,
+    "ms": 595,
+    "requestId": "0d10f0fb-b6d9-4728-9d1f-338a42c344df",
+    "expected": 201,
+    "body": {
+      "user": {
+        "keys": [
+          "id",
+          "name",
+          "email",
+          "role",
+          "sample"
+        ]
+      }
+    },
+    "result": "PASS"
+  },
+  {
+    "label": "login admin",
+    "method": "POST",
+    "url": "http://127.0.0.1:18080/api/auth/login",
+    "http": 200,
+    "ms": 627,
+    "requestId": "4a593720-840d-456b-9799-b8993233b223",
+    "expected": 200,
+    "body": {
+      "user": {
+        "keys": [
+          "id",
+          "name",
+          "email",
+          "role",
+          "sample"
+        ]
+      }
+    },
+    "check": "Admin role",
+    "result": "PASS"
+  },
+  {
+    "label": "authenticated profile",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/me",
+    "http": 200,
+    "ms": 15,
+    "requestId": "df15aa36-8ac2-44cf-913f-5952a64b6eec",
+    "expected": 200,
+    "body": {
+      "id": "string",
+      "name": "string",
+      "email": "string",
+      "role": "string",
+      "sample": false
+    },
+    "check": "Correct JWT subject",
+    "result": "PASS"
+  },
+  {
+    "label": "locations",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/locations",
+    "http": 200,
+    "ms": 12,
+    "requestId": "d1c82abc-bd46-4c9b-85ae-0b2b354be8a9",
+    "expected": 200,
+    "body": {
+      "rows": 1,
+      "keys": [
+        "id",
+        "name",
+        "city",
+        "postcode"
+      ]
+    },
+    "result": "PASS"
+  },
+  {
+    "label": "categories",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/categories",
+    "http": 200,
+    "ms": 15,
+    "requestId": "3d2b1faa-0916-4e74-ab4f-d2849aa4d5fe",
+    "expected": 200,
+    "body": {
+      "rows": 7,
+      "keys": [
+        "id",
+        "name"
+      ]
+    },
+    "check": "7 categories",
+    "result": "PASS"
+  },
+  {
+    "label": "Amul Taaza search",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/products/page?locationId=blr-indiranagar&q=Amul%20Taaza",
+    "http": 200,
+    "ms": 21,
+    "requestId": "c639be7a-a230-4904-8c42-9b203d7a9496",
+    "expected": 200,
+    "body": {
+      "items": {
+        "rows": 1,
+        "keys": [
+          "id",
+          "canonicalProductId",
+          "name",
+          "brand",
+          "quantity",
+          "category",
+          "description",
+          "color",
+          "art",
+          "imageUrl",
+          "amountBase",
+          "baseUnit",
+          "offers"
+        ]
+      },
+      "page": 0,
+      "pageSize": 24,
+      "totalElements": 1,
+      "totalPages": 1,
+      "hasNext": false,
+      "hasPrevious": false
+    },
+    "check": "Amul Taaza present",
+    "result": "PASS"
+  },
+  {
+    "label": "milk details",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/products/milk?locationId=blr-indiranagar",
+    "http": 200,
+    "ms": 12,
+    "requestId": "c9a39d64-7687-4bc7-b63c-8c67ea2bfc28",
+    "expected": 200,
+    "body": {
+      "id": "string",
+      "canonicalProductId": "string",
+      "name": "string",
+      "brand": "string",
+      "quantity": "string",
+      "category": "string",
+      "description": "string",
+      "color": "string",
+      "art": "string",
+      "imageUrl": "string",
+      "amountBase": 1000,
+      "baseUnit": "string",
+      "offers": {
+        "rows": 0,
+        "keys": []
+      }
+    },
+    "check": "Amul Taaza, 1 litre",
+    "result": "PASS"
+  },
+  {
+    "label": "milk variants",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/products/milk/variants?locationId=blr-indiranagar",
+    "http": 200,
+    "ms": 10,
+    "requestId": "7195c55e-6e23-4f71-8f79-250c7d264682",
+    "expected": 200,
+    "body": {
+      "rows": 1,
+      "keys": [
+        "id",
+        "canonicalProductId",
+        "name",
+        "brand",
+        "quantity",
+        "category",
+        "description",
+        "color",
+        "art",
+        "imageUrl",
+        "amountBase",
+        "baseUnit",
+        "offers"
+      ]
+    },
+    "check": "1 litre",
+    "result": "PASS"
+  },
+  {
+    "label": "exact-pack comparison",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/products/milk/comparison?locationId=blr-indiranagar&latitude=10.942972&longitude=76.953417",
+    "http": 200,
+    "ms": 38,
+    "requestId": "6fa7435a-d754-4447-aad4-44b5fd9a5ac7",
+    "expected": 200,
+    "body": {
+      "product": {
+        "keys": [
+          "id",
+          "canonicalProductId",
+          "name",
+          "brand",
+          "quantity",
+          "category",
+          "description",
+          "color",
+          "art",
+          "imageUrl",
+          "amountBase",
+          "baseUnit",
+          "offers"
+        ]
+      },
+      "quantity": 1,
+      "fulfillment": "string",
+      "options": {
+        "rows": 3,
+        "keys": [
+          "source",
+          "name",
+          "variantId",
+          "priceMinor",
+          "unitPriceMinor",
+          "unitLabel",
+          "availability",
+          "stockQuantity",
+          "distanceKm",
+          "deliveryMinor",
+          "handlingMinor",
+          "minimumMinor",
+          "totalMinor",
+          "dataSource",
+          "observedAt",
+          "verificationStatus",
+          "eligible",
+          "reason",
+          "sourceId"
+        ]
+      },
+      "lowestEligible": null,
+      "savingsMinor": null,
+      "explanation": "string"
+    },
+    "check": "3 exact-pack options, missing price and stock remain null",
+    "result": "PASS"
+  },
+  {
+    "label": "rice catalogue",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/products?locationId=blr-indiranagar&q=basmati",
+    "http": 200,
+    "ms": 19,
+    "requestId": "0556593b-3ecc-400a-bbd5-40bb7112b946",
+    "expected": 200,
+    "body": {
+      "rows": 2,
+      "keys": [
+        "id",
+        "canonicalProductId",
+        "name",
+        "brand",
+        "quantity",
+        "category",
+        "description",
+        "color",
+        "art",
+        "imageUrl",
+        "amountBase",
+        "baseUnit",
+        "offers"
+      ]
+    },
+    "result": "PASS"
+  },
+  {
+    "label": "cart add",
+    "method": "PUT",
+    "url": "http://127.0.0.1:18080/api/me/cart",
+    "http": 200,
+    "ms": 48,
+    "requestId": "9e832b41-df62-4619-a53b-91703d291280",
+    "expected": 200,
+    "body": {
+      "id": "string",
+      "productId": "string",
+      "locationId": "string",
+      "quantity": 2,
+      "preferences": {
+        "keys": [
+          "intent",
+          "maxPriceMinor",
+          "targetPriceMinor",
+          "maxUnitPriceMinor",
+          "bulkBudgetMinor",
+          "maxUsefulPacks",
+          "consumptionDays",
+          "monitorPrice"
+        ]
+      }
+    },
+    "result": "PASS"
+  },
+  {
+    "label": "cart read",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/me/cart",
+    "http": 200,
+    "ms": 11,
+    "requestId": "dbb1041e-04c6-4edc-8ca0-8cef6f2ec262",
+    "expected": 200,
+    "body": {
+      "rows": 1,
+      "keys": [
+        "id",
+        "productId",
+        "locationId",
+        "quantity",
+        "preferences"
+      ]
+    },
+    "check": "One 2-pack line",
+    "result": "PASS"
+  },
+  {
+    "label": "cart update",
+    "method": "PUT",
+    "url": "http://127.0.0.1:18080/api/me/cart",
+    "http": 200,
+    "ms": 22,
+    "requestId": "01681ed2-7a84-4777-9c40-8b24c4efb31f",
+    "expected": 200,
+    "body": {
+      "id": "string",
+      "productId": "string",
+      "locationId": "string",
+      "quantity": 3,
+      "preferences": {
+        "keys": [
+          "intent",
+          "maxPriceMinor",
+          "targetPriceMinor",
+          "maxUnitPriceMinor",
+          "bulkBudgetMinor",
+          "maxUsefulPacks",
+          "consumptionDays",
+          "monitorPrice"
+        ]
+      }
+    },
+    "check": "Same line ID, 3 packs",
+    "result": "PASS"
+  },
+  {
+    "label": "peer cart isolation",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/me/cart",
+    "http": 200,
+    "ms": 29,
+    "requestId": "467c000e-93a1-451c-9ce4-df68da2ecf86",
+    "expected": 200,
+    "body": {
+      "rows": 0,
+      "keys": []
+    },
+    "result": "PASS"
+  },
+  {
+    "label": "cart delete",
+    "method": "DELETE",
+    "url": "http://127.0.0.1:18080/api/me/cart/72542c20-c5c7-4302-9a59-aef1b98d11a6",
+    "http": 204,
+    "ms": 17,
+    "requestId": "dc45c5e5-db9d-4539-a586-a92224dd7907",
+    "expected": 204,
+    "body": null,
+    "result": "PASS"
+  },
+  {
+    "label": "cart delete verified",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/me/cart",
+    "http": 200,
+    "ms": 22,
+    "requestId": "983e59dd-3bbd-46cf-b38a-88b392d8c85d",
+    "expected": 200,
+    "body": {
+      "rows": 0,
+      "keys": []
+    },
+    "result": "PASS"
+  },
+  {
+    "label": "pantry add",
+    "method": "PUT",
+    "url": "http://127.0.0.1:18080/api/me/pantry",
+    "http": 204,
+    "ms": 18,
+    "requestId": "1b6e06e0-a364-4754-ae78-c4a1bd3ca70f",
+    "expected": 204,
+    "body": null,
+    "result": "PASS"
+  },
+  {
+    "label": "pantry read",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/me/pantry",
+    "http": 200,
+    "ms": 15,
+    "requestId": "a5ad2c8d-f888-4fa7-9415-d72ff425ad4d",
+    "expected": 200,
+    "body": {
+      "rows": 1,
+      "keys": [
+        "productId",
+        "name",
+        "amountBase",
+        "baseUnit"
+      ]
+    },
+    "result": "PASS"
+  },
+  {
+    "label": "pantry update",
+    "method": "PUT",
+    "url": "http://127.0.0.1:18080/api/me/pantry",
+    "http": 204,
+    "ms": 17,
+    "requestId": "d2d51c68-4ca0-444f-84b8-9188db3d522e",
+    "expected": 204,
+    "body": null,
+    "result": "PASS"
+  },
+  {
+    "label": "pantry update verified",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/me/pantry",
+    "http": 200,
+    "ms": 13,
+    "requestId": "18aadb11-3448-43ac-86db-f066a79ad449",
+    "expected": 200,
+    "body": {
+      "rows": 1,
+      "keys": [
+        "productId",
+        "name",
+        "amountBase",
+        "baseUnit"
+      ]
+    },
+    "result": "PASS"
+  },
+  {
+    "label": "peer pantry isolation",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/me/pantry",
+    "http": 200,
+    "ms": 14,
+    "requestId": "29a9b715-1f59-40cc-a8fb-7e104b6e6a28",
+    "expected": 200,
+    "body": {
+      "rows": 0,
+      "keys": []
+    },
+    "result": "PASS"
+  },
+  {
+    "label": "curated recipe browse",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/me/recipe-intelligence",
+    "http": 200,
+    "ms": 18,
+    "requestId": "20adb649-215b-4519-8c6e-1cf946cd19a0",
+    "expected": 200,
+    "body": {
+      "rows": 4,
+      "keys": [
+        "id",
+        "kind",
+        "source",
+        "recipe"
+      ]
+    },
+    "check": "4 recipes including Jeera rice with ingredients and steps",
+    "result": "PASS"
+  },
+  {
+    "label": "curated recipe scaling",
+    "method": "POST",
+    "url": "http://127.0.0.1:18080/api/me/recipe-intelligence/plan",
+    "http": 200,
+    "ms": 26,
+    "requestId": "afb0fdfb-c1f9-477a-9ac2-90b08c00b7b7",
+    "expected": 200,
+    "body": {
+      "meals": {
+        "rows": 1,
+        "keys": [
+          "recipeId",
+          "day",
+          "servings"
+        ]
+      },
+      "ingredients": {
+        "rows": 5,
+        "keys": [
+          "key",
+          "name",
+          "unit",
+          "required",
+          "pantry",
+          "missing",
+          "substitutions",
+          "choices",
+          "cataloguePacks"
+        ]
+      },
+      "baskets": {
+        "rows": 3,
+        "keys": [
+          "retailer",
+          "complete",
+          "missingIngredients",
+          "pricedSubtotalMinor",
+          "estimatedSubtotalMinor"
+        ]
+      },
+      "budgetMinor": null,
+      "budgetStatus": "string",
+      "sample": false
+    },
+    "check": "Basmati rice: 360/150/210 g required/pantry/missing",
+    "result": "PASS"
+  },
+  {
+    "label": "AI draft disabled",
+    "method": "POST",
+    "url": "http://127.0.0.1:18080/api/me/recipe-intelligence/generate",
+    "http": 503,
+    "ms": 29,
+    "requestId": "b96c0b93-5230-47f8-b0dd-f1776bb3b80b",
+    "expected": 503,
+    "body": {
+      "code": "string",
+      "message": "string"
+    },
+    "result": "PASS"
+  },
+  {
+    "label": "weekly preview",
+    "method": "POST",
+    "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/weekly/preview?locationId=blr-indiranagar",
+    "http": 200,
+    "ms": 89,
+    "requestId": "b22832ba-caa3-4f6c-a804-2c36df107325",
+    "expected": 200,
+    "body": {
+      "plan": {
+        "keys": [
+          "ingredients",
+          "comparison",
+          "budgetMinor",
+          "budgetStatus",
+          "method",
+          "checkedAt",
+          "notes",
+          "sample"
+        ]
+      },
+      "planFeedbackId": "string",
+      "basketFeedbackId": "string"
+    },
+    "check": "Two meals consolidated, rice 360g / pantry 150g / missing 210g; budget status BUDGET_UNKNOWN",
+    "result": "PASS"
+  },
+  {
+    "label": "weekly save",
+    "method": "PUT",
+    "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/weekly?locationId=blr-indiranagar",
+    "http": 200,
+    "ms": 16,
+    "requestId": "d144744a-a256-42ad-b9be-9bb720a47e1a",
+    "expected": 200,
+    "body": {
+      "revision": 1
+    },
+    "result": "PASS"
+  },
+  {
+    "label": "weekly reload",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/weekly?locationId=blr-indiranagar",
+    "http": 200,
+    "ms": 30,
+    "requestId": "557e26b3-54bb-4f87-96df-7dad538db712",
+    "expected": 200,
+    "body": {
+      "draft": {
+        "keys": [
+          "meals",
+          "items",
+          "budgetMinor",
+          "diet",
+          "onHand"
+        ]
+      },
+      "revision": 1,
+      "recipes": {
+        "rows": 4,
+        "keys": [
+          "id",
+          "kind",
+          "source",
+          "recipe"
+        ]
+      },
+      "cart": {
+        "rows": 0,
+        "keys": []
+      },
+      "householdSize": null,
+      "sample": false
+    },
+    "result": "PASS"
+  },
+  {
+    "label": "weekly peer isolation",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/weekly?locationId=blr-indiranagar",
+    "http": 200,
+    "ms": 15,
+    "requestId": "54334544-8dac-4a06-90b1-029dc2eb7535",
+    "expected": 200,
+    "body": {
+      "draft": {
+        "keys": [
+          "meals",
+          "items",
+          "budgetMinor",
+          "diet",
+          "onHand"
+        ]
+      },
+      "revision": 0,
+      "recipes": {
+        "rows": 4,
+        "keys": [
+          "id",
+          "kind",
+          "source",
+          "recipe"
+        ]
+      },
+      "cart": {
+        "rows": 0,
+        "keys": []
+      },
+      "householdSize": null,
+      "sample": false
+    },
+    "result": "PASS"
+  },
+  {
+    "label": "bulk buy",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/bulk/milk?locationId=blr-indiranagar",
+    "http": 200,
+    "ms": 57,
+    "requestId": "47ed2a7a-e6d8-48ed-874a-15b7aa08d064",
+    "expected": 200,
+    "body": {
+      "action": "INSUFFICIENT_INFORMATION",
+      "reason": "string",
+      "productId": "string",
+      "name": "string",
+      "unit": "string",
+      "pantry": 0,
+      "required": null,
+      "maxPurchase": null,
+      "budgetMinor": null,
+      "daysBeforeExpiry": null,
+      "normal": null,
+      "recommended": null,
+      "sample": false
+    },
+    "check": "INSUFFICIENT_INFORMATION",
+    "result": "PASS"
+  },
+  {
+    "label": "personalized",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/recommendations?locationId=blr-indiranagar",
+    "http": 200,
+    "ms": 247,
+    "requestId": "02c6b339-b41d-4cfc-b44d-f0c793eeae29",
+    "expected": 200,
+    "body": {
+      "products": {
+        "rows": 0,
+        "keys": []
+      },
+      "recipes": {
+        "rows": 4,
+        "keys": [
+          "id",
+          "name",
+          "cuisine",
+          "missingIngredients",
+          "estimatedSubtotalMinor"
+        ]
+      },
+      "pantryGaps": {
+        "rows": 0,
+        "keys": []
+      },
+      "budgetMinor": null,
+      "sample": false
+    },
+    "result": "PASS"
+  },
+  {
+    "label": "basket",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/basket?locationId=blr-indiranagar",
+    "http": 200,
+    "ms": 21,
+    "requestId": "62c66a21-aa1b-46c0-ac4b-b82bb880ff08",
+    "expected": 200,
+    "body": {
+      "comparison": null,
+      "budgetMinor": null,
+      "status": "EMPTY",
+      "sample": false
+    },
+    "result": "PASS"
+  },
+  {
+    "label": "price history",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/grocery/variants/milk/price-history?locationId=blr-indiranagar",
+    "http": 200,
+    "ms": 17,
+    "requestId": "bc33c1cf-5e14-456f-9256-f62560f8b853",
+    "expected": 200,
+    "body": {
+      "variantId": "string",
+      "locationId": "string",
+      "from": "string",
+      "until": "string",
+      "stats": {
+        "keys": [
+          "observations",
+          "priced",
+          "minimumMinor",
+          "maximumMinor",
+          "averageMinor"
+        ]
+      },
+      "retailers": {
+        "rows": 0,
+        "keys": []
+      }
+    },
+    "check": "No permission-approved readings",
+    "result": "PASS"
+  },
+  {
+    "label": "forecast eligibility",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/me/price-intelligence/milk?locationId=blr-indiranagar&retailer=blinkit",
+    "http": 200,
+    "ms": 40,
+    "requestId": "beafbc58-0103-4654-aaca-1ec7c4e6e846",
+    "expected": 200,
+    "body": {
+      "status": "INSUFFICIENT_DATA",
+      "productId": "string",
+      "variantId": "string",
+      "pack": "string",
+      "retailer": "string",
+      "locationId": "string",
+      "latestObservation": null,
+      "observedChangeMinor": null,
+      "freshness": "string",
+      "horizonDays": 1,
+      "forecastDate": null,
+      "predictedMinor": null,
+      "lowMinor": null,
+      "highMinor": null,
+      "empiricalCoverage": null,
+      "modelVersion": null,
+      "trainedAt": null,
+      "warning": "string",
+      "advice": {
+        "keys": [
+          "action",
+          "reason"
+        ]
+      }
+    },
+    "check": "INSUFFICIENT_DATA",
+    "result": "PASS"
+  },
+  {
+    "label": "admin overview",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/admin/overview",
+    "http": 200,
+    "ms": 18,
+    "requestId": "b47f99ec-457f-4a45-b3e6-682c5b05469e",
+    "expected": 200,
+    "body": {
+      "users": 8,
+      "platforms": {
+        "rows": 3,
+        "keys": [
+          "id",
+          "enabled",
+          "status",
+          "syncedAt"
+        ]
+      },
+      "products": 27,
+      "categories": 7
+    },
+    "result": "PASS"
+  },
+  {
+    "label": "admin coverage",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/admin/retailer-operations/coverage?locationId=blr-indiranagar",
+    "http": 200,
+    "ms": 1894,
+    "requestId": "932260b2-e1c6-4b01-8b15-def333b767e2",
+    "expected": 200,
+    "body": {
+      "locationId": "string",
+      "freshnessSeconds": 900,
+      "calculatedAt": "string",
+      "counts": {
+        "keys": [
+          "totalProducts",
+          "approvedProducts",
+          "productsWithoutMapping",
+          "unresolvedProducts",
+          "staleProducts",
+          "missingPriceProducts",
+          "uncertainStockProducts",
+          "missingFeeProducts",
+          "packConflictProducts"
+        ]
+      },
+      "retailers": {
+        "rows": 3,
+        "keys": [
+          "id",
+          "recordedUsableProducts",
+          "usableLiveProductsForCurrentAccount",
+          "lastSuccessfulRefresh"
+        ]
+      },
+      "rows": {
+        "rows": 30,
+        "keys": [
+          "productId",
+          "variantId",
+          "categoryId",
+          "name",
+          "brand",
+          "pack",
+          "retailer",
+          "nativeId",
+          "approved",
+          "status",
+          "missingFees",
+          "missingPrice",
+          "uncertainStock",
+          "packConflict",
+          "priceMinor",
+          "stock",
+          "observedAt",
+          "observationSource",
+          "origin",
+          "verification"
+        ]
+      },
+      "hasNext": true,
+      "events": {
+        "rows": 0,
+        "keys": []
+      },
+      "sample": false
+    },
+    "check": {
+      "keys": [
+        "locationId",
+        "freshnessSeconds",
+        "calculatedAt",
+        "counts",
+        "retailers",
+        "rows",
+        "hasNext",
+        "events",
+        "sample"
+      ]
+    },
+    "result": "PASS"
+  },
+  {
+    "label": "rice variant separation",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/products/rice/variants?locationId=blr-indiranagar",
+    "http": 200,
+    "ms": 19,
+    "requestId": "e388668e-6fb1-4a3b-987c-cf7c276dd038",
+    "expected": 200,
+    "body": {
+      "rows": 2,
+      "keys": [
+        "id",
+        "canonicalProductId",
+        "name",
+        "brand",
+        "quantity",
+        "category",
+        "description",
+        "color",
+        "art",
+        "imageUrl",
+        "amountBase",
+        "baseUnit",
+        "offers"
+      ]
+    },
+    "check": "1 kg and 5 kg are distinct variants",
+    "result": "PASS"
+  },
+  {
+    "label": "5 kg rice comparison",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/products/rice-5kg/comparison?locationId=blr-indiranagar&latitude=12.9784&longitude=77.6408",
+    "http": 200,
+    "ms": 11,
+    "requestId": "5c9d77f3-314c-48a6-84da-e919221f5478",
+    "expected": 200,
+    "body": {
+      "product": {
+        "keys": [
+          "id",
+          "canonicalProductId",
+          "name",
+          "brand",
+          "quantity",
+          "category",
+          "description",
+          "color",
+          "art",
+          "imageUrl",
+          "amountBase",
+          "baseUnit",
+          "offers"
+        ]
+      },
+      "quantity": 1,
+      "fulfillment": "string",
+      "options": {
+        "rows": 3,
+        "keys": [
+          "source",
+          "name",
+          "variantId",
+          "priceMinor",
+          "unitPriceMinor",
+          "unitLabel",
+          "availability",
+          "stockQuantity",
+          "distanceKm",
+          "deliveryMinor",
+          "handlingMinor",
+          "minimumMinor",
+          "totalMinor",
+          "dataSource",
+          "observedAt",
+          "verificationStatus",
+          "eligible",
+          "reason",
+          "sourceId"
+        ]
+      },
+      "lowestEligible": null,
+      "savingsMinor": null,
+      "explanation": "string"
+    },
+    "check": "All retailer options scoped to the selected 5 kg pack",
+    "result": "PASS"
+  },
+  {
+    "label": "conflicting pack review",
+    "method": "POST",
+    "url": "http://127.0.0.1:18080/api/admin/catalogue-matching/review",
+    "http": 200,
+    "ms": 67,
+    "requestId": "84e24a1c-664f-4d96-af3b-2ee798fbce07",
+    "expected": 200,
+    "body": {
+      "rows": 1,
+      "keys": [
+        "reference",
+        "evidence"
+      ]
+    },
+    "check": "Synthetic identity test distinguished 1 L from 500 ml",
+    "result": "PASS"
+  },
+  {
+    "label": "mapping decision journal",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/admin/provider/mapping/decisions?variantId=milk&platform=blinkit",
+    "http": 200,
+    "ms": 15,
+    "requestId": "8803b2f1-a8fc-4869-884f-dcc8dc17381a",
+    "expected": 200,
+    "body": {
+      "rows": 0,
+      "keys": []
+    },
+    "check": "Empty; no mapping approved",
+    "result": "PASS"
+  },
+  {
+    "label": "admin denied to customer",
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/admin/retailer-operations/coverage?locationId=blr-indiranagar",
+    "http": 403,
+    "ms": 13,
+    "requestId": "77bf19a9-5cee-44b6-bcb7-0db0e233464b",
+    "expected": 403,
+    "body": {
+      "code": "string",
+      "message": "string"
+    },
+    "result": "PASS"
+  },
+  {
+    "label": "logout",
+    "method": "POST",
+    "url": "http://127.0.0.1:18080/api/auth/logout",
+    "http": 204,
+    "ms": 20,
+    "requestId": "9f3f8c7b-301b-4f91-aff8-ed4e5d3f1f36",
+    "expected": 204,
+    "body": null,
+    "result": "PASS"
+  },
+  {
+    "label": "revoked refresh cookie",
+    "method": "POST",
+    "url": "http://127.0.0.1:18080/api/auth/refresh",
+    "http": 401,
+    "ms": 16,
+    "requestId": "235b5f91-1f3d-44fe-8fa7-1f3d53c13fc3",
+    "expected": 401,
+    "body": {
+      "code": "string",
+      "message": "string"
+    },
+    "result": "PASS"
+  }
+]

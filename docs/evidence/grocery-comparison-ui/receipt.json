@@ -1,0 +1,63 @@
+{
+  "at": "2026-11-19T16:06:28.724Z",
+  "paidSubmissions": 1,
+  "query": "Amul Taaza toned milk 1 litre",
+  "location": {
+    "query": "amul taaza toned milk 1 litre",
+    "latitude": 10.942972,
+    "longitude": 76.953417,
+    "postcode": "641008"
+  },
+  "retailers": [
+    {
+      "retailer": "instamart",
+      "outcome": "PROVIDER_ERROR",
+      "http": 200,
+      "id": "e3d40c0a-90b0-4250-a09f-365ecf4c2b92",
+      "count": 0,
+      "message": "The provider reported a failed retailer."
+    },
+    {
+      "retailer": "blinkit",
+      "outcome": "SUCCESS",
+      "http": 200,
+      "id": "363b1c9c-64f5-4d20-a1c5-18bc4a4d0496",
+      "count": 24,
+      "at": "2026-11-19T16:06:37.968635100Z",
+      "message": null
+    },
+    {
+      "retailer": "zepto",
+      "outcome": "PROVIDER_ERROR",
+      "http": 200,
+      "id": "c8f09e1b-3538-459f-b8f2-a43ed766f0ae",
+      "count": 0,
+      "message": "The provider reported a failed retailer."
+    }
+  ],
+  "before": 86,
+  "allowance": 4,
+  "blocker": null,
+  "platforms": [
+    "BlinkIt",
+    "Zepto",
+    "Swiggy"
+  ],
+  "confirmedAt": "2026-11-19T16:06:33.306Z",
+  "finished": true,
+  "billing": {
+    "settled": true,
+    "balance": 85
+  },
+  "error": null,
+  "winnerCount": 0,
+  "cartHttp": 200,
+  "cart": {
+    "retailer": "blinkit",
+    "nativeId": "176",
+    "title": "Taaza Homogenised Toned Milk",
+    "pack": "1 ltr",
+    "priceMinor": 7700
+  },
+  "cartVerified": true
+}

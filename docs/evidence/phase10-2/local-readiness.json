@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-11-19T02:26:18.2745836+05:30",
+  "launcherReadinessAt": "2026-11-19T02:23:41.5919972+05:30",
+  "credentialSource": "operator masked PowerShell input, session only",
+  "fastApiPort": 8001,
+  "authenticatedLocalReadiness": true,
+  "geminiKeyPresence": "PRESENT",
+  "generationEnabled": true,
+  "model": "gemini-3.5-flash",
+  "springPort": 8080,
+  "springHealth": "UP",
+  "googleAcceptance": "NOT_TESTED",
+  "retailerLedgerHashUnchanged": true,
+  "providerRequestsSentByThisRun": 0
+}

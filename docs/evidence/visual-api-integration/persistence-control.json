@@ -1,0 +1,30 @@
+[
+  {
+    "method": "POST",
+    "url": "http://127.0.0.1:18080/api/auth/register",
+    "http": 201,
+    "ms": 560,
+    "requestId": "e5a7ca40-03f0-493d-ae55-698e09615861"
+  },
+  {
+    "method": "PUT",
+    "url": "http://127.0.0.1:18080/api/me/cart",
+    "http": 200,
+    "ms": 14,
+    "requestId": "0a63d603-ffee-4c2e-9199-46632c8e93c1"
+  },
+  {
+    "method": "PUT",
+    "url": "http://127.0.0.1:18080/api/me/cart",
+    "http": 200,
+    "ms": 23,
+    "requestId": "88cca8f0-35d2-490e-987a-3ff7121fe73c"
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18080/api/me/cart",
+    "http": 200,
+    "ms": 11,
+    "requestId": "72830014-5301-423e-ac48-355f803a9bd0"
+  }
+]

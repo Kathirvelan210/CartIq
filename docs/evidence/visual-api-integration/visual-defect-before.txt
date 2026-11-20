@@ -1,0 +1,2 @@
+Cart rendering defect observed in 1440x900-08-cart-reloaded.png and the real comparison response. With three ineligible offers carrying null price and stock, cart retailer panels display ₹0 for Blinkit and Instamart, and report Zepto as Future integration solely because no Zepto offer exists. Cart section excludes the unpriced item but summary also displays ₹0.
+Chrome console reproduced duplicate React child keys on the admin screen. Recommendation feedback, retailer operations, and price coverage were siblings sharing the same account ID as a key.

@@ -1,0 +1,25 @@
+[
+  {
+    "flow": "draft",
+    "status": 200,
+    "loading": true,
+    "rendered": true
+  },
+  {
+    "flow": "repeat draft",
+    "status": 429,
+    "rendered": true
+  },
+  {
+    "flow": "week",
+    "status": 200,
+    "loading": true,
+    "rendered": true
+  },
+  {
+    "flow": "assistant",
+    "status": 200,
+    "loading": true,
+    "rendered": true
+  }
+]

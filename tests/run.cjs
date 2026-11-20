@@ -1,0 +1,10 @@
+const {spawnSync}=require('node:child_process');
+const fs=require('node:fs');
+const os=require('node:os');
+const path=require('node:path');
+const dir=fs.mkdtempSync(path.join(os.tmpdir(),'cartiq-tests-'));
+const suites=fs.readdirSync(__dirname).filter(file=>file.endsWith('.test.ts'));
+const args=[require.resolve('typescript/bin/tsc'),...suites.map(file=>path.join('tests',file)),'--outDir',dir,'--module','commonjs','--target','ES2020','--esModuleInterop','--skipLibCheck','--types','node'];
+let result=spawnSync(process.execPath,args,{stdio:'inherit'});
+if(result.status===0)result=spawnSync(process.execPath,['--test',...suites.map(file=>path.join(dir,'tests',file.replace(/\.ts$/,'.js')))],{stdio:'inherit'});
+process.exitCode=result.status??1;

@@ -1,0 +1,6 @@
+import { Offer, Product } from '../types';
+export const STALE_MS = 15 * 60 * 1000;
+export function isFresh(offer:Offer, now=Date.now()) {const t=Date.parse(offer.updatedAt); return Number.isFinite(t) && now-t <= STALE_MS && t <= now+60000;}
+export function comparableOffers(product:Product, locationId:string, now=Date.now()) {return product.offers.filter(o=>o.status==='available' && (o.verificationStatus==='VERIFIED'||o.verificationStatus==='SAMPLE') && o.price!==null && Number.isFinite(o.price) && o.price>=0 && o.productId===product.id && o.variant===product.quantity && o.locationId===locationId && isFresh(o,now)).sort((a,b)=>a.price!-b.price!);}
+export function comparison(product:Product, locationId:string, now=Date.now()) {const offers=comparableOffers(product,locationId,now); const best=offers[0]; return {offers,best,saving:offers.length>1 ? offers[offers.length-1]!.price!-best!.price! : 0, tied:offers.filter(o=>o.price===best?.price).length>1};}
+export function freshness(offer:Offer, now=Date.now()) {if(!isFresh(offer,now)) return 'Older price · refresh needed'; const minutes=Math.max(0,Math.floor((now-Date.parse(offer.updatedAt))/60000)); return minutes===0?'Updated just now':`Updated ${minutes} min ago`;}

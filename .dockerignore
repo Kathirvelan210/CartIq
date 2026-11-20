@@ -1,0 +1,16 @@
+**
+!package.json
+!package-lock.json
+!App.tsx
+!index.ts
+!app.json
+!app.config.js
+!assets
+!assets/**
+!tsconfig.json
+!src
+!src/**
+!public
+!public/**
+!configuration
+!configuration/nginx.conf

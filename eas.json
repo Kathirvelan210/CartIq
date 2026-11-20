@@ -1,0 +1,12 @@
+{
+  "cli": {"appVersionSource": "remote"},
+  "build": {
+    "preview": {"distribution": "internal", "environment": "preview", "env": {"CARTIQ_REQUIRE_HTTPS_API": "true"}},
+    "production": {
+      "environment": "production",
+      "env": {"CARTIQ_REQUIRE_HTTPS_API": "true"},
+      "autoIncrement": true,
+      "android": {"buildType": "app-bundle"}
+    }
+  }
+}

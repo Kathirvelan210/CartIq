@@ -1,0 +1,24 @@
+{
+  "verifiedAt": "2026-11-19T05:21:34.3465556+05:30",
+  "spring": {
+    "port": 8080,
+    "previousPid": 24928,
+    "currentPid": 23348,
+    "health": "UP",
+    "localH2Confirmed": true,
+    "flywayLocalH2Confirmed": true,
+    "retailerDisabled": true
+  },
+  "fastapi": {
+    "port": 8001,
+    "previousPid": 26868,
+    "currentPid": 14020,
+    "health": "ok",
+    "authenticatedReadiness": true,
+    "model": "gemini-3.5-flash",
+    "generationEnabled": true,
+    "evidence": "The launcher emitted its readiness marker after authenticated GET /recipes/readiness returned ready with the configured model. The launcher used its gemini-3.5-flash default."
+  },
+  "oldServicePidsExited": true,
+  "quickcommerceLedgerHashUnchanged": true
+}

@@ -1,0 +1,480 @@
+{
+  "title": "India catalogue rule evaluation pairs",
+  "labelledOn": "2026-11-14",
+  "attribution": "Open Food Facts contributors",
+  "licences": {
+    "database": "ODbL-1.0",
+    "contents": "DbCL-1.0"
+  },
+  "notes": "Positive pairs are repeated observations of the same Open Food Facts entries across archive pages. Split labels group sibling product families and GTINs together. All splits are small and source-biased. Use uncertain labels for abstention reporting. No model was trained and these splits do not independently validate cross-retailer performance.",
+  "sources": {
+    "prior-market": {
+      "file": "prior-market.json",
+      "sha256": "665a8b8e29221b331b642e49ee076fcfe89b8b597680c56e70175d35a8903ab6",
+      "url": "https://in.openfoodfacts.org/api/v2/search?countries_tags=en:india&page_size=40&page=1&sort_by=unique_scans_n"
+    },
+    "cookies": {
+      "file": "cookies.json",
+      "sha256": "ef53974043cc1932c404cb30311f68aa19d648cb06eac77ebaeef49b90523a3f",
+      "url": "https://in.openfoodfacts.org/api/v2/search?countries_tags=en:india&page_size=20&page=1&sort_by=unique_scans_n&categories_tags=en:cookies"
+    },
+    "beverages-alt": {
+      "file": "beverages-alt.json",
+      "sha256": "6091d83a8e3a51a567ab4e11bafa09b287aed4ff544d672a8e3416c700677dc9",
+      "url": "https://in.openfoodfacts.org/api/v2/search?countries_tags=en:india&page_size=20&page=1&sort_by=unique_scans_n&categories_tags=en:non-alcoholic-beverages"
+    },
+    "sauces": {
+      "file": "sauces.json",
+      "sha256": "7e9a325da49d2395b63c05853bff8c4611a9f6a4d0f7597b599c7506054f4fc7",
+      "url": "https://in.openfoodfacts.org/api/v2/search?countries_tags=en:india&page_size=40&page=1&sort_by=unique_scans_n"
+    },
+    "spices": {
+      "file": "spices.json",
+      "sha256": "9acfdcebb61852778e6af08fb4cc4db77a2d0b475448de3291773ace51d97ec5",
+      "url": "https://in.openfoodfacts.org/api/v2/search?countries_tags=en:india&page_size=40&page=1&sort_by=unique_scans_n"
+    }
+  },
+  "pairs": [
+    {
+      "split": "train",
+      "label": "SAME_VARIANT",
+      "reason": "Repeated source row for the 90 g original biscuit.",
+      "left": {
+        "source": "prior-market",
+        "gtin": "8901719134852",
+        "family": "parle-g",
+        "name": "Parle-G",
+        "brand": "Parle",
+        "pack": "90g"
+      },
+      "right": {
+        "source": "cookies",
+        "gtin": "8901719134852",
+        "family": "parle-g",
+        "name": "Parle-G",
+        "brand": "Parle",
+        "pack": "90g"
+      }
+    },
+    {
+      "split": "train",
+      "label": "SAME_VARIANT",
+      "reason": "Repeated source row for the 45 g original biscuit with printed barcode evidence.",
+      "left": {
+        "source": "prior-market",
+        "gtin": "8901719134845",
+        "family": "parle-g",
+        "name": "Parle-G Biscuit",
+        "brand": "Parle",
+        "pack": "45gm"
+      },
+      "right": {
+        "source": "cookies",
+        "gtin": "8901719134845",
+        "family": "parle-g",
+        "name": "Parle-G Biscuit",
+        "brand": "Parle",
+        "pack": "45gm"
+      }
+    },
+    {
+      "split": "train",
+      "label": "DIFFERENT_VARIANT",
+      "reason": "Original biscuit packs of 45 g and 90 g.",
+      "left": {
+        "source": "cookies",
+        "gtin": "8901719134845",
+        "family": "parle-g",
+        "name": "Parle-G Biscuit",
+        "brand": "Parle",
+        "pack": "45gm"
+      },
+      "right": {
+        "source": "cookies",
+        "gtin": "8901719134852",
+        "family": "parle-g",
+        "name": "Parle-G",
+        "brand": "Parle",
+        "pack": "90g"
+      }
+    },
+    {
+      "split": "train",
+      "label": "DIFFERENT_VARIANT",
+      "reason": "Original biscuit packs of 90 g and 250 g.",
+      "left": {
+        "source": "cookies",
+        "gtin": "8901719134852",
+        "family": "parle-g",
+        "name": "Parle-G",
+        "brand": "Parle",
+        "pack": "90g"
+      },
+      "right": {
+        "source": "cookies",
+        "gtin": "8901719123870",
+        "family": "parle-g",
+        "name": "Parle-G 250g",
+        "brand": "Parle",
+        "pack": "250 g"
+      }
+    },
+    {
+      "split": "train",
+      "label": "SAME_VARIANT",
+      "reason": "Repeated source row for the 52.5 g cashew cookie.",
+      "left": {
+        "source": "prior-market",
+        "gtin": "8901063093522",
+        "family": "good-day-cashew",
+        "name": "Good Day - Cashew Cookies",
+        "brand": "Britannia",
+        "pack": "52.5 g"
+      },
+      "right": {
+        "source": "cookies",
+        "gtin": "8901063093522",
+        "family": "good-day-cashew",
+        "name": "Good Day - Cashew Cookies",
+        "brand": "Britannia",
+        "pack": "52.5 g"
+      }
+    },
+    {
+      "split": "train",
+      "label": "DIFFERENT_VARIANT",
+      "reason": "52.5 g and 30.2 g cashew cookie packs have distinct GTINs.",
+      "left": {
+        "source": "cookies",
+        "gtin": "8901063093522",
+        "family": "good-day-cashew",
+        "name": "Good Day - Cashew Cookies",
+        "brand": "Britannia",
+        "pack": "52.5 g"
+      },
+      "right": {
+        "source": "cookies",
+        "gtin": "8901063092853",
+        "family": "good-day-cashew",
+        "name": "Good Day cashew cookie",
+        "brand": "Britannia",
+        "pack": "30.2 g"
+      }
+    },
+    {
+      "split": "train",
+      "label": "UNCERTAIN",
+      "reason": "Different codes, brand-only titles and unitless quantities cannot establish the recipe or pack.",
+      "left": {
+        "source": "prior-market",
+        "gtin": "8901058017687",
+        "family": "maggi-noodles",
+        "name": "maggi",
+        "brand": "Maggi",
+        "pack": "75"
+      },
+      "right": {
+        "source": "prior-market",
+        "gtin": "8901058000290",
+        "family": "maggi-noodles",
+        "name": "maggi",
+        "brand": "Nestl�",
+        "pack": "70"
+      }
+    },
+    {
+      "split": "train",
+      "label": "UNCERTAIN",
+      "reason": "Flavour or pack is missing across the two snack records.",
+      "left": {
+        "source": "prior-market",
+        "gtin": "8906010500764",
+        "family": "chataka-pataka",
+        "name": "balaji wafers chataka pataka",
+        "brand": "Balaji",
+        "pack": "25g"
+      },
+      "right": {
+        "source": "prior-market",
+        "gtin": "8906010500627",
+        "family": "chataka-pataka",
+        "name": "Chataka Pataka Tangy Tomato",
+        "brand": "Balaji",
+        "pack": null
+      }
+    },
+    {
+      "split": "validation",
+      "label": "SAME_VARIANT",
+      "reason": "Repeated source row for Sting 250 mL.",
+      "left": {
+        "source": "prior-market",
+        "gtin": "8902080000227",
+        "family": "sting-energy",
+        "name": "Sting Energy",
+        "brand": "PepsiCo",
+        "pack": "250 ml"
+      },
+      "right": {
+        "source": "beverages-alt",
+        "gtin": "8902080000227",
+        "family": "sting-energy",
+        "name": "Sting Energy",
+        "brand": "PepsiCo",
+        "pack": "250 ml"
+      }
+    },
+    {
+      "split": "validation",
+      "label": "SAME_VARIANT",
+      "reason": "Repeated source row for Red Bull 250 mL.",
+      "left": {
+        "source": "prior-market",
+        "gtin": "90162602",
+        "family": "red-bull-energy",
+        "name": "Red Bull Energy Drink",
+        "brand": "Red Bull",
+        "pack": "250 ml"
+      },
+      "right": {
+        "source": "beverages-alt",
+        "gtin": "90162602",
+        "family": "red-bull-energy",
+        "name": "Red Bull Energy Drink",
+        "brand": "Red Bull",
+        "pack": "250 ml"
+      }
+    },
+    {
+      "split": "validation",
+      "label": "DIFFERENT_VARIANT",
+      "reason": "Different energy-drink brands in the same pack size.",
+      "left": {
+        "source": "prior-market",
+        "gtin": "8902080000227",
+        "family": "sting-energy",
+        "name": "Sting Energy",
+        "brand": "PepsiCo",
+        "pack": "250 ml"
+      },
+      "right": {
+        "source": "prior-market",
+        "gtin": "90162602",
+        "family": "red-bull-energy",
+        "name": "Red Bull Energy Drink",
+        "brand": "Red Bull",
+        "pack": "250 ml"
+      }
+    },
+    {
+      "split": "validation",
+      "label": "DIFFERENT_VARIANT",
+      "reason": "Sprite 600 mL and 2.25 L are different packs.",
+      "left": {
+        "source": "beverages-alt",
+        "gtin": "8901764032707",
+        "family": "sprite",
+        "name": "Sprite",
+        "brand": "Coca-Cola",
+        "pack": "600 ml"
+      },
+      "right": {
+        "source": "beverages-alt",
+        "gtin": "8901764032905",
+        "family": "sprite",
+        "name": "Sprite",
+        "brand": "Coca-Cola, Sprite",
+        "pack": "2.25l"
+      }
+    },
+    {
+      "split": "validation",
+      "label": "UNCERTAIN",
+      "reason": "Identically named 250 mL source entries carry different codes and no corroborated code relationship.",
+      "left": {
+        "source": "prior-market",
+        "gtin": "8901764032912",
+        "family": "sprite",
+        "name": "Sprite",
+        "brand": "Coca-Cola, Sprite",
+        "pack": "250 ml"
+      },
+      "right": {
+        "source": "prior-market",
+        "gtin": "3948764032912",
+        "family": "sprite",
+        "name": "Sprite",
+        "brand": "Coca-Cola, Sprite",
+        "pack": "250ml"
+      }
+    },
+    {
+      "split": "validation",
+      "label": "UNCERTAIN",
+      "reason": "The related-looking codes disagree on 600 mL versus 740 mL. The source identity of the second code is unresolved.",
+      "left": {
+        "source": "beverages-alt",
+        "gtin": "8901764032707",
+        "family": "sprite",
+        "name": "Sprite",
+        "brand": "Coca-Cola",
+        "pack": "600 ml"
+      },
+      "right": {
+        "source": "beverages-alt",
+        "gtin": "3948764032707",
+        "family": "sprite",
+        "name": "Sprite",
+        "brand": "Coca-Cola Company",
+        "pack": "740ml"
+      }
+    },
+    {
+      "split": "test",
+      "label": "SAME_VARIANT",
+      "reason": "Repeated source row for a 250 mL Thums Up pack.",
+      "left": {
+        "source": "prior-market",
+        "gtin": "8901764042911",
+        "family": "thums-up",
+        "name": "Thums up",
+        "brand": "Thums Up",
+        "pack": "250 ml"
+      },
+      "right": {
+        "source": "beverages-alt",
+        "gtin": "8901764042911",
+        "family": "thums-up",
+        "name": "Thums up",
+        "brand": "Thums Up",
+        "pack": "250 ml"
+      }
+    },
+    {
+      "split": "test",
+      "label": "UNCERTAIN",
+      "reason": "Two different source codes claim the same 250 mL Thums Up pack.",
+      "left": {
+        "source": "prior-market",
+        "gtin": "8901764042911",
+        "family": "thums-up",
+        "name": "Thums up",
+        "brand": "Thums Up",
+        "pack": "250 ml"
+      },
+      "right": {
+        "source": "prior-market",
+        "gtin": "3948764042911",
+        "family": "thums-up",
+        "name": "thums up",
+        "brand": "thumsup",
+        "pack": "250ml"
+      }
+    },
+    {
+      "split": "test",
+      "label": "SAME_VARIANT",
+      "reason": "Repeated source row for Fresh Tomato 90 g ketchup.",
+      "left": {
+        "source": "sauces",
+        "gtin": "8901030897542",
+        "family": "kissan-ketchup",
+        "name": "kissan fresh tomato",
+        "brand": "Kissan",
+        "pack": "90g"
+      },
+      "right": {
+        "source": "prior-market",
+        "gtin": "8901030897542",
+        "family": "kissan-ketchup",
+        "name": "kissan fresh tomato",
+        "brand": "Kissan",
+        "pack": "90g"
+      }
+    },
+    {
+      "split": "test",
+      "label": "DIFFERENT_VARIANT",
+      "reason": "Kissan Fresh Tomato 90 g and 850 g are different labelled packs.",
+      "left": {
+        "source": "sauces",
+        "gtin": "8901030897542",
+        "family": "kissan-ketchup",
+        "name": "kissan fresh tomato",
+        "brand": "Kissan",
+        "pack": "90g"
+      },
+      "right": {
+        "source": "sauces",
+        "gtin": "8901030902932",
+        "family": "kissan-ketchup",
+        "name": "Fresh Tomato Ketchup",
+        "brand": "Kissan",
+        "pack": "850 g"
+      }
+    },
+    {
+      "split": "test",
+      "label": "UNCERTAIN",
+      "reason": "The first row has a unitless pack and unclear plain-versus-chilli identity.",
+      "left": {
+        "source": "sauces",
+        "gtin": "8901030921667",
+        "family": "kissan-ketchup",
+        "name": "kissan",
+        "brand": "Kissan",
+        "pack": "1"
+      },
+      "right": {
+        "source": "sauces",
+        "gtin": "8901030897542",
+        "family": "kissan-ketchup",
+        "name": "kissan fresh tomato",
+        "brand": "Kissan",
+        "pack": "90g"
+      }
+    },
+    {
+      "split": "test",
+      "label": "DIFFERENT_VARIANT",
+      "reason": "Chaat and Pav Bhaji are differently formulated blends in equal 50 g packs.",
+      "left": {
+        "source": "spices",
+        "gtin": "8901786060504",
+        "family": "everest-blends",
+        "name": "Chaat Masala",
+        "brand": "Everest",
+        "pack": "50 g"
+      },
+      "right": {
+        "source": "spices",
+        "gtin": "8901786070503",
+        "family": "everest-blends",
+        "name": "Pav bhaji masala",
+        "brand": "Everest",
+        "pack": "50g"
+      }
+    },
+    {
+      "split": "test",
+      "label": "DIFFERENT_VARIANT",
+      "reason": "Pav Bhaji and Sambhar are differently formulated blends in equal 50 g packs.",
+      "left": {
+        "source": "spices",
+        "gtin": "8901786070503",
+        "family": "everest-blends",
+        "name": "Pav bhaji masala",
+        "brand": "Everest",
+        "pack": "50g"
+      },
+      "right": {
+        "source": "spices",
+        "gtin": "8901786080502",
+        "family": "everest-blends",
+        "name": "Everest Sambhar Masala",
+        "brand": "Everest",
+        "pack": "50 g"
+      }
+    }
+  ]
+}

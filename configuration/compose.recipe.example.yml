@@ -1,0 +1,13 @@
+# Optional on an authorized staging host. Keep forecasting's HTTP listener private.
+services:
+  backend:
+    environment:
+      CARTIQ_RECIPE_GENERATION_ENABLED: 'true'
+  forecast:
+    environment:
+      CARTIQ_RECIPE_GENERATION_ENABLED: 'true'
+      GEMINI_API_KEY: ${GEMINI_API_KEY:?Supply the existing backend Gemini credential using protected injection}
+      GEMINI_MODEL: ${GEMINI_MODEL:?Specify a Gemini model with structured JSON output}
+    networks: [private, recipe-egress]
+networks:
+  recipe-egress:

@@ -1,0 +1,3 @@
+# Database
+
+No live database snapshot is included. backend/src/main/resources/catalogue/products.json is the repository starter catalogue; its contents and IDs have not been verified against the user's live MySQL database. Do not treat it as a 24/27 snapshot. Schema migrations V1–V9 are under backend/src/main/resources/db/migration. V8/V9 have not been approved for MySQL. Spring Boot runs Flyway automatically: do not connect this build to any database where V8/V9 must not be applied. Restore and count verification require a separately prepared catalogue-only export and an isolated MySQL instance. Never use a full private production backup as a development fixture.

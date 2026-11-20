@@ -1,0 +1,56 @@
+[
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/api/meta",
+    "http": 200,
+    "ms": 729,
+    "requestId": "c0d0e48c-1359-4dd3-8fe2-6e76eb6d2eb3"
+  },
+  {
+    "method": "POST",
+    "url": "http://127.0.0.1:18082/api/auth/register",
+    "http": 201,
+    "ms": 904,
+    "requestId": "9d3c60e8-4b77-46a3-91f4-46bfc0a6919b"
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/api/products/milk?locationId=blr-indiranagar",
+    "http": 200,
+    "ms": 99,
+    "requestId": "9fc3ca36-0002-49f2-92fc-79a796455007",
+    "summary": "Three built-in SAMPLE offers"
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/api/products/milk/comparison?locationId=blr-indiranagar&latitude=12.9784&longitude=77.6408&fulfillment=delivery",
+    "http": 200,
+    "ms": 91,
+    "requestId": "471b0778-e857-4338-9cb0-e047099347c2",
+    "summary": "No verified winner or total from the synthetic offers"
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/api/products/milk/analytics?locationId=blr-indiranagar",
+    "http": 200,
+    "ms": 113,
+    "requestId": "e6977531-d9ff-4003-a465-09bda24e0fb4",
+    "summary": "180 legacy SAMPLE points"
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/api/grocery/variants/milk/price-history?locationId=blr-indiranagar",
+    "http": 200,
+    "ms": 61,
+    "requestId": "b030070a-8198-42e9-ad66-5c9278489fc6",
+    "summary": "Zero permission-cleared series despite the nonempty sample history"
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/api/me/price-intelligence/milk?locationId=blr-indiranagar&retailer=blinkit",
+    "http": 200,
+    "ms": 35,
+    "requestId": "8a70c123-15ff-4a62-b088-5c58304f77c1",
+    "summary": "INSUFFICIENT_DATA"
+  }
+]

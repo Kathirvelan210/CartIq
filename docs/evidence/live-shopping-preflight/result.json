@@ -1,0 +1,44 @@
+{
+  "testedAt": "2026-11-19T12:03:37.002Z",
+  "origin": "http://localhost:8092",
+  "chrome": "158.0.8127.36",
+  "account": "Dedicated local CartIQ shopper in isolated Chrome profile",
+  "database": "Local H2",
+  "geolocationBefore": [
+    18.5204,
+    73.8567
+  ],
+  "geolocationAfter": [
+    28.6139,
+    77.209
+  ],
+  "selection": {
+    "query": "milk",
+    "retailer": "blinkit",
+    "latitude": 10.942972,
+    "longitude": 76.953417,
+    "postcode": "641008"
+  },
+  "maximumCredits": 1,
+  "ledgerBalance": 92,
+  "expiresAt": "2026-11-19T12:08:36.860232500Z",
+  "paidConfirmations": 0,
+  "blockedPaidAttempts": 0,
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/shopping/retailers/private-search/platforms",
+      "http": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/api/me/shopping-position",
+      "http": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/shopping/retailers/private-search/prepare",
+      "http": 200
+    }
+  ]
+}

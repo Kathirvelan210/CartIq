@@ -1,0 +1,51 @@
+{
+  "checks": {
+    "mysql": "PASS",
+    "backup": "PASS",
+    "rollback": "PASS"
+  },
+  "candidateSha256": "29c083ae06fc9fe8570f3e089f8646d2593b7ef27f7e5f222ab7157429b25e50",
+  "previousSha256": "114cb70fe89e3ac40603c550015b16c30238d1c5e4910464cca1d8620dc3a579",
+  "mysqlVersion": "8.0.44",
+  "flywayVersions": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20"
+  ],
+  "forecastSchemaCounts": {
+    "observations": 0,
+    "retentionGrants": 0,
+    "forecastPermissions": 0
+  },
+  "historicalIntakeCounts": {
+    "authorizations": 0,
+    "batches": 0,
+    "decisions": 0
+  },
+  "weeklyShoppingFixturesRestored": true,
+  "disabledPilotRestored": true,
+  "backupSha256": "5f4b67353bf8db7e46910c9b3cbbbe19f06aa10730f0aaeb6f522e18427f802a",
+  "retailerOperations": {
+    "status": 200,
+    "anonymousStatus": 401,
+    "verified": true
+  },
+  "springReadiness": true
+}

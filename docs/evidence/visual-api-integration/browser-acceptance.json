@@ -1,0 +1,7325 @@
+{
+  "version": "157.0.8103.79",
+  "checks": [
+    {
+      "dim": "1440x900",
+      "label": "home catalogue",
+      "result": "PASS",
+      "detail": "Server categories rendered"
+    },
+    {
+      "dim": "1440x900",
+      "label": "registration",
+      "result": "PASS",
+      "detail": "Signed in with the account returned by Spring"
+    },
+    {
+      "dim": "1440x900",
+      "label": "browser JWT refresh and profile",
+      "result": "PASS",
+      "detail": "Profile rendered after reload and real refresh"
+    },
+    {
+      "dim": "1440x900",
+      "label": "search",
+      "result": "PASS",
+      "detail": "Real catalogue item appeared for edited query"
+    },
+    {
+      "dim": "1440x900",
+      "label": "product details",
+      "result": "PASS",
+      "detail": "Canonical detail and pack picker opened"
+    },
+    {
+      "dim": "1440x900",
+      "label": "comparison",
+      "result": "PASS",
+      "detail": "Exact pack and unknown stock/price rendered"
+    },
+    {
+      "dim": "1440x900",
+      "label": "cart add",
+      "result": "PASS",
+      "detail": "Persisted item rendered in cart"
+    },
+    {
+      "dim": "1440x900",
+      "label": "cart update and reload",
+      "result": "PASS",
+      "detail": "Updated quantity returned by backend; line survived reload"
+    },
+    {
+      "dim": "1440x900",
+      "label": "cart remove",
+      "result": "PASS",
+      "detail": "Deleted cart row no longer rendered"
+    },
+    {
+      "dim": "1440x900",
+      "label": "pantry writes and reload",
+      "result": "PASS",
+      "detail": "Single row updated from 100 to 150 g and survived reload"
+    },
+    {
+      "dim": "1440x900",
+      "label": "recipes",
+      "result": "PASS",
+      "detail": "Curated recipe returned by Spring, including exact ingredients"
+    },
+    {
+      "dim": "1440x900",
+      "label": "weekly shopping plan",
+      "result": "PASS",
+      "detail": "360 g rice need, 150 g pantry, 210 g missing; incomplete basket and saved revision after reload"
+    },
+    {
+      "dim": "1440x900",
+      "label": "unified assistant",
+      "result": "PASS",
+      "detail": "Exact rule-based backend reply rendered"
+    },
+    {
+      "dim": "1440x900",
+      "label": "bulk buy",
+      "result": "PASS",
+      "detail": "INSUFFICIENT_INFORMATION"
+    },
+    {
+      "dim": "1440x900",
+      "label": "personalized recommendations",
+      "result": "PASS",
+      "detail": "Authenticated recommendation sections rendered"
+    },
+    {
+      "dim": "1440x900",
+      "label": "price trends",
+      "result": "PASS",
+      "detail": "History/forecast limitation rendered"
+    },
+    {
+      "dim": "1440x900",
+      "label": "empty catalogue result",
+      "result": "PASS",
+      "detail": "HTTP 200 with zero catalogue rows displayed as no matches"
+    },
+    {
+      "dim": "1440x900",
+      "label": "logout and login",
+      "result": "PASS",
+      "detail": "UI logout and real JWT login"
+    },
+    {
+      "dim": "1440x900",
+      "label": "admin dashboard",
+      "result": "PASS",
+      "detail": "Real coverage counts and diagnostics, empty journal and rejected 500 ml compatibility; no decision saved"
+    },
+    {
+      "dim": "1366x768",
+      "label": "home catalogue",
+      "result": "PASS",
+      "detail": "Server categories rendered"
+    },
+    {
+      "dim": "1366x768",
+      "label": "registration",
+      "result": "PASS",
+      "detail": "Signed in with the account returned by Spring"
+    },
+    {
+      "dim": "1366x768",
+      "label": "browser JWT refresh and profile",
+      "result": "PASS",
+      "detail": "Profile rendered after reload and real refresh"
+    },
+    {
+      "dim": "1366x768",
+      "label": "search",
+      "result": "PASS",
+      "detail": "Real catalogue item appeared for edited query"
+    },
+    {
+      "dim": "1366x768",
+      "label": "product details",
+      "result": "PASS",
+      "detail": "Canonical detail and pack picker opened"
+    },
+    {
+      "dim": "1366x768",
+      "label": "comparison",
+      "result": "PASS",
+      "detail": "Exact pack and unknown stock/price rendered"
+    },
+    {
+      "dim": "1366x768",
+      "label": "cart add",
+      "result": "PASS",
+      "detail": "Persisted item rendered in cart"
+    },
+    {
+      "dim": "1366x768",
+      "label": "cart update and reload",
+      "result": "PASS",
+      "detail": "Updated quantity returned by backend; line survived reload"
+    },
+    {
+      "dim": "1366x768",
+      "label": "cart remove",
+      "result": "PASS",
+      "detail": "Deleted cart row no longer rendered"
+    },
+    {
+      "dim": "1366x768",
+      "label": "pantry writes and reload",
+      "result": "PASS",
+      "detail": "Single row updated from 100 to 150 g and survived reload"
+    },
+    {
+      "dim": "1366x768",
+      "label": "recipes",
+      "result": "PASS",
+      "detail": "Curated recipe returned by Spring, including exact ingredients"
+    },
+    {
+      "dim": "1366x768",
+      "label": "weekly shopping plan",
+      "result": "PASS",
+      "detail": "360 g rice need, 150 g pantry, 210 g missing; incomplete basket and saved revision after reload"
+    },
+    {
+      "dim": "1366x768",
+      "label": "unified assistant",
+      "result": "PASS",
+      "detail": "Exact rule-based backend reply rendered"
+    },
+    {
+      "dim": "1366x768",
+      "label": "bulk buy",
+      "result": "PASS",
+      "detail": "INSUFFICIENT_INFORMATION"
+    },
+    {
+      "dim": "1366x768",
+      "label": "personalized recommendations",
+      "result": "PASS",
+      "detail": "Authenticated recommendation sections rendered"
+    },
+    {
+      "dim": "1366x768",
+      "label": "price trends",
+      "result": "PASS",
+      "detail": "History/forecast limitation rendered"
+    },
+    {
+      "dim": "1366x768",
+      "label": "empty catalogue result",
+      "result": "PASS",
+      "detail": "HTTP 200 with zero catalogue rows displayed as no matches"
+    },
+    {
+      "dim": "1366x768",
+      "label": "logout and login",
+      "result": "PASS",
+      "detail": "UI logout and real JWT login"
+    },
+    {
+      "dim": "1366x768",
+      "label": "admin dashboard",
+      "result": "PASS",
+      "detail": "Real coverage counts and diagnostics, empty journal and rejected 500 ml compatibility; no decision saved"
+    },
+    {
+      "dim": "390x844",
+      "label": "home catalogue",
+      "result": "PASS",
+      "detail": "Server categories rendered"
+    },
+    {
+      "dim": "390x844",
+      "label": "registration",
+      "result": "PASS",
+      "detail": "Signed in with the account returned by Spring"
+    },
+    {
+      "dim": "390x844",
+      "label": "browser JWT refresh and profile",
+      "result": "PASS",
+      "detail": "Profile rendered after reload and real refresh"
+    },
+    {
+      "dim": "390x844",
+      "label": "search",
+      "result": "PASS",
+      "detail": "Real catalogue item appeared for edited query"
+    },
+    {
+      "dim": "390x844",
+      "label": "product details",
+      "result": "PASS",
+      "detail": "Canonical detail and pack picker opened"
+    },
+    {
+      "dim": "390x844",
+      "label": "comparison",
+      "result": "PASS",
+      "detail": "Exact pack and unknown stock/price rendered"
+    },
+    {
+      "dim": "390x844",
+      "label": "cart add",
+      "result": "PASS",
+      "detail": "Persisted item rendered in cart"
+    },
+    {
+      "dim": "390x844",
+      "label": "cart update and reload",
+      "result": "PASS",
+      "detail": "Updated quantity returned by backend; line survived reload"
+    },
+    {
+      "dim": "390x844",
+      "label": "cart remove",
+      "result": "PASS",
+      "detail": "Deleted cart row no longer rendered"
+    },
+    {
+      "dim": "390x844",
+      "label": "pantry writes and reload",
+      "result": "PASS",
+      "detail": "Single row updated from 100 to 150 g and survived reload"
+    },
+    {
+      "dim": "390x844",
+      "label": "recipes",
+      "result": "PASS",
+      "detail": "Curated recipe returned by Spring, including exact ingredients"
+    },
+    {
+      "dim": "390x844",
+      "label": "weekly shopping plan",
+      "result": "PASS",
+      "detail": "360 g rice need, 150 g pantry, 210 g missing; incomplete basket and saved revision after reload"
+    },
+    {
+      "dim": "390x844",
+      "label": "unified assistant",
+      "result": "PASS",
+      "detail": "Exact rule-based backend reply rendered"
+    },
+    {
+      "dim": "390x844",
+      "label": "bulk buy",
+      "result": "PASS",
+      "detail": "INSUFFICIENT_INFORMATION"
+    },
+    {
+      "dim": "390x844",
+      "label": "personalized recommendations",
+      "result": "PASS",
+      "detail": "Authenticated recommendation sections rendered"
+    },
+    {
+      "dim": "390x844",
+      "label": "price trends",
+      "result": "PASS",
+      "detail": "History/forecast limitation rendered"
+    },
+    {
+      "dim": "390x844",
+      "label": "empty catalogue result",
+      "result": "PASS",
+      "detail": "HTTP 200 with zero catalogue rows displayed as no matches"
+    },
+    {
+      "dim": "390x844",
+      "label": "logout and login",
+      "result": "PASS",
+      "detail": "UI logout and real JWT login"
+    },
+    {
+      "dim": "390x844",
+      "label": "admin dashboard",
+      "result": "PASS",
+      "detail": "Real coverage counts and diagnostics, empty journal and rejected 500 ml compatibility; no decision saved"
+    }
+  ],
+  "events": [
+    {
+      "dim": "1440x900",
+      "step": "launch",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/locations",
+      "status": 200,
+      "requestId": "c5a8d35a-5092-4f6a-b835-25a570cfe96c",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "id",
+          "name",
+          "city",
+          "postcode"
+        ]
+      },
+      "ms": 50
+    },
+    {
+      "dim": "1440x900",
+      "step": "launch",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/meta",
+      "status": 200,
+      "requestId": "5b7a4296-a3a4-4849-9bb7-53fdc8515e69",
+      "body": {
+        "groceryProvider": "string",
+        "message": "Retailer ordering and payments are outside this shopping-list application. Provider access needs verified credentials and permission.",
+        "version": "string",
+        "orderingEnabled": false,
+        "sample": false
+      },
+      "ms": 50
+    },
+    {
+      "dim": "1440x900",
+      "step": "launch",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/refresh",
+      "status": 401,
+      "requestId": "4b28804f-d6aa-48cc-9754-d39eb778e449",
+      "body": {
+        "code": "string",
+        "message": "Please sign in."
+      },
+      "ms": 55
+    },
+    {
+      "dim": "1440x900",
+      "step": "launch",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/categories",
+      "status": 200,
+      "requestId": "db07eec8-7407-4aa1-9f65-e5448088610e",
+      "body": {
+        "rows": 7,
+        "keys": [
+          "id",
+          "name"
+        ]
+      },
+      "ms": 63
+    },
+    {
+      "dim": "1440x900",
+      "step": "home catalogue",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "21a358e5-6907-4a7f-93e8-199f4575a29d",
+      "body": {
+        "rows": 27,
+        "keys": [
+          "id",
+          "canonicalProductId",
+          "name",
+          "brand",
+          "quantity",
+          "category",
+          "description",
+          "color",
+          "art",
+          "imageUrl",
+          "amountBase",
+          "baseUnit",
+          "offers"
+        ]
+      },
+      "ms": 29
+    },
+    {
+      "dim": "1440x900",
+      "step": "registration",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/register",
+      "status": 201,
+      "requestId": "c5853fcb-27a3-465e-9e49-9839de8b104a",
+      "body": {
+        "user": {
+          "keys": [
+            "id",
+            "name",
+            "email",
+            "role",
+            "sample"
+          ]
+        }
+      },
+      "ms": 938
+    },
+    {
+      "dim": "1440x900",
+      "step": "browser JWT refresh and profile",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/wishlist",
+      "status": 200,
+      "requestId": "04d6476e-8e09-4485-9998-38a7e0aae557",
+      "body": null,
+      "ms": 96
+    },
+    {
+      "dim": "1440x900",
+      "step": "browser JWT refresh and profile",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/cart",
+      "status": 200,
+      "requestId": "a06f7af8-7099-48f1-835c-20f6539b222d",
+      "body": null,
+      "ms": 97
+    },
+    {
+      "dim": "1440x900",
+      "step": "browser JWT refresh and profile",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/meta",
+      "status": 200,
+      "requestId": "5ee9d9ca-9426-4ad6-ac2d-e0715153fa66",
+      "body": {
+        "groceryProvider": "string",
+        "message": "Retailer ordering and payments are outside this shopping-list application. Provider access needs verified credentials and permission.",
+        "version": "string",
+        "orderingEnabled": false,
+        "sample": false
+      },
+      "ms": 23
+    },
+    {
+      "dim": "1440x900",
+      "step": "browser JWT refresh and profile",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/categories",
+      "status": 200,
+      "requestId": "c39c0550-2178-4644-bec7-c43c29c88e7e",
+      "body": {
+        "rows": 7,
+        "keys": [
+          "id",
+          "name"
+        ]
+      },
+      "ms": 20
+    },
+    {
+      "dim": "1440x900",
+      "step": "browser JWT refresh and profile",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/locations",
+      "status": 200,
+      "requestId": "0bc0fd14-0176-42f8-b882-1b6315c40d14",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "id",
+          "name",
+          "city",
+          "postcode"
+        ]
+      },
+      "ms": 27
+    },
+    {
+      "dim": "1440x900",
+      "step": "browser JWT refresh and profile",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/refresh",
+      "status": 200,
+      "requestId": "ea02f257-3b14-4879-9f3d-3e57653947ac",
+      "body": {
+        "user": {
+          "keys": [
+            "id",
+            "name",
+            "email",
+            "role",
+            "sample"
+          ]
+        }
+      },
+      "ms": 37
+    },
+    {
+      "dim": "1440x900",
+      "step": "browser JWT refresh and profile",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me",
+      "status": 200,
+      "requestId": "4cc3a783-0a52-4d02-8db2-cabf14679503",
+      "body": {
+        "id": "string",
+        "name": "Browser Test Shopper 1440",
+        "email": "string",
+        "role": "customer",
+        "sample": false
+      },
+      "ms": 37
+    },
+    {
+      "dim": "1440x900",
+      "step": "browser JWT refresh and profile",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "0476fbd8-7d06-4075-8c47-a48af2cbf764",
+      "body": {
+        "rows": 27,
+        "keys": [
+          "id",
+          "canonicalProductId",
+          "name",
+          "brand",
+          "quantity",
+          "category",
+          "description",
+          "color",
+          "art",
+          "imageUrl",
+          "amountBase",
+          "baseUnit",
+          "offers"
+        ]
+      },
+      "ms": 23
+    },
+    {
+      "dim": "1440x900",
+      "step": "browser JWT refresh and profile",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/cart",
+      "status": 200,
+      "requestId": "4d97fb66-9225-4cbe-806a-168a167898b3",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 21
+    },
+    {
+      "dim": "1440x900",
+      "step": "browser JWT refresh and profile",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/wishlist",
+      "status": 200,
+      "requestId": "ca7642ac-adfd-4a5f-b8d5-4efeafedce25",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 22
+    },
+    {
+      "dim": "1440x900",
+      "step": "browser JWT refresh and profile",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me",
+      "status": 200,
+      "requestId": "87b7b89b-ce63-42b9-be1e-f0d5e772c728",
+      "body": {
+        "id": "string",
+        "name": "Browser Test Shopper 1440",
+        "email": "string",
+        "role": "customer",
+        "sample": false
+      },
+      "ms": 31
+    },
+    {
+      "dim": "1440x900",
+      "step": "search",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/page?locationId=blr-indiranagar&q=Amul%20Taaza&category=&page=0&brand=&pack=",
+      "status": 200,
+      "requestId": "df196dfc-d26e-4b6a-a601-b5359dcf531a",
+      "body": {
+        "items": {
+          "rows": 1,
+          "keys": [
+            "id",
+            "canonicalProductId",
+            "name",
+            "brand",
+            "quantity",
+            "category",
+            "description",
+            "color",
+            "art",
+            "imageUrl",
+            "amountBase",
+            "baseUnit",
+            "offers"
+          ]
+        },
+        "page": 0,
+        "pageSize": 24,
+        "totalElements": 1,
+        "totalPages": 1,
+        "hasNext": false,
+        "hasPrevious": false
+      },
+      "ms": 42
+    },
+    {
+      "dim": "1440x900",
+      "step": "search",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/milk/variants?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "7f59faa4-400c-414d-b32f-78255e4e6b00",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "id",
+          "canonicalProductId",
+          "name",
+          "brand",
+          "quantity",
+          "category",
+          "description",
+          "color",
+          "art",
+          "imageUrl",
+          "amountBase",
+          "baseUnit",
+          "offers"
+        ]
+      },
+      "ms": 28
+    },
+    {
+      "dim": "1440x900",
+      "step": "product details",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/milk?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "cd208f50-6c75-4b26-a1f8-c46a764f33e4",
+      "body": {
+        "id": "string",
+        "canonicalProductId": "string",
+        "name": "Amul Taaza",
+        "brand": "string",
+        "quantity": "1 litre",
+        "category": "string",
+        "description": "string",
+        "color": "string",
+        "art": "string",
+        "imageUrl": "string",
+        "amountBase": 1000,
+        "baseUnit": "string",
+        "offers": {
+          "rows": 0,
+          "keys": []
+        }
+      },
+      "ms": 27
+    },
+    {
+      "dim": "1440x900",
+      "step": "product details",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/milk/variants?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "727b1b73-6053-4913-8d83-d5081eb110ce",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "id",
+          "canonicalProductId",
+          "name",
+          "brand",
+          "quantity",
+          "category",
+          "description",
+          "color",
+          "art",
+          "imageUrl",
+          "amountBase",
+          "baseUnit",
+          "offers"
+        ]
+      },
+      "ms": 45
+    },
+    {
+      "dim": "1440x900",
+      "step": "product details",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/milk/metadata?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "3a9fd58e-05dd-4439-bc51-8b4493af955c",
+      "body": {
+        "gtins": {
+          "rows": 0,
+          "keys": []
+        },
+        "sources": {
+          "rows": 0,
+          "keys": []
+        }
+      },
+      "ms": 50
+    },
+    {
+      "dim": "1440x900",
+      "step": "product details",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/shopping/retailers/offers/milk?locationId=blr-indiranagar",
+      "status": 403,
+      "requestId": "19517b68-db48-4251-a071-b680ae231e6c",
+      "body": {
+        "code": "string",
+        "message": "You do not have access to this resource."
+      },
+      "ms": 76
+    },
+    {
+      "dim": "1440x900",
+      "step": "comparison",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/milk/comparison?locationId=blr-indiranagar&latitude=12.9784&longitude=77.6408&radiusKm=5&quantity=1&fulfillment=delivery",
+      "status": 200,
+      "requestId": "ad9abd25-b34e-42e3-bbce-7867fe682cd8",
+      "body": {
+        "product": {
+          "keys": [
+            "id",
+            "canonicalProductId",
+            "name",
+            "brand",
+            "quantity",
+            "category",
+            "description",
+            "color",
+            "art",
+            "imageUrl",
+            "amountBase",
+            "baseUnit",
+            "offers"
+          ]
+        },
+        "quantity": 1,
+        "fulfillment": "string",
+        "options": {
+          "rows": 3,
+          "keys": [
+            "source",
+            "name",
+            "variantId",
+            "priceMinor",
+            "unitPriceMinor",
+            "unitLabel",
+            "availability",
+            "stockQuantity",
+            "distanceKm",
+            "deliveryMinor",
+            "handlingMinor",
+            "minimumMinor",
+            "totalMinor",
+            "dataSource",
+            "observedAt",
+            "verificationStatus",
+            "eligible",
+            "reason",
+            "sourceId"
+          ]
+        },
+        "lowestEligible": null,
+        "savingsMinor": null,
+        "explanation": "string"
+      },
+      "ms": 30
+    },
+    {
+      "dim": "1440x900",
+      "step": "cart add",
+      "method": "PUT",
+      "url": "http://127.0.0.1:18080/api/me/cart",
+      "status": 200,
+      "requestId": "dfbffb07-83ea-43b4-9000-c567611199c1",
+      "body": {
+        "id": "string",
+        "productId": "string",
+        "locationId": "string",
+        "quantity": 1,
+        "preferences": {
+          "keys": [
+            "intent",
+            "maxPriceMinor",
+            "targetPriceMinor",
+            "maxUnitPriceMinor",
+            "bulkBudgetMinor",
+            "maxUsefulPacks",
+            "consumptionDays",
+            "monitorPrice"
+          ]
+        }
+      },
+      "ms": 48
+    },
+    {
+      "dim": "1440x900",
+      "step": "cart update and reload",
+      "method": "PUT",
+      "url": "http://127.0.0.1:18080/api/me/cart",
+      "status": 200,
+      "requestId": "1dcaae45-a722-4253-890b-947bb0706153",
+      "body": {
+        "id": "string",
+        "productId": "string",
+        "locationId": "string",
+        "quantity": 2,
+        "preferences": {
+          "keys": [
+            "intent",
+            "maxPriceMinor",
+            "targetPriceMinor",
+            "maxUnitPriceMinor",
+            "bulkBudgetMinor",
+            "maxUsefulPacks",
+            "consumptionDays",
+            "monitorPrice"
+          ]
+        }
+      },
+      "ms": 67
+    },
+    {
+      "dim": "1440x900",
+      "step": "cart update and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/meta",
+      "status": 200,
+      "requestId": "3b9392e2-6eab-497b-968f-cd4f9119973c",
+      "body": {
+        "groceryProvider": "string",
+        "message": "Retailer ordering and payments are outside this shopping-list application. Provider access needs verified credentials and permission.",
+        "version": "string",
+        "orderingEnabled": false,
+        "sample": false
+      },
+      "ms": 24
+    },
+    {
+      "dim": "1440x900",
+      "step": "cart update and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/categories",
+      "status": 200,
+      "requestId": "5288aa10-5f0d-4ace-9232-a8dcf5c11945",
+      "body": {
+        "rows": 7,
+        "keys": [
+          "id",
+          "name"
+        ]
+      },
+      "ms": 21
+    },
+    {
+      "dim": "1440x900",
+      "step": "cart update and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/locations",
+      "status": 200,
+      "requestId": "858c1d1d-6331-4686-9c06-be6dede89bde",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "id",
+          "name",
+          "city",
+          "postcode"
+        ]
+      },
+      "ms": 28
+    },
+    {
+      "dim": "1440x900",
+      "step": "cart update and reload",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/refresh",
+      "status": 200,
+      "requestId": "194ccf4f-e759-4994-a52a-650f69024235",
+      "body": {
+        "user": {
+          "keys": [
+            "id",
+            "name",
+            "email",
+            "role",
+            "sample"
+          ]
+        }
+      },
+      "ms": 28
+    },
+    {
+      "dim": "1440x900",
+      "step": "cart update and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me",
+      "status": 200,
+      "requestId": "af9b38fd-9e12-4dfb-b24f-614a16763a07",
+      "body": {
+        "id": "string",
+        "name": "Browser Test Shopper 1440",
+        "email": "string",
+        "role": "customer",
+        "sample": false
+      },
+      "ms": 22
+    },
+    {
+      "dim": "1440x900",
+      "step": "cart update and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "a4fd71c4-57e2-4cc4-9c53-4b64245a7f73",
+      "body": {
+        "rows": 27,
+        "keys": [
+          "id",
+          "canonicalProductId",
+          "name",
+          "brand",
+          "quantity",
+          "category",
+          "description",
+          "color",
+          "art",
+          "imageUrl",
+          "amountBase",
+          "baseUnit",
+          "offers"
+        ]
+      },
+      "ms": 23
+    },
+    {
+      "dim": "1440x900",
+      "step": "cart update and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/cart",
+      "status": 200,
+      "requestId": "4ae22461-4426-4e3b-a9bd-3b1dea6f076c",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "id",
+          "productId",
+          "locationId",
+          "quantity",
+          "preferences"
+        ]
+      },
+      "ms": 16
+    },
+    {
+      "dim": "1440x900",
+      "step": "cart update and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/wishlist",
+      "status": 200,
+      "requestId": "f9f40690-01a1-4f9c-a0bf-2594743196a5",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 20
+    },
+    {
+      "dim": "1440x900",
+      "step": "cart remove",
+      "method": "DELETE",
+      "url": "http://127.0.0.1:18080/api/me/cart/e0192230-e090-4377-9bdf-708444dc7c6c",
+      "status": 204,
+      "requestId": "d156a97a-d5dd-4e59-9ed9-40616edb6a63",
+      "body": null,
+      "ms": 28
+    },
+    {
+      "dim": "1440x900",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/overview?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "90a7408a-f0e1-4408-8dc5-c85c9d1b6be3",
+      "body": {
+        "budget": {
+          "keys": [
+            "month",
+            "limitMinor",
+            "spentMinor",
+            "remainingMinor",
+            "categories"
+          ]
+        },
+        "recentPurchases": {
+          "rows": 0,
+          "keys": []
+        },
+        "recommendations": {
+          "rows": 0,
+          "keys": []
+        },
+        "trend": {
+          "rows": 6,
+          "keys": [
+            "month",
+            "amountMinor"
+          ]
+        },
+        "watchCount": 0,
+        "unreadNotifications": 0,
+        "dueCount": 0
+      },
+      "ms": 50
+    },
+    {
+      "dim": "1440x900",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/pantry",
+      "status": 200,
+      "requestId": "b2049cc8-37a4-41d7-9d2d-4ab3dcacc08f",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 21
+    },
+    {
+      "dim": "1440x900",
+      "step": "pantry writes and reload",
+      "method": "PUT",
+      "url": "http://127.0.0.1:18080/api/me/pantry",
+      "status": 204,
+      "requestId": "412d5da2-2139-46cd-8cae-aca0b9a31370",
+      "body": null,
+      "ms": 26
+    },
+    {
+      "dim": "1440x900",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/pantry",
+      "status": 200,
+      "requestId": "5256dd9f-c4b1-4ea9-88c5-cfe40bfa8311",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "productId",
+          "name",
+          "amountBase",
+          "baseUnit"
+        ]
+      },
+      "ms": 17
+    },
+    {
+      "dim": "1440x900",
+      "step": "pantry writes and reload",
+      "method": "PUT",
+      "url": "http://127.0.0.1:18080/api/me/pantry",
+      "status": 204,
+      "requestId": "ce9428d7-ec45-4244-bf67-41c29aa29a25",
+      "body": null,
+      "ms": 23
+    },
+    {
+      "dim": "1440x900",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/pantry",
+      "status": 200,
+      "requestId": "00065795-4f0c-413a-8a8a-5edadf81793f",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "productId",
+          "name",
+          "amountBase",
+          "baseUnit"
+        ]
+      },
+      "ms": 18
+    },
+    {
+      "dim": "1440x900",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/categories",
+      "status": 200,
+      "requestId": "0f75db3c-2fdc-44b2-a63b-3df5f823bb07",
+      "body": {
+        "rows": 7,
+        "keys": [
+          "id",
+          "name"
+        ]
+      },
+      "ms": 29
+    },
+    {
+      "dim": "1440x900",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/meta",
+      "status": 200,
+      "requestId": "54dc6340-620c-4841-8b0a-2baccde2a11c",
+      "body": {
+        "groceryProvider": "string",
+        "message": "Retailer ordering and payments are outside this shopping-list application. Provider access needs verified credentials and permission.",
+        "version": "string",
+        "orderingEnabled": false,
+        "sample": false
+      },
+      "ms": 31
+    },
+    {
+      "dim": "1440x900",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/locations",
+      "status": 200,
+      "requestId": "910f4b68-b9a6-4827-8ff9-a510e91432b3",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "id",
+          "name",
+          "city",
+          "postcode"
+        ]
+      },
+      "ms": 33
+    },
+    {
+      "dim": "1440x900",
+      "step": "pantry writes and reload",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/refresh",
+      "status": 200,
+      "requestId": "534f068b-ae5c-4765-8b8a-538e8d48386b",
+      "body": {
+        "user": {
+          "keys": [
+            "id",
+            "name",
+            "email",
+            "role",
+            "sample"
+          ]
+        }
+      },
+      "ms": 39
+    },
+    {
+      "dim": "1440x900",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me",
+      "status": 200,
+      "requestId": "aebdc64d-d112-4593-88b6-6f6266510b2d",
+      "body": {
+        "id": "string",
+        "name": "Browser Test Shopper 1440",
+        "email": "string",
+        "role": "customer",
+        "sample": false
+      },
+      "ms": 21
+    },
+    {
+      "dim": "1440x900",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "17a2a2e1-cada-4f8c-8a52-ef12d198dfea",
+      "body": {
+        "rows": 27,
+        "keys": [
+          "id",
+          "canonicalProductId",
+          "name",
+          "brand",
+          "quantity",
+          "category",
+          "description",
+          "color",
+          "art",
+          "imageUrl",
+          "amountBase",
+          "baseUnit",
+          "offers"
+        ]
+      },
+      "ms": 24
+    },
+    {
+      "dim": "1440x900",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/cart",
+      "status": 200,
+      "requestId": "db4df4e2-4d0c-4a3d-9074-01c3d3a51d7f",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 26
+    },
+    {
+      "dim": "1440x900",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/wishlist",
+      "status": 200,
+      "requestId": "32d98c80-ed34-4bca-82b8-a52dd6f2ceb5",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 31
+    },
+    {
+      "dim": "1440x900",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/overview?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "d5fa4be1-530f-491a-b2b7-24ba933e2821",
+      "body": {
+        "budget": {
+          "keys": [
+            "month",
+            "limitMinor",
+            "spentMinor",
+            "remainingMinor",
+            "categories"
+          ]
+        },
+        "recentPurchases": {
+          "rows": 0,
+          "keys": []
+        },
+        "recommendations": {
+          "rows": 0,
+          "keys": []
+        },
+        "trend": {
+          "rows": 6,
+          "keys": [
+            "month",
+            "amountMinor"
+          ]
+        },
+        "watchCount": 0,
+        "unreadNotifications": 0,
+        "dueCount": 0
+      },
+      "ms": 83
+    },
+    {
+      "dim": "1440x900",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/pantry",
+      "status": 200,
+      "requestId": "a89bb263-47f9-4212-a08f-dbba9a1e34f6",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "productId",
+          "name",
+          "amountBase",
+          "baseUnit"
+        ]
+      },
+      "ms": 22
+    },
+    {
+      "dim": "1440x900",
+      "step": "recipes",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/recipe-intelligence?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "0fce76b5-7f8d-416b-9a64-9389dfb63490",
+      "body": {
+        "rows": 4,
+        "keys": [
+          "id",
+          "kind",
+          "source",
+          "recipe"
+        ]
+      },
+      "ms": 83
+    },
+    {
+      "dim": "1440x900",
+      "step": "recipes",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/me/recipe-intelligence/plan",
+      "status": 200,
+      "requestId": "cd5af017-b072-4b24-a838-7583d912e1b2",
+      "body": {
+        "meals": {
+          "rows": 1,
+          "keys": [
+            "recipeId",
+            "day",
+            "servings"
+          ]
+        },
+        "ingredients": {
+          "rows": 5,
+          "keys": [
+            "key",
+            "name",
+            "unit",
+            "required",
+            "pantry",
+            "missing",
+            "substitutions",
+            "choices",
+            "cataloguePacks"
+          ]
+        },
+        "baskets": {
+          "rows": 3,
+          "keys": [
+            "retailer",
+            "complete",
+            "missingIngredients",
+            "pricedSubtotalMinor",
+            "estimatedSubtotalMinor"
+          ]
+        },
+        "budgetMinor": null,
+        "budgetStatus": "string",
+        "sample": false
+      },
+      "ms": 72
+    },
+    {
+      "dim": "1440x900",
+      "step": "recipes",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/me/recipe-intelligence/generate",
+      "status": 503,
+      "requestId": "27a8c8a4-d3c7-4291-9ffc-1c962cc9e565",
+      "body": {
+        "code": "string",
+        "message": "Recipe generation is not configured."
+      },
+      "ms": 88
+    },
+    {
+      "dim": "1440x900",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/weekly?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "3e0d4f1d-ece1-4208-8f24-3b36b2b75f35",
+      "body": {
+        "draft": {
+          "keys": [
+            "meals",
+            "items",
+            "budgetMinor",
+            "diet",
+            "onHand"
+          ]
+        },
+        "revision": 0,
+        "recipes": {
+          "rows": 4,
+          "keys": [
+            "id",
+            "kind",
+            "source",
+            "recipe"
+          ]
+        },
+        "cart": {
+          "rows": 0,
+          "keys": []
+        },
+        "householdSize": null,
+        "sample": false
+      },
+      "ms": 35
+    },
+    {
+      "dim": "1440x900",
+      "step": "weekly shopping plan",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/weekly/preview?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "d26cbf9e-6a61-4195-949b-1a63be1af34f",
+      "body": {
+        "plan": {
+          "keys": [
+            "ingredients",
+            "comparison",
+            "budgetMinor",
+            "budgetStatus",
+            "method",
+            "checkedAt",
+            "notes",
+            "sample"
+          ]
+        },
+        "planFeedbackId": "string",
+        "basketFeedbackId": "string"
+      },
+      "ms": 113
+    },
+    {
+      "dim": "1440x900",
+      "step": "weekly shopping plan",
+      "method": "PUT",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/weekly?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "77230ee6-168e-4df2-ac45-59e351fdb2d8",
+      "body": {
+        "revision": 1
+      },
+      "ms": 44
+    },
+    {
+      "dim": "1440x900",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/locations",
+      "status": 200,
+      "requestId": "20a40821-ac42-45df-800f-73dccd54c7fb",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "id",
+          "name",
+          "city",
+          "postcode"
+        ]
+      },
+      "ms": 23
+    },
+    {
+      "dim": "1440x900",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/meta",
+      "status": 200,
+      "requestId": "552f7070-39b7-41e8-bbe2-f5ef72096217",
+      "body": {
+        "groceryProvider": "string",
+        "message": "Retailer ordering and payments are outside this shopping-list application. Provider access needs verified credentials and permission.",
+        "version": "string",
+        "orderingEnabled": false,
+        "sample": false
+      },
+      "ms": 23
+    },
+    {
+      "dim": "1440x900",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/categories",
+      "status": 200,
+      "requestId": "03a72543-7650-43f2-a384-bc9f6a768717",
+      "body": {
+        "rows": 7,
+        "keys": [
+          "id",
+          "name"
+        ]
+      },
+      "ms": 24
+    },
+    {
+      "dim": "1440x900",
+      "step": "weekly shopping plan",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/refresh",
+      "status": 200,
+      "requestId": "0817c834-3dd4-4576-9244-9d2f8c5a5a4b",
+      "body": {
+        "user": {
+          "keys": [
+            "id",
+            "name",
+            "email",
+            "role",
+            "sample"
+          ]
+        }
+      },
+      "ms": 28
+    },
+    {
+      "dim": "1440x900",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me",
+      "status": 200,
+      "requestId": "80c5e9ba-e390-4ee2-8d6c-fa156ea3c6d6",
+      "body": {
+        "id": "string",
+        "name": "Browser Test Shopper 1440",
+        "email": "string",
+        "role": "customer",
+        "sample": false
+      },
+      "ms": 16
+    },
+    {
+      "dim": "1440x900",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "9e090af9-aa90-4434-aea6-aa1fac4c3dca",
+      "body": {
+        "rows": 27,
+        "keys": [
+          "id",
+          "canonicalProductId",
+          "name",
+          "brand",
+          "quantity",
+          "category",
+          "description",
+          "color",
+          "art",
+          "imageUrl",
+          "amountBase",
+          "baseUnit",
+          "offers"
+        ]
+      },
+      "ms": 23
+    },
+    {
+      "dim": "1440x900",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/cart",
+      "status": 200,
+      "requestId": "f1989071-2a61-4523-910f-24fa47bef995",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 20
+    },
+    {
+      "dim": "1440x900",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/wishlist",
+      "status": 200,
+      "requestId": "5f98c31f-d97a-431d-bca7-4470836d1eb0",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 20
+    },
+    {
+      "dim": "1440x900",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/overview?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "290231f2-27be-4683-a536-c277b8e2d418",
+      "body": {
+        "budget": {
+          "keys": [
+            "month",
+            "limitMinor",
+            "spentMinor",
+            "remainingMinor",
+            "categories"
+          ]
+        },
+        "recentPurchases": {
+          "rows": 0,
+          "keys": []
+        },
+        "recommendations": {
+          "rows": 0,
+          "keys": []
+        },
+        "trend": {
+          "rows": 6,
+          "keys": [
+            "month",
+            "amountMinor"
+          ]
+        },
+        "watchCount": 0,
+        "unreadNotifications": 0,
+        "dueCount": 0
+      },
+      "ms": 28
+    },
+    {
+      "dim": "1440x900",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/weekly?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "68645ad9-1b10-465d-bddf-e03d707354d6",
+      "body": {
+        "draft": {
+          "keys": [
+            "meals",
+            "items",
+            "budgetMinor",
+            "diet",
+            "onHand"
+          ]
+        },
+        "revision": 1,
+        "recipes": {
+          "rows": 4,
+          "keys": [
+            "id",
+            "kind",
+            "source",
+            "recipe"
+          ]
+        },
+        "cart": {
+          "rows": 0,
+          "keys": []
+        },
+        "householdSize": null,
+        "sample": false
+      },
+      "ms": 28
+    },
+    {
+      "dim": "1440x900",
+      "step": "unified assistant",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/weekly/assistant?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "6aadca00-0378-4b11-9ebb-436890d5594d",
+      "body": {
+        "intent": "string",
+        "method": "RULE_BASED",
+        "text": "string",
+        "products": {
+          "rows": 0,
+          "keys": []
+        },
+        "pantry": {
+          "rows": 0,
+          "keys": []
+        },
+        "plan": null,
+        "bulk": null,
+        "suggestions": {
+          "keys": [
+            "products",
+            "recipes",
+            "pantryGaps",
+            "budgetMinor",
+            "sample"
+          ]
+        },
+        "timing": null,
+        "sample": false,
+        "feedbackId": "string"
+      },
+      "ms": 427
+    },
+    {
+      "dim": "1440x900",
+      "step": "bulk buy",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/preferences",
+      "status": 200,
+      "requestId": "aae42dea-4bdb-4592-8957-0fd198e87f68",
+      "body": {
+        "household": null
+      },
+      "ms": 32
+    },
+    {
+      "dim": "1440x900",
+      "step": "bulk buy",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/shopping/retailers/offers/milk?locationId=blr-indiranagar",
+      "status": 403,
+      "requestId": "b54cc9a9-c88f-4e6d-9166-806a08ff7e06",
+      "body": {
+        "code": "string",
+        "message": "You do not have access to this resource."
+      },
+      "ms": 35
+    },
+    {
+      "dim": "1440x900",
+      "step": "bulk buy",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/bulk/milk/limits?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "7e1e00b6-a9b1-4dd5-9640-af796e42d8ba",
+      "body": {
+        "limits": null
+      },
+      "ms": 42
+    },
+    {
+      "dim": "1440x900",
+      "step": "bulk buy",
+      "method": "PUT",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/bulk/milk/limits?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "14327329-2626-4ff7-a703-259efcf7ba09",
+      "body": {
+        "limits": {
+          "keys": [
+            "perPersonDaily",
+            "storageCapacity",
+            "planningDays",
+            "budgetMinor"
+          ]
+        }
+      },
+      "ms": 46
+    },
+    {
+      "dim": "1440x900",
+      "step": "bulk buy",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/bulk/milk?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "f2cb507c-f8d0-42e8-a064-ff6a2bc302ef",
+      "body": {
+        "action": "INSUFFICIENT_INFORMATION",
+        "reason": "string",
+        "productId": "string",
+        "name": "Amul Taaza",
+        "unit": "string",
+        "pantry": 0,
+        "required": null,
+        "maxPurchase": null,
+        "budgetMinor": null,
+        "daysBeforeExpiry": null,
+        "normal": null,
+        "recommended": null,
+        "sample": false
+      },
+      "ms": 88
+    },
+    {
+      "dim": "1440x900",
+      "step": "personalized recommendations",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/preferences",
+      "status": 200,
+      "requestId": "6a66f110-cd32-41e6-9716-5fcd8c948a44",
+      "body": {
+        "household": null
+      },
+      "ms": 33
+    },
+    {
+      "dim": "1440x900",
+      "step": "personalized recommendations",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/recommendations?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "4ee5dfca-44f4-4208-89e8-f6e58536d692",
+      "body": {
+        "products": {
+          "rows": 0,
+          "keys": []
+        },
+        "recipes": {
+          "rows": 4,
+          "keys": [
+            "id",
+            "name",
+            "cuisine",
+            "missingIngredients",
+            "estimatedSubtotalMinor"
+          ]
+        },
+        "pantryGaps": {
+          "rows": 0,
+          "keys": []
+        },
+        "budgetMinor": null,
+        "sample": false
+      },
+      "ms": 440
+    },
+    {
+      "dim": "1440x900",
+      "step": "price trends",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/grocery/variants/milk/price-history?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "3faf486d-8672-44fe-97ab-551b55d83a44",
+      "body": {
+        "variantId": "string",
+        "locationId": "string",
+        "from": "string",
+        "until": "string",
+        "stats": {
+          "keys": [
+            "observations",
+            "priced",
+            "minimumMinor",
+            "maximumMinor",
+            "averageMinor"
+          ]
+        },
+        "retailers": {
+          "rows": 0,
+          "keys": []
+        }
+      },
+      "ms": 33
+    },
+    {
+      "dim": "1440x900",
+      "step": "price trends",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/price-intelligence/milk?locationId=blr-indiranagar&retailer=blinkit",
+      "status": 200,
+      "requestId": "2036e67a-b04f-4c5b-a50d-3aa45bfb99dd",
+      "body": {
+        "status": "INSUFFICIENT_DATA",
+        "productId": "string",
+        "variantId": "string",
+        "pack": "string",
+        "retailer": "string",
+        "locationId": "string",
+        "latestObservation": null,
+        "observedChangeMinor": null,
+        "freshness": "string",
+        "horizonDays": 1,
+        "forecastDate": null,
+        "predictedMinor": null,
+        "lowMinor": null,
+        "highMinor": null,
+        "empiricalCoverage": null,
+        "modelVersion": null,
+        "trainedAt": null,
+        "warning": "string",
+        "advice": {
+          "keys": [
+            "action",
+            "reason"
+          ]
+        }
+      },
+      "ms": 54
+    },
+    {
+      "dim": "1440x900",
+      "step": "empty catalogue result",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/page?locationId=blr-indiranagar&q=zzzz%20no%20grocery%20matches&category=&page=0&brand=&pack=",
+      "status": 200,
+      "requestId": "b3a7d750-aa9e-4388-a52e-d4fd4305e66d",
+      "body": {
+        "items": {
+          "rows": 0,
+          "keys": []
+        },
+        "page": 0,
+        "pageSize": 24,
+        "totalElements": 0,
+        "totalPages": 0,
+        "hasNext": false,
+        "hasPrevious": false
+      },
+      "ms": 18
+    },
+    {
+      "dim": "1440x900",
+      "step": "logout and login",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/logout",
+      "status": 204,
+      "requestId": "f7ffeca8-89a9-4785-8cb2-eeac4c62da45",
+      "body": null,
+      "ms": 32
+    },
+    {
+      "dim": "1440x900",
+      "step": "logout and login",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/login",
+      "status": 200,
+      "requestId": "d9ea9173-0aba-47d7-9a9b-4aaf740cd3bb",
+      "body": {
+        "user": {
+          "keys": [
+            "id",
+            "name",
+            "email",
+            "role",
+            "sample"
+          ]
+        }
+      },
+      "ms": 637
+    },
+    {
+      "dim": "1440x900",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/cart",
+      "status": 200,
+      "requestId": "81ec6809-287b-4604-9f0d-2696b27ea381",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 39
+    },
+    {
+      "dim": "1440x900",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/wishlist",
+      "status": 200,
+      "requestId": "68d54d49-7dc2-4e4b-b95b-a6ec0bc11990",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 39
+    },
+    {
+      "dim": "1440x900",
+      "step": "admin dashboard",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/logout",
+      "status": 204,
+      "requestId": "c9c018be-7818-4600-a6ac-ad784d33ecd9",
+      "body": null,
+      "ms": 21
+    },
+    {
+      "dim": "1440x900",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/page?locationId=blr-indiranagar&q=zzzz%20no%20grocery%20matches&category=&page=0&brand=&pack=",
+      "status": 200,
+      "requestId": "d5142a2e-e12e-4da9-af7e-e435dbb934fd",
+      "body": {
+        "items": {
+          "rows": 0,
+          "keys": []
+        },
+        "page": 0,
+        "pageSize": 24,
+        "totalElements": 0,
+        "totalPages": 0,
+        "hasNext": false,
+        "hasPrevious": false
+      },
+      "ms": 14
+    },
+    {
+      "dim": "1440x900",
+      "step": "admin dashboard",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/login",
+      "status": 200,
+      "requestId": "18dd36c2-ae48-461f-99a6-ed08a5b13e87",
+      "body": {
+        "user": {
+          "keys": [
+            "id",
+            "name",
+            "email",
+            "role",
+            "sample"
+          ]
+        }
+      },
+      "ms": 643
+    },
+    {
+      "dim": "1440x900",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/wishlist",
+      "status": 200,
+      "requestId": "6e7b31c2-b5ca-4b18-8c9a-2b1c1263bcde",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 29
+    },
+    {
+      "dim": "1440x900",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/cart",
+      "status": 200,
+      "requestId": "33f05bee-1eb4-4c0d-8f4d-2c714ccb2b35",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 30
+    },
+    {
+      "dim": "1440x900",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me",
+      "status": 200,
+      "requestId": "22a8caeb-f3e2-4d94-a266-7c4851e551fc",
+      "body": {
+        "id": "string",
+        "name": "Administrator",
+        "email": "string",
+        "role": "admin",
+        "sample": false
+      },
+      "ms": 20
+    },
+    {
+      "dim": "1440x900",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/admin/overview",
+      "status": 200,
+      "requestId": "615148ef-27ec-4e77-a894-edc6295238bd",
+      "body": {
+        "users": 21,
+        "platforms": {
+          "rows": 3,
+          "keys": [
+            "id",
+            "enabled",
+            "status",
+            "syncedAt"
+          ]
+        },
+        "products": 27,
+        "categories": 7
+      },
+      "ms": 41
+    },
+    {
+      "dim": "1440x900",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/admin/users",
+      "status": 200,
+      "requestId": "11ef4f2e-abec-4297-8705-d432b2c23d11",
+      "body": {
+        "rows": 21,
+        "keys": [
+          "id",
+          "name",
+          "email",
+          "role",
+          "sample"
+        ]
+      },
+      "ms": 42
+    },
+    {
+      "dim": "1440x900",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/page?locationId=blr-indiranagar&q=&category=&page=0&brand=&pack=",
+      "status": 200,
+      "requestId": "5d038a76-acf7-485e-a241-7c3297d7d13e",
+      "body": {
+        "items": {
+          "rows": 24,
+          "keys": [
+            "id",
+            "canonicalProductId",
+            "name",
+            "brand",
+            "quantity",
+            "category",
+            "description",
+            "color",
+            "art",
+            "imageUrl",
+            "amountBase",
+            "baseUnit",
+            "offers"
+          ]
+        },
+        "page": 0,
+        "pageSize": 24,
+        "totalElements": 27,
+        "totalPages": 2,
+        "hasNext": true,
+        "hasPrevious": false
+      },
+      "ms": 47
+    },
+    {
+      "dim": "1440x900",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/admin/retailer-operations/filters",
+      "status": 200,
+      "requestId": "1e3186e2-3c62-4a99-844d-d6ffc0011cf9",
+      "body": {
+        "locations": {
+          "rows": 1,
+          "keys": [
+            "id",
+            "name"
+          ]
+        },
+        "categories": {
+          "rows": 7,
+          "keys": [
+            "id",
+            "name"
+          ]
+        }
+      },
+      "ms": 16
+    },
+    {
+      "dim": "1440x900",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/admin/retailer-operations/coverage?locationId=blr-indiranagar&page=0",
+      "status": 200,
+      "requestId": "905c9a94-3080-423f-acdb-53d01bff8264",
+      "body": {
+        "locationId": "string",
+        "freshnessSeconds": 900,
+        "calculatedAt": "string",
+        "counts": {
+          "keys": [
+            "totalProducts",
+            "approvedProducts",
+            "productsWithoutMapping",
+            "unresolvedProducts",
+            "staleProducts",
+            "missingPriceProducts",
+            "uncertainStockProducts",
+            "missingFeeProducts",
+            "packConflictProducts"
+          ]
+        },
+        "retailers": {
+          "rows": 3,
+          "keys": [
+            "id",
+            "recordedUsableProducts",
+            "usableLiveProductsForCurrentAccount",
+            "lastSuccessfulRefresh"
+          ]
+        },
+        "rows": {
+          "rows": 30,
+          "keys": [
+            "productId",
+            "variantId",
+            "categoryId",
+            "name",
+            "brand",
+            "pack",
+            "retailer",
+            "nativeId",
+            "approved",
+            "status",
+            "missingFees",
+            "missingPrice",
+            "uncertainStock",
+            "packConflict",
+            "priceMinor",
+            "stock",
+            "observedAt",
+            "observationSource",
+            "origin",
+            "verification"
+          ]
+        },
+        "hasNext": true,
+        "events": {
+          "rows": 0,
+          "keys": []
+        },
+        "sample": false
+      },
+      "ms": 1620
+    },
+    {
+      "dim": "1440x900",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/admin/provider/mapping/decisions?variantId=milk&platform=blinkit&afterRevision=0",
+      "status": 200,
+      "requestId": "0dfdf420-0bee-463f-8f8c-a7ace7905431",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 14
+    },
+    {
+      "dim": "1440x900",
+      "step": "admin dashboard",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/admin/provider/mapping/preview",
+      "status": 200,
+      "requestId": "bceb1a03-1e7f-4960-b102-c8bb8b74767f",
+      "body": {
+        "decisionId": "string",
+        "assessment": {
+          "keys": [
+            "variantId",
+            "canonicalPack",
+            "canonicalGtins",
+            "evidence",
+            "blockingReasons",
+            "canonicalIdentity"
+          ]
+        }
+      },
+      "ms": 26
+    },
+    {
+      "dim": "1366x768",
+      "step": "launch",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/locations",
+      "status": 200,
+      "requestId": "3d236e91-ea78-4961-a09c-55fa73423928",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "id",
+          "name",
+          "city",
+          "postcode"
+        ]
+      },
+      "ms": 25
+    },
+    {
+      "dim": "1366x768",
+      "step": "launch",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/meta",
+      "status": 200,
+      "requestId": "b384834d-6514-4865-8f1c-2e326222ebea",
+      "body": {
+        "groceryProvider": "string",
+        "message": "Retailer ordering and payments are outside this shopping-list application. Provider access needs verified credentials and permission.",
+        "version": "string",
+        "orderingEnabled": false,
+        "sample": false
+      },
+      "ms": 26
+    },
+    {
+      "dim": "1366x768",
+      "step": "home catalogue",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/categories",
+      "status": 200,
+      "requestId": "9910fae9-cd5f-43cc-bfde-209955ecd74d",
+      "body": {
+        "rows": 7,
+        "keys": [
+          "id",
+          "name"
+        ]
+      },
+      "ms": 25
+    },
+    {
+      "dim": "1366x768",
+      "step": "home catalogue",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/refresh",
+      "status": 401,
+      "requestId": "9e4b8217-1b25-4d67-80ac-52f615c82ada",
+      "body": {
+        "code": "string",
+        "message": "Please sign in."
+      },
+      "ms": 25
+    },
+    {
+      "dim": "1366x768",
+      "step": "home catalogue",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "f507c671-26a5-434c-9827-45585c209883",
+      "body": {
+        "rows": 27,
+        "keys": [
+          "id",
+          "canonicalProductId",
+          "name",
+          "brand",
+          "quantity",
+          "category",
+          "description",
+          "color",
+          "art",
+          "imageUrl",
+          "amountBase",
+          "baseUnit",
+          "offers"
+        ]
+      },
+      "ms": 15
+    },
+    {
+      "dim": "1366x768",
+      "step": "registration",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/register",
+      "status": 201,
+      "requestId": "dce61f0c-314b-4005-a853-ebc8da550c0f",
+      "body": {
+        "user": {
+          "keys": [
+            "id",
+            "name",
+            "email",
+            "role",
+            "sample"
+          ]
+        }
+      },
+      "ms": 650
+    },
+    {
+      "dim": "1366x768",
+      "step": "browser JWT refresh and profile",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/locations",
+      "status": 200,
+      "requestId": "82da6c97-86a3-477d-9a7d-7b5feaa5b6f7",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "id",
+          "name",
+          "city",
+          "postcode"
+        ]
+      },
+      "ms": 19
+    },
+    {
+      "dim": "1366x768",
+      "step": "browser JWT refresh and profile",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/categories",
+      "status": 200,
+      "requestId": "bc786eec-42d7-4e9b-a936-bc2b8f69e04c",
+      "body": {
+        "rows": 7,
+        "keys": [
+          "id",
+          "name"
+        ]
+      },
+      "ms": 16
+    },
+    {
+      "dim": "1366x768",
+      "step": "browser JWT refresh and profile",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/meta",
+      "status": 200,
+      "requestId": "6e3e9388-2baa-476d-a936-dbbde2a92206",
+      "body": {
+        "groceryProvider": "string",
+        "message": "Retailer ordering and payments are outside this shopping-list application. Provider access needs verified credentials and permission.",
+        "version": "string",
+        "orderingEnabled": false,
+        "sample": false
+      },
+      "ms": 18
+    },
+    {
+      "dim": "1366x768",
+      "step": "browser JWT refresh and profile",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/refresh",
+      "status": 200,
+      "requestId": "dedcb628-15a0-430e-9d79-89a56cd1e65d",
+      "body": {
+        "user": {
+          "keys": [
+            "id",
+            "name",
+            "email",
+            "role",
+            "sample"
+          ]
+        }
+      },
+      "ms": 28
+    },
+    {
+      "dim": "1366x768",
+      "step": "browser JWT refresh and profile",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me",
+      "status": 200,
+      "requestId": "6280e4ba-321d-4d7e-98b2-2527efcee707",
+      "body": {
+        "id": "string",
+        "name": "Browser Test Shopper 1366",
+        "email": "string",
+        "role": "customer",
+        "sample": false
+      },
+      "ms": 20
+    },
+    {
+      "dim": "1366x768",
+      "step": "browser JWT refresh and profile",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "4140d939-56fe-4c7f-a047-efdf8b134fe9",
+      "body": {
+        "rows": 27,
+        "keys": [
+          "id",
+          "canonicalProductId",
+          "name",
+          "brand",
+          "quantity",
+          "category",
+          "description",
+          "color",
+          "art",
+          "imageUrl",
+          "amountBase",
+          "baseUnit",
+          "offers"
+        ]
+      },
+      "ms": 17
+    },
+    {
+      "dim": "1366x768",
+      "step": "browser JWT refresh and profile",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/cart",
+      "status": 200,
+      "requestId": "d1f51bcc-7fd6-4c05-9882-d12d2c78c6c4",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 13
+    },
+    {
+      "dim": "1366x768",
+      "step": "browser JWT refresh and profile",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/wishlist",
+      "status": 200,
+      "requestId": "baf1a694-6c6b-42c3-8e75-f7c7e6e23f38",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 20
+    },
+    {
+      "dim": "1366x768",
+      "step": "browser JWT refresh and profile",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me",
+      "status": 200,
+      "requestId": "b08eed91-2afe-4a60-8727-2d0dca2f66ae",
+      "body": {
+        "id": "string",
+        "name": "Browser Test Shopper 1366",
+        "email": "string",
+        "role": "customer",
+        "sample": false
+      },
+      "ms": 22
+    },
+    {
+      "dim": "1366x768",
+      "step": "search",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/page?locationId=blr-indiranagar&q=Amul%20Taaza&category=&page=0&brand=&pack=",
+      "status": 200,
+      "requestId": "6d1e0804-7aa9-4f17-b8ca-a873e4cec561",
+      "body": {
+        "items": {
+          "rows": 1,
+          "keys": [
+            "id",
+            "canonicalProductId",
+            "name",
+            "brand",
+            "quantity",
+            "category",
+            "description",
+            "color",
+            "art",
+            "imageUrl",
+            "amountBase",
+            "baseUnit",
+            "offers"
+          ]
+        },
+        "page": 0,
+        "pageSize": 24,
+        "totalElements": 1,
+        "totalPages": 1,
+        "hasNext": false,
+        "hasPrevious": false
+      },
+      "ms": 20
+    },
+    {
+      "dim": "1366x768",
+      "step": "search",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/milk/variants?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "1fdb6d89-dd6d-4ff1-af77-943c5de0aea3",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "id",
+          "canonicalProductId",
+          "name",
+          "brand",
+          "quantity",
+          "category",
+          "description",
+          "color",
+          "art",
+          "imageUrl",
+          "amountBase",
+          "baseUnit",
+          "offers"
+        ]
+      },
+      "ms": 20
+    },
+    {
+      "dim": "1366x768",
+      "step": "product details",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/milk?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "5cf9326e-3246-4cec-91a2-ba683313127f",
+      "body": {
+        "id": "string",
+        "canonicalProductId": "string",
+        "name": "Amul Taaza",
+        "brand": "string",
+        "quantity": "1 litre",
+        "category": "string",
+        "description": "string",
+        "color": "string",
+        "art": "string",
+        "imageUrl": "string",
+        "amountBase": 1000,
+        "baseUnit": "string",
+        "offers": {
+          "rows": 0,
+          "keys": []
+        }
+      },
+      "ms": 14
+    },
+    {
+      "dim": "1366x768",
+      "step": "product details",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/milk/metadata?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "57ed6dff-036c-483d-aba6-22a40b51f217",
+      "body": {
+        "gtins": {
+          "rows": 0,
+          "keys": []
+        },
+        "sources": {
+          "rows": 0,
+          "keys": []
+        }
+      },
+      "ms": 18
+    },
+    {
+      "dim": "1366x768",
+      "step": "product details",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/milk/variants?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "803d3f47-8c51-418a-97b3-03123e06203c",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "id",
+          "canonicalProductId",
+          "name",
+          "brand",
+          "quantity",
+          "category",
+          "description",
+          "color",
+          "art",
+          "imageUrl",
+          "amountBase",
+          "baseUnit",
+          "offers"
+        ]
+      },
+      "ms": 18
+    },
+    {
+      "dim": "1366x768",
+      "step": "product details",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/shopping/retailers/offers/milk?locationId=blr-indiranagar",
+      "status": 403,
+      "requestId": "077c19dd-e9b7-453a-90ed-c75f0a7d3ef6",
+      "body": {
+        "code": "string",
+        "message": "You do not have access to this resource."
+      },
+      "ms": 18
+    },
+    {
+      "dim": "1366x768",
+      "step": "comparison",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/milk/comparison?locationId=blr-indiranagar&latitude=12.9784&longitude=77.6408&radiusKm=5&quantity=1&fulfillment=delivery",
+      "status": 200,
+      "requestId": "9994d1dd-d1ad-42e7-a6a8-01a23e146aa1",
+      "body": {
+        "product": {
+          "keys": [
+            "id",
+            "canonicalProductId",
+            "name",
+            "brand",
+            "quantity",
+            "category",
+            "description",
+            "color",
+            "art",
+            "imageUrl",
+            "amountBase",
+            "baseUnit",
+            "offers"
+          ]
+        },
+        "quantity": 1,
+        "fulfillment": "string",
+        "options": {
+          "rows": 3,
+          "keys": [
+            "source",
+            "name",
+            "variantId",
+            "priceMinor",
+            "unitPriceMinor",
+            "unitLabel",
+            "availability",
+            "stockQuantity",
+            "distanceKm",
+            "deliveryMinor",
+            "handlingMinor",
+            "minimumMinor",
+            "totalMinor",
+            "dataSource",
+            "observedAt",
+            "verificationStatus",
+            "eligible",
+            "reason",
+            "sourceId"
+          ]
+        },
+        "lowestEligible": null,
+        "savingsMinor": null,
+        "explanation": "string"
+      },
+      "ms": 25
+    },
+    {
+      "dim": "1366x768",
+      "step": "cart add",
+      "method": "PUT",
+      "url": "http://127.0.0.1:18080/api/me/cart",
+      "status": 200,
+      "requestId": "aa2283c7-a767-4c39-bd60-f9c3b4d776e9",
+      "body": {
+        "id": "string",
+        "productId": "string",
+        "locationId": "string",
+        "quantity": 1,
+        "preferences": {
+          "keys": [
+            "intent",
+            "maxPriceMinor",
+            "targetPriceMinor",
+            "maxUnitPriceMinor",
+            "bulkBudgetMinor",
+            "maxUsefulPacks",
+            "consumptionDays",
+            "monitorPrice"
+          ]
+        }
+      },
+      "ms": 27
+    },
+    {
+      "dim": "1366x768",
+      "step": "cart update and reload",
+      "method": "PUT",
+      "url": "http://127.0.0.1:18080/api/me/cart",
+      "status": 200,
+      "requestId": "2dc3ed59-9478-44a9-8e0a-7093856e9313",
+      "body": {
+        "id": "string",
+        "productId": "string",
+        "locationId": "string",
+        "quantity": 2,
+        "preferences": {
+          "keys": [
+            "intent",
+            "maxPriceMinor",
+            "targetPriceMinor",
+            "maxUnitPriceMinor",
+            "bulkBudgetMinor",
+            "maxUsefulPacks",
+            "consumptionDays",
+            "monitorPrice"
+          ]
+        }
+      },
+      "ms": 15
+    },
+    {
+      "dim": "1366x768",
+      "step": "cart update and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/locations",
+      "status": 200,
+      "requestId": "af016166-f6fb-4f6b-bc4d-455f0e66983a",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "id",
+          "name",
+          "city",
+          "postcode"
+        ]
+      },
+      "ms": 19
+    },
+    {
+      "dim": "1366x768",
+      "step": "cart update and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/meta",
+      "status": 200,
+      "requestId": "1e851d80-57c7-4609-bde4-81c556526609",
+      "body": {
+        "groceryProvider": "string",
+        "message": "Retailer ordering and payments are outside this shopping-list application. Provider access needs verified credentials and permission.",
+        "version": "string",
+        "orderingEnabled": false,
+        "sample": false
+      },
+      "ms": 21
+    },
+    {
+      "dim": "1366x768",
+      "step": "cart update and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/categories",
+      "status": 200,
+      "requestId": "38587e0b-baef-44b0-8d37-11a05b8c23f2",
+      "body": {
+        "rows": 7,
+        "keys": [
+          "id",
+          "name"
+        ]
+      },
+      "ms": 21
+    },
+    {
+      "dim": "1366x768",
+      "step": "cart update and reload",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/refresh",
+      "status": 200,
+      "requestId": "8d927c3f-12b7-4e80-b472-d51f4827dfc7",
+      "body": {
+        "user": {
+          "keys": [
+            "id",
+            "name",
+            "email",
+            "role",
+            "sample"
+          ]
+        }
+      },
+      "ms": 25
+    },
+    {
+      "dim": "1366x768",
+      "step": "cart update and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me",
+      "status": 200,
+      "requestId": "86b90930-ac03-4116-88f9-b794563757eb",
+      "body": {
+        "id": "string",
+        "name": "Browser Test Shopper 1366",
+        "email": "string",
+        "role": "customer",
+        "sample": false
+      },
+      "ms": 14
+    },
+    {
+      "dim": "1366x768",
+      "step": "cart update and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "1d707314-fc8e-4c56-a649-d71a940510d1",
+      "body": {
+        "rows": 27,
+        "keys": [
+          "id",
+          "canonicalProductId",
+          "name",
+          "brand",
+          "quantity",
+          "category",
+          "description",
+          "color",
+          "art",
+          "imageUrl",
+          "amountBase",
+          "baseUnit",
+          "offers"
+        ]
+      },
+      "ms": 23
+    },
+    {
+      "dim": "1366x768",
+      "step": "cart update and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/cart",
+      "status": 200,
+      "requestId": "869c8039-f471-4320-b619-cfdd5066aa4e",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "id",
+          "productId",
+          "locationId",
+          "quantity",
+          "preferences"
+        ]
+      },
+      "ms": 15
+    },
+    {
+      "dim": "1366x768",
+      "step": "cart update and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/wishlist",
+      "status": 200,
+      "requestId": "fb5a4570-21ca-4192-bc28-1508724ba2db",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 15
+    },
+    {
+      "dim": "1366x768",
+      "step": "cart remove",
+      "method": "DELETE",
+      "url": "http://127.0.0.1:18080/api/me/cart/cf89677a-403b-47fa-928c-4092e6c51ddd",
+      "status": 204,
+      "requestId": "09f8464e-5784-4f42-9201-63ca3a02e68e",
+      "body": null,
+      "ms": 14
+    },
+    {
+      "dim": "1366x768",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/overview?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "d5a588de-3cef-41ad-8c8d-19efffcab7ff",
+      "body": {
+        "budget": {
+          "keys": [
+            "month",
+            "limitMinor",
+            "spentMinor",
+            "remainingMinor",
+            "categories"
+          ]
+        },
+        "recentPurchases": {
+          "rows": 0,
+          "keys": []
+        },
+        "recommendations": {
+          "rows": 0,
+          "keys": []
+        },
+        "trend": {
+          "rows": 6,
+          "keys": [
+            "month",
+            "amountMinor"
+          ]
+        },
+        "watchCount": 0,
+        "unreadNotifications": 0,
+        "dueCount": 0
+      },
+      "ms": 25
+    },
+    {
+      "dim": "1366x768",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/pantry",
+      "status": 200,
+      "requestId": "ba2224be-8cab-4fc2-897d-15aaea76c338",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 17
+    },
+    {
+      "dim": "1366x768",
+      "step": "pantry writes and reload",
+      "method": "PUT",
+      "url": "http://127.0.0.1:18080/api/me/pantry",
+      "status": 204,
+      "requestId": "c840f159-ceae-4298-be92-5dff7ec5eb19",
+      "body": null,
+      "ms": 34
+    },
+    {
+      "dim": "1366x768",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/pantry",
+      "status": 200,
+      "requestId": "7ab9d76f-f932-49cd-a311-5482635f2b5e",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "productId",
+          "name",
+          "amountBase",
+          "baseUnit"
+        ]
+      },
+      "ms": 18
+    },
+    {
+      "dim": "1366x768",
+      "step": "pantry writes and reload",
+      "method": "PUT",
+      "url": "http://127.0.0.1:18080/api/me/pantry",
+      "status": 204,
+      "requestId": "0ae7855b-76d8-4f62-9f06-82339d3ffeaf",
+      "body": null,
+      "ms": 25
+    },
+    {
+      "dim": "1366x768",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/pantry",
+      "status": 200,
+      "requestId": "05751988-eafc-4c42-979b-fb7452d2e1d3",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "productId",
+          "name",
+          "amountBase",
+          "baseUnit"
+        ]
+      },
+      "ms": 24
+    },
+    {
+      "dim": "1366x768",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/locations",
+      "status": 200,
+      "requestId": "0f1010a6-bd5a-46e3-9912-2f1bccd6ebe5",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "id",
+          "name",
+          "city",
+          "postcode"
+        ]
+      },
+      "ms": 51
+    },
+    {
+      "dim": "1366x768",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/meta",
+      "status": 200,
+      "requestId": "a76a3b38-397f-4716-80aa-5e081ecc0724",
+      "body": {
+        "groceryProvider": "string",
+        "message": "Retailer ordering and payments are outside this shopping-list application. Provider access needs verified credentials and permission.",
+        "version": "string",
+        "orderingEnabled": false,
+        "sample": false
+      },
+      "ms": 66
+    },
+    {
+      "dim": "1366x768",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/categories",
+      "status": 200,
+      "requestId": "f3a805ea-faf2-422a-a4b5-8f557c13ac8a",
+      "body": {
+        "rows": 7,
+        "keys": [
+          "id",
+          "name"
+        ]
+      },
+      "ms": 65
+    },
+    {
+      "dim": "1366x768",
+      "step": "pantry writes and reload",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/refresh",
+      "status": 200,
+      "requestId": "87e8a718-1ea7-4b5f-a279-e1fbe8ece319",
+      "body": {
+        "user": {
+          "keys": [
+            "id",
+            "name",
+            "email",
+            "role",
+            "sample"
+          ]
+        }
+      },
+      "ms": 77
+    },
+    {
+      "dim": "1366x768",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me",
+      "status": 200,
+      "requestId": "4a11ea27-aece-4eff-920a-76d14f0bccbb",
+      "body": {
+        "id": "string",
+        "name": "Browser Test Shopper 1366",
+        "email": "string",
+        "role": "customer",
+        "sample": false
+      },
+      "ms": 29
+    },
+    {
+      "dim": "1366x768",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "3baa1df9-59e3-4f87-82e1-25e4dc1cc780",
+      "body": {
+        "rows": 27,
+        "keys": [
+          "id",
+          "canonicalProductId",
+          "name",
+          "brand",
+          "quantity",
+          "category",
+          "description",
+          "color",
+          "art",
+          "imageUrl",
+          "amountBase",
+          "baseUnit",
+          "offers"
+        ]
+      },
+      "ms": 38
+    },
+    {
+      "dim": "1366x768",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/cart",
+      "status": 200,
+      "requestId": "8913d611-f69c-4e82-83f1-089ec0dd229e",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 38
+    },
+    {
+      "dim": "1366x768",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/wishlist",
+      "status": 200,
+      "requestId": "c00374de-b7a4-413d-beee-f764ced09501",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 48
+    },
+    {
+      "dim": "1366x768",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/overview?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "29bc2b93-9152-405e-9207-32caa4686977",
+      "body": {
+        "budget": {
+          "keys": [
+            "month",
+            "limitMinor",
+            "spentMinor",
+            "remainingMinor",
+            "categories"
+          ]
+        },
+        "recentPurchases": {
+          "rows": 0,
+          "keys": []
+        },
+        "recommendations": {
+          "rows": 0,
+          "keys": []
+        },
+        "trend": {
+          "rows": 6,
+          "keys": [
+            "month",
+            "amountMinor"
+          ]
+        },
+        "watchCount": 0,
+        "unreadNotifications": 0,
+        "dueCount": 0
+      },
+      "ms": 49
+    },
+    {
+      "dim": "1366x768",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/pantry",
+      "status": 200,
+      "requestId": "f2bae197-8fa2-4dee-977c-4d6606a69ba6",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "productId",
+          "name",
+          "amountBase",
+          "baseUnit"
+        ]
+      },
+      "ms": 37
+    },
+    {
+      "dim": "1366x768",
+      "step": "recipes",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/recipe-intelligence?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "ba9876a1-dc0f-4c38-a874-88cf99f94baa",
+      "body": {
+        "rows": 4,
+        "keys": [
+          "id",
+          "kind",
+          "source",
+          "recipe"
+        ]
+      },
+      "ms": 20
+    },
+    {
+      "dim": "1366x768",
+      "step": "recipes",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/me/recipe-intelligence/plan",
+      "status": 200,
+      "requestId": "e83fbe9e-d337-497e-aa01-cadb193cfc31",
+      "body": {
+        "meals": {
+          "rows": 1,
+          "keys": [
+            "recipeId",
+            "day",
+            "servings"
+          ]
+        },
+        "ingredients": {
+          "rows": 5,
+          "keys": [
+            "key",
+            "name",
+            "unit",
+            "required",
+            "pantry",
+            "missing",
+            "substitutions",
+            "choices",
+            "cataloguePacks"
+          ]
+        },
+        "baskets": {
+          "rows": 3,
+          "keys": [
+            "retailer",
+            "complete",
+            "missingIngredients",
+            "pricedSubtotalMinor",
+            "estimatedSubtotalMinor"
+          ]
+        },
+        "budgetMinor": null,
+        "budgetStatus": "string",
+        "sample": false
+      },
+      "ms": 98
+    },
+    {
+      "dim": "1366x768",
+      "step": "recipes",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/me/recipe-intelligence/generate",
+      "status": 503,
+      "requestId": "a26a079e-af28-4c57-9305-e094cb03e87a",
+      "body": {
+        "code": "string",
+        "message": "Recipe generation is not configured."
+      },
+      "ms": 76
+    },
+    {
+      "dim": "1366x768",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/weekly?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "0f29c48e-96f9-4ece-b288-a0eabf9922ca",
+      "body": {
+        "draft": {
+          "keys": [
+            "meals",
+            "items",
+            "budgetMinor",
+            "diet",
+            "onHand"
+          ]
+        },
+        "revision": 0,
+        "recipes": {
+          "rows": 4,
+          "keys": [
+            "id",
+            "kind",
+            "source",
+            "recipe"
+          ]
+        },
+        "cart": {
+          "rows": 0,
+          "keys": []
+        },
+        "householdSize": null,
+        "sample": false
+      },
+      "ms": 35
+    },
+    {
+      "dim": "1366x768",
+      "step": "weekly shopping plan",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/weekly/preview?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "f7ba09ae-81db-4fc5-850e-8d61050999e6",
+      "body": {
+        "plan": {
+          "keys": [
+            "ingredients",
+            "comparison",
+            "budgetMinor",
+            "budgetStatus",
+            "method",
+            "checkedAt",
+            "notes",
+            "sample"
+          ]
+        },
+        "planFeedbackId": "string",
+        "basketFeedbackId": "string"
+      },
+      "ms": 120
+    },
+    {
+      "dim": "1366x768",
+      "step": "weekly shopping plan",
+      "method": "PUT",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/weekly?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "7c9da807-6e47-4af6-8c3f-3f98b9c78dc4",
+      "body": {
+        "revision": 1
+      },
+      "ms": 51
+    },
+    {
+      "dim": "1366x768",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/locations",
+      "status": 200,
+      "requestId": "41bdde2d-dc60-4a02-872a-d3c11fd6823b",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "id",
+          "name",
+          "city",
+          "postcode"
+        ]
+      },
+      "ms": 23
+    },
+    {
+      "dim": "1366x768",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/meta",
+      "status": 200,
+      "requestId": "f9089046-72b0-4131-ac9b-081a1020bfdc",
+      "body": {
+        "groceryProvider": "string",
+        "message": "Retailer ordering and payments are outside this shopping-list application. Provider access needs verified credentials and permission.",
+        "version": "string",
+        "orderingEnabled": false,
+        "sample": false
+      },
+      "ms": 22
+    },
+    {
+      "dim": "1366x768",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/categories",
+      "status": 200,
+      "requestId": "8de3a402-1fd7-491a-b053-3ee70fa8ed9a",
+      "body": {
+        "rows": 7,
+        "keys": [
+          "id",
+          "name"
+        ]
+      },
+      "ms": 22
+    },
+    {
+      "dim": "1366x768",
+      "step": "weekly shopping plan",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/refresh",
+      "status": 200,
+      "requestId": "989ecb79-7998-4c13-98ee-6577aa4f4358",
+      "body": {
+        "user": {
+          "keys": [
+            "id",
+            "name",
+            "email",
+            "role",
+            "sample"
+          ]
+        }
+      },
+      "ms": 30
+    },
+    {
+      "dim": "1366x768",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me",
+      "status": 200,
+      "requestId": "e77ca58b-2b36-488c-9bcd-1e86fa577250",
+      "body": {
+        "id": "string",
+        "name": "Browser Test Shopper 1366",
+        "email": "string",
+        "role": "customer",
+        "sample": false
+      },
+      "ms": 14
+    },
+    {
+      "dim": "1366x768",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "db231a95-845e-4e47-a7ee-44968111482d",
+      "body": {
+        "rows": 27,
+        "keys": [
+          "id",
+          "canonicalProductId",
+          "name",
+          "brand",
+          "quantity",
+          "category",
+          "description",
+          "color",
+          "art",
+          "imageUrl",
+          "amountBase",
+          "baseUnit",
+          "offers"
+        ]
+      },
+      "ms": 19
+    },
+    {
+      "dim": "1366x768",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/cart",
+      "status": 200,
+      "requestId": "57d1f8ea-5cf0-4d53-a024-bfc4fc8a87e2",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 16
+    },
+    {
+      "dim": "1366x768",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/wishlist",
+      "status": 200,
+      "requestId": "d5e1d640-3e28-463e-8644-2951d6995747",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 17
+    },
+    {
+      "dim": "1366x768",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/overview?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "bd1bf08e-3156-4006-8515-db3b8772ff92",
+      "body": {
+        "budget": {
+          "keys": [
+            "month",
+            "limitMinor",
+            "spentMinor",
+            "remainingMinor",
+            "categories"
+          ]
+        },
+        "recentPurchases": {
+          "rows": 0,
+          "keys": []
+        },
+        "recommendations": {
+          "rows": 0,
+          "keys": []
+        },
+        "trend": {
+          "rows": 6,
+          "keys": [
+            "month",
+            "amountMinor"
+          ]
+        },
+        "watchCount": 0,
+        "unreadNotifications": 0,
+        "dueCount": 0
+      },
+      "ms": 28
+    },
+    {
+      "dim": "1366x768",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/weekly?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "6f1867db-38fd-4c48-a2dd-ba69deab9af2",
+      "body": {
+        "draft": {
+          "keys": [
+            "meals",
+            "items",
+            "budgetMinor",
+            "diet",
+            "onHand"
+          ]
+        },
+        "revision": 1,
+        "recipes": {
+          "rows": 4,
+          "keys": [
+            "id",
+            "kind",
+            "source",
+            "recipe"
+          ]
+        },
+        "cart": {
+          "rows": 0,
+          "keys": []
+        },
+        "householdSize": null,
+        "sample": false
+      },
+      "ms": 27
+    },
+    {
+      "dim": "1366x768",
+      "step": "unified assistant",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/weekly/assistant?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "996a52be-be1a-400c-8564-af42c400d55d",
+      "body": {
+        "intent": "string",
+        "method": "RULE_BASED",
+        "text": "string",
+        "products": {
+          "rows": 0,
+          "keys": []
+        },
+        "pantry": {
+          "rows": 0,
+          "keys": []
+        },
+        "plan": null,
+        "bulk": null,
+        "suggestions": {
+          "keys": [
+            "products",
+            "recipes",
+            "pantryGaps",
+            "budgetMinor",
+            "sample"
+          ]
+        },
+        "timing": null,
+        "sample": false,
+        "feedbackId": "string"
+      },
+      "ms": 182
+    },
+    {
+      "dim": "1366x768",
+      "step": "bulk buy",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/preferences",
+      "status": 200,
+      "requestId": "38a296e6-1b65-4b8d-8d36-65fd2ace72ca",
+      "body": {
+        "household": null
+      },
+      "ms": 20
+    },
+    {
+      "dim": "1366x768",
+      "step": "bulk buy",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/shopping/retailers/offers/milk?locationId=blr-indiranagar",
+      "status": 403,
+      "requestId": "a8a083db-8e81-4719-871e-b625335ddfb5",
+      "body": {
+        "code": "string",
+        "message": "You do not have access to this resource."
+      },
+      "ms": 40
+    },
+    {
+      "dim": "1366x768",
+      "step": "bulk buy",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/bulk/milk/limits?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "5b5862d1-ad81-41aa-ab0b-52ddbe4ffd23",
+      "body": {
+        "limits": null
+      },
+      "ms": 39
+    },
+    {
+      "dim": "1366x768",
+      "step": "bulk buy",
+      "method": "PUT",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/bulk/milk/limits?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "8a39840f-694c-46e7-b437-f86a4d90921f",
+      "body": {
+        "limits": {
+          "keys": [
+            "perPersonDaily",
+            "storageCapacity",
+            "planningDays",
+            "budgetMinor"
+          ]
+        }
+      },
+      "ms": 37
+    },
+    {
+      "dim": "1366x768",
+      "step": "bulk buy",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/bulk/milk?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "8688c268-072c-495d-8355-b72b6606042e",
+      "body": {
+        "action": "INSUFFICIENT_INFORMATION",
+        "reason": "string",
+        "productId": "string",
+        "name": "Amul Taaza",
+        "unit": "string",
+        "pantry": 0,
+        "required": null,
+        "maxPurchase": null,
+        "budgetMinor": null,
+        "daysBeforeExpiry": null,
+        "normal": null,
+        "recommended": null,
+        "sample": false
+      },
+      "ms": 45
+    },
+    {
+      "dim": "1366x768",
+      "step": "personalized recommendations",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/preferences",
+      "status": 200,
+      "requestId": "9a16b0f5-dbf5-46de-900c-f8333e66ff2d",
+      "body": {
+        "household": null
+      },
+      "ms": 36
+    },
+    {
+      "dim": "1366x768",
+      "step": "personalized recommendations",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/recommendations?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "fd63ec33-805c-4a2c-ba4a-09958a3f42b0",
+      "body": {
+        "products": {
+          "rows": 0,
+          "keys": []
+        },
+        "recipes": {
+          "rows": 4,
+          "keys": [
+            "id",
+            "name",
+            "cuisine",
+            "missingIngredients",
+            "estimatedSubtotalMinor"
+          ]
+        },
+        "pantryGaps": {
+          "rows": 0,
+          "keys": []
+        },
+        "budgetMinor": null,
+        "sample": false
+      },
+      "ms": 124
+    },
+    {
+      "dim": "1366x768",
+      "step": "price trends",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/grocery/variants/milk/price-history?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "40506d89-26c9-4c85-907a-6e50e452aef8",
+      "body": {
+        "variantId": "string",
+        "locationId": "string",
+        "from": "string",
+        "until": "string",
+        "stats": {
+          "keys": [
+            "observations",
+            "priced",
+            "minimumMinor",
+            "maximumMinor",
+            "averageMinor"
+          ]
+        },
+        "retailers": {
+          "rows": 0,
+          "keys": []
+        }
+      },
+      "ms": 26
+    },
+    {
+      "dim": "1366x768",
+      "step": "price trends",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/price-intelligence/milk?locationId=blr-indiranagar&retailer=blinkit",
+      "status": 200,
+      "requestId": "c1d8203e-f5d5-44d0-818f-300bb427b06e",
+      "body": {
+        "status": "INSUFFICIENT_DATA",
+        "productId": "string",
+        "variantId": "string",
+        "pack": "string",
+        "retailer": "string",
+        "locationId": "string",
+        "latestObservation": null,
+        "observedChangeMinor": null,
+        "freshness": "string",
+        "horizonDays": 1,
+        "forecastDate": null,
+        "predictedMinor": null,
+        "lowMinor": null,
+        "highMinor": null,
+        "empiricalCoverage": null,
+        "modelVersion": null,
+        "trainedAt": null,
+        "warning": "string",
+        "advice": {
+          "keys": [
+            "action",
+            "reason"
+          ]
+        }
+      },
+      "ms": 46
+    },
+    {
+      "dim": "1366x768",
+      "step": "empty catalogue result",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/page?locationId=blr-indiranagar&q=zzzz%20no%20grocery%20matches&category=&page=0&brand=&pack=",
+      "status": 200,
+      "requestId": "14d427ff-2463-4b8e-979d-a2d9f0c86ac2",
+      "body": {
+        "items": {
+          "rows": 0,
+          "keys": []
+        },
+        "page": 0,
+        "pageSize": 24,
+        "totalElements": 0,
+        "totalPages": 0,
+        "hasNext": false,
+        "hasPrevious": false
+      },
+      "ms": 15
+    },
+    {
+      "dim": "1366x768",
+      "step": "logout and login",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/logout",
+      "status": 204,
+      "requestId": "dd7763fc-9555-41a3-adc5-42293488e77c",
+      "body": null,
+      "ms": 24
+    },
+    {
+      "dim": "1366x768",
+      "step": "logout and login",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/login",
+      "status": 200,
+      "requestId": "bd14e2c2-3737-48ea-860b-779a93bc1980",
+      "body": {
+        "user": {
+          "keys": [
+            "id",
+            "name",
+            "email",
+            "role",
+            "sample"
+          ]
+        }
+      },
+      "ms": 332
+    },
+    {
+      "dim": "1366x768",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/cart",
+      "status": 200,
+      "requestId": "446838d3-c130-44b1-bf97-e8fde92aae5b",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 15
+    },
+    {
+      "dim": "1366x768",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/wishlist",
+      "status": 200,
+      "requestId": "c02eed62-eba2-489a-b1d8-2ed8e3520831",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 17
+    },
+    {
+      "dim": "1366x768",
+      "step": "admin dashboard",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/logout",
+      "status": 204,
+      "requestId": "6e4a980e-48b0-4095-8ebd-e4add100d423",
+      "body": null,
+      "ms": 29
+    },
+    {
+      "dim": "1366x768",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/page?locationId=blr-indiranagar&q=zzzz%20no%20grocery%20matches&category=&page=0&brand=&pack=",
+      "status": 401,
+      "requestId": "6a45b758-a73a-4bd3-9c29-50cccd267d68",
+      "body": {
+        "code": "string",
+        "message": "Please sign in again."
+      },
+      "ms": 64
+    },
+    {
+      "dim": "1366x768",
+      "step": "admin dashboard",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/login",
+      "status": 200,
+      "requestId": "53ba1e0a-4d9e-4be4-90c0-8a865ecfb947",
+      "body": {
+        "user": {
+          "keys": [
+            "id",
+            "name",
+            "email",
+            "role",
+            "sample"
+          ]
+        }
+      },
+      "ms": 340
+    },
+    {
+      "dim": "1366x768",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/wishlist",
+      "status": 200,
+      "requestId": "5c0d4c1f-0660-4a6a-867a-5023d7cb4678",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 40
+    },
+    {
+      "dim": "1366x768",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/cart",
+      "status": 200,
+      "requestId": "4c2df999-a483-4d96-9dee-6c86c96254c2",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 44
+    },
+    {
+      "dim": "1366x768",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/page?locationId=blr-indiranagar&q=zzzz%20no%20grocery%20matches&category=&page=0&brand=&pack=",
+      "status": 200,
+      "requestId": "c24eaf3d-6966-4319-8c5b-41d54c042183",
+      "body": null,
+      "ms": 127
+    },
+    {
+      "dim": "1366x768",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me",
+      "status": 200,
+      "requestId": "fd278060-0ac0-4b04-91ff-880571a31aae",
+      "body": {
+        "id": "string",
+        "name": "Administrator",
+        "email": "string",
+        "role": "admin",
+        "sample": false
+      },
+      "ms": 22
+    },
+    {
+      "dim": "1366x768",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/admin/overview",
+      "status": 200,
+      "requestId": "ddd4427f-20cc-4294-84c5-6c96002d9578",
+      "body": {
+        "users": 22,
+        "platforms": {
+          "rows": 3,
+          "keys": [
+            "id",
+            "enabled",
+            "status",
+            "syncedAt"
+          ]
+        },
+        "products": 27,
+        "categories": 7
+      },
+      "ms": 53
+    },
+    {
+      "dim": "1366x768",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/page?locationId=blr-indiranagar&q=&category=&page=0&brand=&pack=",
+      "status": 200,
+      "requestId": "e8cac1d2-9e72-4be2-9cdc-13170c68bbe7",
+      "body": {
+        "items": {
+          "rows": 24,
+          "keys": [
+            "id",
+            "canonicalProductId",
+            "name",
+            "brand",
+            "quantity",
+            "category",
+            "description",
+            "color",
+            "art",
+            "imageUrl",
+            "amountBase",
+            "baseUnit",
+            "offers"
+          ]
+        },
+        "page": 0,
+        "pageSize": 24,
+        "totalElements": 27,
+        "totalPages": 2,
+        "hasNext": true,
+        "hasPrevious": false
+      },
+      "ms": 49
+    },
+    {
+      "dim": "1366x768",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/admin/users",
+      "status": 200,
+      "requestId": "9f16bda7-2ae8-4bb2-8955-a7df38e75e8d",
+      "body": {
+        "rows": 22,
+        "keys": [
+          "id",
+          "name",
+          "email",
+          "role",
+          "sample"
+        ]
+      },
+      "ms": 53
+    },
+    {
+      "dim": "1366x768",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/admin/retailer-operations/filters",
+      "status": 200,
+      "requestId": "6d745dd3-08bd-4805-a4d1-e7660652b6bb",
+      "body": {
+        "locations": {
+          "rows": 1,
+          "keys": [
+            "id",
+            "name"
+          ]
+        },
+        "categories": {
+          "rows": 7,
+          "keys": [
+            "id",
+            "name"
+          ]
+        }
+      },
+      "ms": 36
+    },
+    {
+      "dim": "1366x768",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/admin/retailer-operations/coverage?locationId=blr-indiranagar&page=0",
+      "status": 200,
+      "requestId": "6ef2bc92-a786-433f-aa52-792f1a863622",
+      "body": {
+        "locationId": "string",
+        "freshnessSeconds": 900,
+        "calculatedAt": "string",
+        "counts": {
+          "keys": [
+            "totalProducts",
+            "approvedProducts",
+            "productsWithoutMapping",
+            "unresolvedProducts",
+            "staleProducts",
+            "missingPriceProducts",
+            "uncertainStockProducts",
+            "missingFeeProducts",
+            "packConflictProducts"
+          ]
+        },
+        "retailers": {
+          "rows": 3,
+          "keys": [
+            "id",
+            "recordedUsableProducts",
+            "usableLiveProductsForCurrentAccount",
+            "lastSuccessfulRefresh"
+          ]
+        },
+        "rows": {
+          "rows": 30,
+          "keys": [
+            "productId",
+            "variantId",
+            "categoryId",
+            "name",
+            "brand",
+            "pack",
+            "retailer",
+            "nativeId",
+            "approved",
+            "status",
+            "missingFees",
+            "missingPrice",
+            "uncertainStock",
+            "packConflict",
+            "priceMinor",
+            "stock",
+            "observedAt",
+            "observationSource",
+            "origin",
+            "verification"
+          ]
+        },
+        "hasNext": true,
+        "events": {
+          "rows": 0,
+          "keys": []
+        },
+        "sample": false
+      },
+      "ms": 489
+    },
+    {
+      "dim": "1366x768",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/admin/provider/mapping/decisions?variantId=milk&platform=blinkit&afterRevision=0",
+      "status": 200,
+      "requestId": "38a8de88-a10b-4664-b29c-2a54ba6b938a",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 20
+    },
+    {
+      "dim": "1366x768",
+      "step": "admin dashboard",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/admin/provider/mapping/preview",
+      "status": 200,
+      "requestId": "cc5c56c9-1722-4226-8d0c-0c2bc76f1b01",
+      "body": {
+        "decisionId": "string",
+        "assessment": {
+          "keys": [
+            "variantId",
+            "canonicalPack",
+            "canonicalGtins",
+            "evidence",
+            "blockingReasons",
+            "canonicalIdentity"
+          ]
+        }
+      },
+      "ms": 25
+    },
+    {
+      "dim": "390x844",
+      "step": "home catalogue",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/locations",
+      "status": 200,
+      "requestId": "881beb18-f3f6-4ebf-8771-ea30bab01139",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "id",
+          "name",
+          "city",
+          "postcode"
+        ]
+      },
+      "ms": 27
+    },
+    {
+      "dim": "390x844",
+      "step": "home catalogue",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/meta",
+      "status": 200,
+      "requestId": "815c97b8-fb05-4a22-b23b-2d68db8451bc",
+      "body": {
+        "groceryProvider": "string",
+        "message": "Retailer ordering and payments are outside this shopping-list application. Provider access needs verified credentials and permission.",
+        "version": "string",
+        "orderingEnabled": false,
+        "sample": false
+      },
+      "ms": 28
+    },
+    {
+      "dim": "390x844",
+      "step": "home catalogue",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/categories",
+      "status": 200,
+      "requestId": "f7d8ba1e-32ed-4aa0-9050-c6d1cb89c2cd",
+      "body": {
+        "rows": 7,
+        "keys": [
+          "id",
+          "name"
+        ]
+      },
+      "ms": 29
+    },
+    {
+      "dim": "390x844",
+      "step": "home catalogue",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/refresh",
+      "status": 401,
+      "requestId": "87b6aec5-4df0-40a0-b6fd-bf1b305f0a36",
+      "body": {
+        "code": "string",
+        "message": "Please sign in."
+      },
+      "ms": 29
+    },
+    {
+      "dim": "390x844",
+      "step": "home catalogue",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "7fed8ca3-b27b-415b-b845-6d6fe356986c",
+      "body": {
+        "rows": 27,
+        "keys": [
+          "id",
+          "canonicalProductId",
+          "name",
+          "brand",
+          "quantity",
+          "category",
+          "description",
+          "color",
+          "art",
+          "imageUrl",
+          "amountBase",
+          "baseUnit",
+          "offers"
+        ]
+      },
+      "ms": 9
+    },
+    {
+      "dim": "390x844",
+      "step": "registration",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/register",
+      "status": 201,
+      "requestId": "6fea67fc-f7c4-4741-8e12-7725ec99837d",
+      "body": {
+        "user": {
+          "keys": [
+            "id",
+            "name",
+            "email",
+            "role",
+            "sample"
+          ]
+        }
+      },
+      "ms": 312
+    },
+    {
+      "dim": "390x844",
+      "step": "browser JWT refresh and profile",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/locations",
+      "status": 200,
+      "requestId": "7965a051-2d10-435a-b8ab-68b10f3bc7d9",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "id",
+          "name",
+          "city",
+          "postcode"
+        ]
+      },
+      "ms": 49
+    },
+    {
+      "dim": "390x844",
+      "step": "browser JWT refresh and profile",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/meta",
+      "status": 200,
+      "requestId": "d7752874-23fe-458c-b81b-61bdc966df1e",
+      "body": {
+        "groceryProvider": "string",
+        "message": "Retailer ordering and payments are outside this shopping-list application. Provider access needs verified credentials and permission.",
+        "version": "string",
+        "orderingEnabled": false,
+        "sample": false
+      },
+      "ms": 48
+    },
+    {
+      "dim": "390x844",
+      "step": "browser JWT refresh and profile",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/categories",
+      "status": 200,
+      "requestId": "40d66a04-5948-410d-bdd3-c5bf10c5b59f",
+      "body": {
+        "rows": 7,
+        "keys": [
+          "id",
+          "name"
+        ]
+      },
+      "ms": 50
+    },
+    {
+      "dim": "390x844",
+      "step": "browser JWT refresh and profile",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/refresh",
+      "status": 200,
+      "requestId": "71f11f6b-d6e4-4deb-b66b-511e9267dc84",
+      "body": {
+        "user": {
+          "keys": [
+            "id",
+            "name",
+            "email",
+            "role",
+            "sample"
+          ]
+        }
+      },
+      "ms": 70
+    },
+    {
+      "dim": "390x844",
+      "step": "browser JWT refresh and profile",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me",
+      "status": 200,
+      "requestId": "ad777a2f-d52d-4466-88ce-522950c164be",
+      "body": {
+        "id": "string",
+        "name": "Browser Test Shopper 390",
+        "email": "string",
+        "role": "customer",
+        "sample": false
+      },
+      "ms": 20
+    },
+    {
+      "dim": "390x844",
+      "step": "browser JWT refresh and profile",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "9d7730d5-7b9b-4ec5-898b-6be6221a763d",
+      "body": {
+        "rows": 27,
+        "keys": [
+          "id",
+          "canonicalProductId",
+          "name",
+          "brand",
+          "quantity",
+          "category",
+          "description",
+          "color",
+          "art",
+          "imageUrl",
+          "amountBase",
+          "baseUnit",
+          "offers"
+        ]
+      },
+      "ms": 29
+    },
+    {
+      "dim": "390x844",
+      "step": "browser JWT refresh and profile",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/wishlist",
+      "status": 200,
+      "requestId": "74b75a0f-1437-4da7-9a74-35b59b2fc7a1",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 19
+    },
+    {
+      "dim": "390x844",
+      "step": "browser JWT refresh and profile",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/cart",
+      "status": 200,
+      "requestId": "d2def7f5-cda5-45d9-b58f-8fbfa1e0192c",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 21
+    },
+    {
+      "dim": "390x844",
+      "step": "browser JWT refresh and profile",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me",
+      "status": 200,
+      "requestId": "b815c921-86af-4f92-ba64-40eccbb2d94d",
+      "body": {
+        "id": "string",
+        "name": "Browser Test Shopper 390",
+        "email": "string",
+        "role": "customer",
+        "sample": false
+      },
+      "ms": 54
+    },
+    {
+      "dim": "390x844",
+      "step": "search",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/page?locationId=blr-indiranagar&q=Amul%20Taaza&category=&page=0&brand=&pack=",
+      "status": 200,
+      "requestId": "e7d75c77-e780-41ff-9c5f-ee2d90eef7db",
+      "body": {
+        "items": {
+          "rows": 1,
+          "keys": [
+            "id",
+            "canonicalProductId",
+            "name",
+            "brand",
+            "quantity",
+            "category",
+            "description",
+            "color",
+            "art",
+            "imageUrl",
+            "amountBase",
+            "baseUnit",
+            "offers"
+          ]
+        },
+        "page": 0,
+        "pageSize": 24,
+        "totalElements": 1,
+        "totalPages": 1,
+        "hasNext": false,
+        "hasPrevious": false
+      },
+      "ms": 11
+    },
+    {
+      "dim": "390x844",
+      "step": "search",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/milk/variants?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "855dc433-85fa-44c9-9e8c-d2752bb78706",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "id",
+          "canonicalProductId",
+          "name",
+          "brand",
+          "quantity",
+          "category",
+          "description",
+          "color",
+          "art",
+          "imageUrl",
+          "amountBase",
+          "baseUnit",
+          "offers"
+        ]
+      },
+      "ms": 24
+    },
+    {
+      "dim": "390x844",
+      "step": "product details",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/milk?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "47426db6-4a69-43bf-b71b-d39deab7ac2a",
+      "body": {
+        "id": "string",
+        "canonicalProductId": "string",
+        "name": "Amul Taaza",
+        "brand": "string",
+        "quantity": "1 litre",
+        "category": "string",
+        "description": "string",
+        "color": "string",
+        "art": "string",
+        "imageUrl": "string",
+        "amountBase": 1000,
+        "baseUnit": "string",
+        "offers": {
+          "rows": 0,
+          "keys": []
+        }
+      },
+      "ms": 23
+    },
+    {
+      "dim": "390x844",
+      "step": "product details",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/milk/metadata?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "3093af0a-fe2c-4c9c-8919-f71c3722a238",
+      "body": {
+        "gtins": {
+          "rows": 0,
+          "keys": []
+        },
+        "sources": {
+          "rows": 0,
+          "keys": []
+        }
+      },
+      "ms": 33
+    },
+    {
+      "dim": "390x844",
+      "step": "product details",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/milk/variants?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "07d5b0cf-01ba-47c8-b42b-eebea24422b2",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "id",
+          "canonicalProductId",
+          "name",
+          "brand",
+          "quantity",
+          "category",
+          "description",
+          "color",
+          "art",
+          "imageUrl",
+          "amountBase",
+          "baseUnit",
+          "offers"
+        ]
+      },
+      "ms": 32
+    },
+    {
+      "dim": "390x844",
+      "step": "product details",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/shopping/retailers/offers/milk?locationId=blr-indiranagar",
+      "status": 403,
+      "requestId": "6c63c481-34a3-43ea-b7af-6a75a7cacd21",
+      "body": {
+        "code": "string",
+        "message": "You do not have access to this resource."
+      },
+      "ms": 33
+    },
+    {
+      "dim": "390x844",
+      "step": "comparison",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/milk/comparison?locationId=blr-indiranagar&latitude=12.9784&longitude=77.6408&radiusKm=5&quantity=1&fulfillment=delivery",
+      "status": 200,
+      "requestId": "0751f514-c72f-4171-85f1-6ff38e7e2286",
+      "body": {
+        "product": {
+          "keys": [
+            "id",
+            "canonicalProductId",
+            "name",
+            "brand",
+            "quantity",
+            "category",
+            "description",
+            "color",
+            "art",
+            "imageUrl",
+            "amountBase",
+            "baseUnit",
+            "offers"
+          ]
+        },
+        "quantity": 1,
+        "fulfillment": "string",
+        "options": {
+          "rows": 3,
+          "keys": [
+            "source",
+            "name",
+            "variantId",
+            "priceMinor",
+            "unitPriceMinor",
+            "unitLabel",
+            "availability",
+            "stockQuantity",
+            "distanceKm",
+            "deliveryMinor",
+            "handlingMinor",
+            "minimumMinor",
+            "totalMinor",
+            "dataSource",
+            "observedAt",
+            "verificationStatus",
+            "eligible",
+            "reason",
+            "sourceId"
+          ]
+        },
+        "lowestEligible": null,
+        "savingsMinor": null,
+        "explanation": "string"
+      },
+      "ms": 21
+    },
+    {
+      "dim": "390x844",
+      "step": "cart add",
+      "method": "PUT",
+      "url": "http://127.0.0.1:18080/api/me/cart",
+      "status": 200,
+      "requestId": "0d9cf52e-bdae-4924-9fbd-85e19b446c4c",
+      "body": {
+        "id": "string",
+        "productId": "string",
+        "locationId": "string",
+        "quantity": 1,
+        "preferences": {
+          "keys": [
+            "intent",
+            "maxPriceMinor",
+            "targetPriceMinor",
+            "maxUnitPriceMinor",
+            "bulkBudgetMinor",
+            "maxUsefulPacks",
+            "consumptionDays",
+            "monitorPrice"
+          ]
+        }
+      },
+      "ms": 52
+    },
+    {
+      "dim": "390x844",
+      "step": "cart update and reload",
+      "method": "PUT",
+      "url": "http://127.0.0.1:18080/api/me/cart",
+      "status": 200,
+      "requestId": "cea0d43f-9723-4221-9131-de3addfb8a7c",
+      "body": {
+        "id": "string",
+        "productId": "string",
+        "locationId": "string",
+        "quantity": 2,
+        "preferences": {
+          "keys": [
+            "intent",
+            "maxPriceMinor",
+            "targetPriceMinor",
+            "maxUnitPriceMinor",
+            "bulkBudgetMinor",
+            "maxUsefulPacks",
+            "consumptionDays",
+            "monitorPrice"
+          ]
+        }
+      },
+      "ms": 12
+    },
+    {
+      "dim": "390x844",
+      "step": "cart update and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/locations",
+      "status": 200,
+      "requestId": "88d2b6fe-0b45-402b-b6ff-7f256b0ba886",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "id",
+          "name",
+          "city",
+          "postcode"
+        ]
+      },
+      "ms": 30
+    },
+    {
+      "dim": "390x844",
+      "step": "cart update and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/meta",
+      "status": 200,
+      "requestId": "624b49de-7e9d-4d8d-978b-a4ce69408db3",
+      "body": {
+        "groceryProvider": "string",
+        "message": "Retailer ordering and payments are outside this shopping-list application. Provider access needs verified credentials and permission.",
+        "version": "string",
+        "orderingEnabled": false,
+        "sample": false
+      },
+      "ms": 28
+    },
+    {
+      "dim": "390x844",
+      "step": "cart update and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/categories",
+      "status": 200,
+      "requestId": "5dfe0596-f7c7-4373-883d-c9766e94ab62",
+      "body": {
+        "rows": 7,
+        "keys": [
+          "id",
+          "name"
+        ]
+      },
+      "ms": 32
+    },
+    {
+      "dim": "390x844",
+      "step": "cart update and reload",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/refresh",
+      "status": 200,
+      "requestId": "a54ff8cc-1f0b-40c9-bd4c-5f89e33a2bf3",
+      "body": {
+        "user": {
+          "keys": [
+            "id",
+            "name",
+            "email",
+            "role",
+            "sample"
+          ]
+        }
+      },
+      "ms": 34
+    },
+    {
+      "dim": "390x844",
+      "step": "cart update and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me",
+      "status": 200,
+      "requestId": "f9ec331f-bd24-4823-b26f-25082464434f",
+      "body": {
+        "id": "string",
+        "name": "Browser Test Shopper 390",
+        "email": "string",
+        "role": "customer",
+        "sample": false
+      },
+      "ms": 13
+    },
+    {
+      "dim": "390x844",
+      "step": "cart update and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "84d35228-425e-40a9-97be-abcfac468ab8",
+      "body": {
+        "rows": 27,
+        "keys": [
+          "id",
+          "canonicalProductId",
+          "name",
+          "brand",
+          "quantity",
+          "category",
+          "description",
+          "color",
+          "art",
+          "imageUrl",
+          "amountBase",
+          "baseUnit",
+          "offers"
+        ]
+      },
+      "ms": 24
+    },
+    {
+      "dim": "390x844",
+      "step": "cart update and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/cart",
+      "status": 200,
+      "requestId": "9aa05042-57ca-4abc-bc0e-200fdfd997ba",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "id",
+          "productId",
+          "locationId",
+          "quantity",
+          "preferences"
+        ]
+      },
+      "ms": 16
+    },
+    {
+      "dim": "390x844",
+      "step": "cart update and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/wishlist",
+      "status": 200,
+      "requestId": "bcb115e2-f97a-4bf1-88c2-eed99666a878",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 16
+    },
+    {
+      "dim": "390x844",
+      "step": "cart remove",
+      "method": "DELETE",
+      "url": "http://127.0.0.1:18080/api/me/cart/42ff2d76-50ac-4dae-8ac4-fd065263cb4d",
+      "status": 204,
+      "requestId": "44193559-9c87-46b7-8964-93faecd44058",
+      "body": null,
+      "ms": 17
+    },
+    {
+      "dim": "390x844",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/overview?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "c1562c61-4068-4860-b78b-325ebb2f6def",
+      "body": {
+        "budget": {
+          "keys": [
+            "month",
+            "limitMinor",
+            "spentMinor",
+            "remainingMinor",
+            "categories"
+          ]
+        },
+        "recentPurchases": {
+          "rows": 0,
+          "keys": []
+        },
+        "recommendations": {
+          "rows": 0,
+          "keys": []
+        },
+        "trend": {
+          "rows": 6,
+          "keys": [
+            "month",
+            "amountMinor"
+          ]
+        },
+        "watchCount": 0,
+        "unreadNotifications": 0,
+        "dueCount": 0
+      },
+      "ms": 35
+    },
+    {
+      "dim": "390x844",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/pantry",
+      "status": 200,
+      "requestId": "f9364870-8509-48fe-832b-e590864301c6",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 18
+    },
+    {
+      "dim": "390x844",
+      "step": "pantry writes and reload",
+      "method": "PUT",
+      "url": "http://127.0.0.1:18080/api/me/pantry",
+      "status": 204,
+      "requestId": "bd7f80b5-1397-4af6-b105-7dc9ebc3e7fa",
+      "body": null,
+      "ms": 19
+    },
+    {
+      "dim": "390x844",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/pantry",
+      "status": 200,
+      "requestId": "60768b89-9640-45c0-a986-b575145c6632",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "productId",
+          "name",
+          "amountBase",
+          "baseUnit"
+        ]
+      },
+      "ms": 16
+    },
+    {
+      "dim": "390x844",
+      "step": "pantry writes and reload",
+      "method": "PUT",
+      "url": "http://127.0.0.1:18080/api/me/pantry",
+      "status": 204,
+      "requestId": "df80fc21-027b-47ac-9573-4bd88ec73796",
+      "body": null,
+      "ms": 17
+    },
+    {
+      "dim": "390x844",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/pantry",
+      "status": 200,
+      "requestId": "48762c6f-8304-4309-a6ee-ea55d8d2f935",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "productId",
+          "name",
+          "amountBase",
+          "baseUnit"
+        ]
+      },
+      "ms": 19
+    },
+    {
+      "dim": "390x844",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/locations",
+      "status": 200,
+      "requestId": "51d4353a-ecb9-433a-8cb6-612e0d037393",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "id",
+          "name",
+          "city",
+          "postcode"
+        ]
+      },
+      "ms": 29
+    },
+    {
+      "dim": "390x844",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/meta",
+      "status": 200,
+      "requestId": "8d1b7422-1a2b-42c2-9525-185994ef8c3f",
+      "body": {
+        "groceryProvider": "string",
+        "message": "Retailer ordering and payments are outside this shopping-list application. Provider access needs verified credentials and permission.",
+        "version": "string",
+        "orderingEnabled": false,
+        "sample": false
+      },
+      "ms": 41
+    },
+    {
+      "dim": "390x844",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/categories",
+      "status": 200,
+      "requestId": "04d4e550-d7b7-47da-8a8e-5e458e0c52fe",
+      "body": {
+        "rows": 7,
+        "keys": [
+          "id",
+          "name"
+        ]
+      },
+      "ms": 42
+    },
+    {
+      "dim": "390x844",
+      "step": "pantry writes and reload",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/refresh",
+      "status": 200,
+      "requestId": "763d7597-2c6f-4af9-bde5-99ec08c7bc57",
+      "body": {
+        "user": {
+          "keys": [
+            "id",
+            "name",
+            "email",
+            "role",
+            "sample"
+          ]
+        }
+      },
+      "ms": 41
+    },
+    {
+      "dim": "390x844",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me",
+      "status": 200,
+      "requestId": "2fa34af9-a669-4a2e-a377-a646bf9fec50",
+      "body": {
+        "id": "string",
+        "name": "Browser Test Shopper 390",
+        "email": "string",
+        "role": "customer",
+        "sample": false
+      },
+      "ms": 15
+    },
+    {
+      "dim": "390x844",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "005d42c6-5c17-424e-87a9-2547611e5985",
+      "body": {
+        "rows": 27,
+        "keys": [
+          "id",
+          "canonicalProductId",
+          "name",
+          "brand",
+          "quantity",
+          "category",
+          "description",
+          "color",
+          "art",
+          "imageUrl",
+          "amountBase",
+          "baseUnit",
+          "offers"
+        ]
+      },
+      "ms": 33
+    },
+    {
+      "dim": "390x844",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/cart",
+      "status": 200,
+      "requestId": "62ec10f7-0662-4a87-a701-ff10ccfd860d",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 23
+    },
+    {
+      "dim": "390x844",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/wishlist",
+      "status": 200,
+      "requestId": "5c86d59c-8ac9-440d-8a9d-9890ff91d35e",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 23
+    },
+    {
+      "dim": "390x844",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/overview?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "bf7ca6fc-a41d-4771-96e5-06cff04c1b5d",
+      "body": {
+        "budget": {
+          "keys": [
+            "month",
+            "limitMinor",
+            "spentMinor",
+            "remainingMinor",
+            "categories"
+          ]
+        },
+        "recentPurchases": {
+          "rows": 0,
+          "keys": []
+        },
+        "recommendations": {
+          "rows": 0,
+          "keys": []
+        },
+        "trend": {
+          "rows": 6,
+          "keys": [
+            "month",
+            "amountMinor"
+          ]
+        },
+        "watchCount": 0,
+        "unreadNotifications": 0,
+        "dueCount": 0
+      },
+      "ms": 30
+    },
+    {
+      "dim": "390x844",
+      "step": "pantry writes and reload",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/pantry",
+      "status": 200,
+      "requestId": "a8190b24-8269-40a4-b063-7fb29ce6fa92",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "productId",
+          "name",
+          "amountBase",
+          "baseUnit"
+        ]
+      },
+      "ms": 20
+    },
+    {
+      "dim": "390x844",
+      "step": "recipes",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/recipe-intelligence?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "a9cefb55-7df7-47aa-b997-d6ba23a77a7b",
+      "body": {
+        "rows": 4,
+        "keys": [
+          "id",
+          "kind",
+          "source",
+          "recipe"
+        ]
+      },
+      "ms": 23
+    },
+    {
+      "dim": "390x844",
+      "step": "recipes",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/me/recipe-intelligence/plan",
+      "status": 200,
+      "requestId": "0d7f233a-1152-4878-a515-061d5d12e715",
+      "body": {
+        "meals": {
+          "rows": 1,
+          "keys": [
+            "recipeId",
+            "day",
+            "servings"
+          ]
+        },
+        "ingredients": {
+          "rows": 5,
+          "keys": [
+            "key",
+            "name",
+            "unit",
+            "required",
+            "pantry",
+            "missing",
+            "substitutions",
+            "choices",
+            "cataloguePacks"
+          ]
+        },
+        "baskets": {
+          "rows": 3,
+          "keys": [
+            "retailer",
+            "complete",
+            "missingIngredients",
+            "pricedSubtotalMinor",
+            "estimatedSubtotalMinor"
+          ]
+        },
+        "budgetMinor": null,
+        "budgetStatus": "string",
+        "sample": false
+      },
+      "ms": 79
+    },
+    {
+      "dim": "390x844",
+      "step": "recipes",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/me/recipe-intelligence/generate",
+      "status": 503,
+      "requestId": "31096711-d2e8-4346-8db5-061fa322c56f",
+      "body": {
+        "code": "string",
+        "message": "Recipe generation is not configured."
+      },
+      "ms": 81
+    },
+    {
+      "dim": "390x844",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/weekly?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "95e1720d-ee7f-482f-812c-9a4f028405d5",
+      "body": {
+        "draft": {
+          "keys": [
+            "meals",
+            "items",
+            "budgetMinor",
+            "diet",
+            "onHand"
+          ]
+        },
+        "revision": 0,
+        "recipes": {
+          "rows": 4,
+          "keys": [
+            "id",
+            "kind",
+            "source",
+            "recipe"
+          ]
+        },
+        "cart": {
+          "rows": 0,
+          "keys": []
+        },
+        "householdSize": null,
+        "sample": false
+      },
+      "ms": 25
+    },
+    {
+      "dim": "390x844",
+      "step": "weekly shopping plan",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/weekly/preview?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "2f56872d-79e6-4be8-9f04-9ff193a546d3",
+      "body": {
+        "plan": {
+          "keys": [
+            "ingredients",
+            "comparison",
+            "budgetMinor",
+            "budgetStatus",
+            "method",
+            "checkedAt",
+            "notes",
+            "sample"
+          ]
+        },
+        "planFeedbackId": "string",
+        "basketFeedbackId": "string"
+      },
+      "ms": 63
+    },
+    {
+      "dim": "390x844",
+      "step": "weekly shopping plan",
+      "method": "PUT",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/weekly?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "f63a4f4e-2fc4-455a-a13c-ebceb95dacc9",
+      "body": {
+        "revision": 1
+      },
+      "ms": 47
+    },
+    {
+      "dim": "390x844",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/categories",
+      "status": 200,
+      "requestId": "a016b8e9-f890-4d01-b36b-2556d417d973",
+      "body": {
+        "rows": 7,
+        "keys": [
+          "id",
+          "name"
+        ]
+      },
+      "ms": 23
+    },
+    {
+      "dim": "390x844",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/locations",
+      "status": 200,
+      "requestId": "da9816e9-e81f-4947-9101-909d8323a4b0",
+      "body": {
+        "rows": 1,
+        "keys": [
+          "id",
+          "name",
+          "city",
+          "postcode"
+        ]
+      },
+      "ms": 30
+    },
+    {
+      "dim": "390x844",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/meta",
+      "status": 200,
+      "requestId": "d73e80de-7317-465f-96a0-cf374cae549a",
+      "body": {
+        "groceryProvider": "string",
+        "message": "Retailer ordering and payments are outside this shopping-list application. Provider access needs verified credentials and permission.",
+        "version": "string",
+        "orderingEnabled": false,
+        "sample": false
+      },
+      "ms": 29
+    },
+    {
+      "dim": "390x844",
+      "step": "weekly shopping plan",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/refresh",
+      "status": 200,
+      "requestId": "cd32599f-51ea-4253-bf2b-87c5c52e489d",
+      "body": {
+        "user": {
+          "keys": [
+            "id",
+            "name",
+            "email",
+            "role",
+            "sample"
+          ]
+        }
+      },
+      "ms": 33
+    },
+    {
+      "dim": "390x844",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me",
+      "status": 200,
+      "requestId": "df8a12cd-802b-4b51-acae-f30032ca0d81",
+      "body": {
+        "id": "string",
+        "name": "Browser Test Shopper 390",
+        "email": "string",
+        "role": "customer",
+        "sample": false
+      },
+      "ms": 15
+    },
+    {
+      "dim": "390x844",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "bfd6219b-4fc8-4e00-9234-bba8459f029d",
+      "body": {
+        "rows": 27,
+        "keys": [
+          "id",
+          "canonicalProductId",
+          "name",
+          "brand",
+          "quantity",
+          "category",
+          "description",
+          "color",
+          "art",
+          "imageUrl",
+          "amountBase",
+          "baseUnit",
+          "offers"
+        ]
+      },
+      "ms": 36
+    },
+    {
+      "dim": "390x844",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/cart",
+      "status": 200,
+      "requestId": "4afccf88-7c6e-43f7-82d5-85860d5ca3ed",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 21
+    },
+    {
+      "dim": "390x844",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/wishlist",
+      "status": 200,
+      "requestId": "41e029f8-5638-41db-b4f4-329d0af07790",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 23
+    },
+    {
+      "dim": "390x844",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/overview?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "640708a6-ecd9-4013-8d98-48ae8720271e",
+      "body": {
+        "budget": {
+          "keys": [
+            "month",
+            "limitMinor",
+            "spentMinor",
+            "remainingMinor",
+            "categories"
+          ]
+        },
+        "recentPurchases": {
+          "rows": 0,
+          "keys": []
+        },
+        "recommendations": {
+          "rows": 0,
+          "keys": []
+        },
+        "trend": {
+          "rows": 6,
+          "keys": [
+            "month",
+            "amountMinor"
+          ]
+        },
+        "watchCount": 0,
+        "unreadNotifications": 0,
+        "dueCount": 0
+      },
+      "ms": 29
+    },
+    {
+      "dim": "390x844",
+      "step": "weekly shopping plan",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/weekly?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "ca69c21a-93d3-4c19-9a63-d505192bc0ac",
+      "body": {
+        "draft": {
+          "keys": [
+            "meals",
+            "items",
+            "budgetMinor",
+            "diet",
+            "onHand"
+          ]
+        },
+        "revision": 1,
+        "recipes": {
+          "rows": 4,
+          "keys": [
+            "id",
+            "kind",
+            "source",
+            "recipe"
+          ]
+        },
+        "cart": {
+          "rows": 0,
+          "keys": []
+        },
+        "householdSize": null,
+        "sample": false
+      },
+      "ms": 22
+    },
+    {
+      "dim": "390x844",
+      "step": "unified assistant",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/weekly/assistant?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "5943cbce-eee2-4bdf-89d6-743f962d7ec3",
+      "body": {
+        "intent": "string",
+        "method": "RULE_BASED",
+        "text": "string",
+        "products": {
+          "rows": 0,
+          "keys": []
+        },
+        "pantry": {
+          "rows": 0,
+          "keys": []
+        },
+        "plan": null,
+        "bulk": null,
+        "suggestions": {
+          "keys": [
+            "products",
+            "recipes",
+            "pantryGaps",
+            "budgetMinor",
+            "sample"
+          ]
+        },
+        "timing": null,
+        "sample": false,
+        "feedbackId": "string"
+      },
+      "ms": 188
+    },
+    {
+      "dim": "390x844",
+      "step": "bulk buy",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/preferences",
+      "status": 200,
+      "requestId": "cbd8bd99-014a-4010-bc4a-77ea5232037c",
+      "body": {
+        "household": null
+      },
+      "ms": 25
+    },
+    {
+      "dim": "390x844",
+      "step": "bulk buy",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/shopping/retailers/offers/milk?locationId=blr-indiranagar",
+      "status": 403,
+      "requestId": "2fec90e7-8923-4b16-87e0-397479e2112e",
+      "body": {
+        "code": "string",
+        "message": "You do not have access to this resource."
+      },
+      "ms": 33
+    },
+    {
+      "dim": "390x844",
+      "step": "bulk buy",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/bulk/milk/limits?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "e5764dcd-0c98-4942-863f-11bca53c11db",
+      "body": {
+        "limits": null
+      },
+      "ms": 33
+    },
+    {
+      "dim": "390x844",
+      "step": "bulk buy",
+      "method": "PUT",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/bulk/milk/limits?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "1ec49fa8-8784-4716-a78a-5ab0f0baf1a3",
+      "body": {
+        "limits": {
+          "keys": [
+            "perPersonDaily",
+            "storageCapacity",
+            "planningDays",
+            "budgetMinor"
+          ]
+        }
+      },
+      "ms": 25
+    },
+    {
+      "dim": "390x844",
+      "step": "bulk buy",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/bulk/milk?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "902eec3e-3941-4d5b-96bd-42439079a3f6",
+      "body": {
+        "action": "INSUFFICIENT_INFORMATION",
+        "reason": "string",
+        "productId": "string",
+        "name": "Amul Taaza",
+        "unit": "string",
+        "pantry": 0,
+        "required": null,
+        "maxPurchase": null,
+        "budgetMinor": null,
+        "daysBeforeExpiry": null,
+        "normal": null,
+        "recommended": null,
+        "sample": false
+      },
+      "ms": 22
+    },
+    {
+      "dim": "390x844",
+      "step": "personalized recommendations",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/preferences",
+      "status": 200,
+      "requestId": "9907b0f3-e70a-4e45-8adf-41cf4ad3a46d",
+      "body": {
+        "household": null
+      },
+      "ms": 24
+    },
+    {
+      "dim": "390x844",
+      "step": "personalized recommendations",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/shopping-intelligence/recommendations?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "f14d50dc-3b7c-4bbc-a272-cf4337e9e1e1",
+      "body": {
+        "products": {
+          "rows": 0,
+          "keys": []
+        },
+        "recipes": {
+          "rows": 4,
+          "keys": [
+            "id",
+            "name",
+            "cuisine",
+            "missingIngredients",
+            "estimatedSubtotalMinor"
+          ]
+        },
+        "pantryGaps": {
+          "rows": 0,
+          "keys": []
+        },
+        "budgetMinor": null,
+        "sample": false
+      },
+      "ms": 111
+    },
+    {
+      "dim": "390x844",
+      "step": "price trends",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/price-intelligence/milk?locationId=blr-indiranagar&retailer=blinkit",
+      "status": 200,
+      "requestId": "bd66d292-f7fb-48cc-8aff-d594ae76b1af",
+      "body": {
+        "status": "INSUFFICIENT_DATA",
+        "productId": "string",
+        "variantId": "string",
+        "pack": "string",
+        "retailer": "string",
+        "locationId": "string",
+        "latestObservation": null,
+        "observedChangeMinor": null,
+        "freshness": "string",
+        "horizonDays": 1,
+        "forecastDate": null,
+        "predictedMinor": null,
+        "lowMinor": null,
+        "highMinor": null,
+        "empiricalCoverage": null,
+        "modelVersion": null,
+        "trainedAt": null,
+        "warning": "string",
+        "advice": {
+          "keys": [
+            "action",
+            "reason"
+          ]
+        }
+      },
+      "ms": 38
+    },
+    {
+      "dim": "390x844",
+      "step": "price trends",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/grocery/variants/milk/price-history?locationId=blr-indiranagar",
+      "status": 200,
+      "requestId": "fbdfa68f-57a8-4286-84bf-44a8b66be11c",
+      "body": {
+        "variantId": "string",
+        "locationId": "string",
+        "from": "string",
+        "until": "string",
+        "stats": {
+          "keys": [
+            "observations",
+            "priced",
+            "minimumMinor",
+            "maximumMinor",
+            "averageMinor"
+          ]
+        },
+        "retailers": {
+          "rows": 0,
+          "keys": []
+        }
+      },
+      "ms": 43
+    },
+    {
+      "dim": "390x844",
+      "step": "empty catalogue result",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/page?locationId=blr-indiranagar&q=zzzz%20no%20grocery%20matches&category=&page=0&brand=&pack=",
+      "status": 200,
+      "requestId": "5143bd73-798e-4a93-9d85-05f44c7eb924",
+      "body": {
+        "items": {
+          "rows": 0,
+          "keys": []
+        },
+        "page": 0,
+        "pageSize": 24,
+        "totalElements": 0,
+        "totalPages": 0,
+        "hasNext": false,
+        "hasPrevious": false
+      },
+      "ms": 17
+    },
+    {
+      "dim": "390x844",
+      "step": "logout and login",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/logout",
+      "status": 204,
+      "requestId": "0fe500bc-e63d-43a6-a197-0da6e8e3efef",
+      "body": null,
+      "ms": 18
+    },
+    {
+      "dim": "390x844",
+      "step": "logout and login",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/login",
+      "status": 200,
+      "requestId": "08290fed-c271-45da-a0e7-01873e1ab9d4",
+      "body": {
+        "user": {
+          "keys": [
+            "id",
+            "name",
+            "email",
+            "role",
+            "sample"
+          ]
+        }
+      },
+      "ms": 351
+    },
+    {
+      "dim": "390x844",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/cart",
+      "status": 200,
+      "requestId": "482acb3f-b953-4132-964c-a411b3fe68cf",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 30
+    },
+    {
+      "dim": "390x844",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/wishlist",
+      "status": 200,
+      "requestId": "c32268a5-bfd5-43c7-9354-792342ce05e0",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 34
+    },
+    {
+      "dim": "390x844",
+      "step": "admin dashboard",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/logout",
+      "status": 204,
+      "requestId": "cb5e297b-cdd7-45d2-afb0-8b3e126d74a3",
+      "body": null,
+      "ms": 23
+    },
+    {
+      "dim": "390x844",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/page?locationId=blr-indiranagar&q=zzzz%20no%20grocery%20matches&category=&page=0&brand=&pack=",
+      "status": 200,
+      "requestId": "8e458bf0-f490-451a-84ec-285c374d14e0",
+      "body": {
+        "items": {
+          "rows": 0,
+          "keys": []
+        },
+        "page": 0,
+        "pageSize": 24,
+        "totalElements": 0,
+        "totalPages": 0,
+        "hasNext": false,
+        "hasPrevious": false
+      },
+      "ms": 16
+    },
+    {
+      "dim": "390x844",
+      "step": "admin dashboard",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/auth/login",
+      "status": 200,
+      "requestId": "2b510adf-d7f0-4327-a6ce-130e22ee1829",
+      "body": {
+        "user": {
+          "keys": [
+            "id",
+            "name",
+            "email",
+            "role",
+            "sample"
+          ]
+        }
+      },
+      "ms": 318
+    },
+    {
+      "dim": "390x844",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/cart",
+      "status": 200,
+      "requestId": "c258bc53-1c4a-4ab7-b8be-b63dc7f7dded",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 25
+    },
+    {
+      "dim": "390x844",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me/wishlist",
+      "status": 200,
+      "requestId": "a894d3c9-bce3-428f-902e-122d4caaa994",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 25
+    },
+    {
+      "dim": "390x844",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/me",
+      "status": 200,
+      "requestId": "ed21be7b-ca21-43de-a2ba-3ccbba31790d",
+      "body": {
+        "id": "string",
+        "name": "Administrator",
+        "email": "string",
+        "role": "admin",
+        "sample": false
+      },
+      "ms": 23
+    },
+    {
+      "dim": "390x844",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/admin/overview",
+      "status": 200,
+      "requestId": "1a68fa19-4b14-44bc-b047-bd1275a1fbc0",
+      "body": {
+        "users": 23,
+        "platforms": {
+          "rows": 3,
+          "keys": [
+            "id",
+            "enabled",
+            "status",
+            "syncedAt"
+          ]
+        },
+        "products": 27,
+        "categories": 7
+      },
+      "ms": 40
+    },
+    {
+      "dim": "390x844",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/admin/users",
+      "status": 200,
+      "requestId": "5d53e00c-66bb-432d-b9f4-aace05745f0d",
+      "body": {
+        "rows": 23,
+        "keys": [
+          "id",
+          "name",
+          "email",
+          "role",
+          "sample"
+        ]
+      },
+      "ms": 47
+    },
+    {
+      "dim": "390x844",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/products/page?locationId=blr-indiranagar&q=&category=&page=0&brand=&pack=",
+      "status": 200,
+      "requestId": "e7dfdd32-e609-4eab-ae34-03be6a98e97c",
+      "body": {
+        "items": {
+          "rows": 24,
+          "keys": [
+            "id",
+            "canonicalProductId",
+            "name",
+            "brand",
+            "quantity",
+            "category",
+            "description",
+            "color",
+            "art",
+            "imageUrl",
+            "amountBase",
+            "baseUnit",
+            "offers"
+          ]
+        },
+        "page": 0,
+        "pageSize": 24,
+        "totalElements": 27,
+        "totalPages": 2,
+        "hasNext": true,
+        "hasPrevious": false
+      },
+      "ms": 43
+    },
+    {
+      "dim": "390x844",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/admin/retailer-operations/filters",
+      "status": 200,
+      "requestId": "39dfaa83-6efe-45a3-9409-4b523c790d66",
+      "body": {
+        "locations": {
+          "rows": 1,
+          "keys": [
+            "id",
+            "name"
+          ]
+        },
+        "categories": {
+          "rows": 7,
+          "keys": [
+            "id",
+            "name"
+          ]
+        }
+      },
+      "ms": 31
+    },
+    {
+      "dim": "390x844",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/admin/retailer-operations/coverage?locationId=blr-indiranagar&page=0",
+      "status": 200,
+      "requestId": "5796cae4-1183-44d8-855a-94b01d6fb15b",
+      "body": {
+        "locationId": "string",
+        "freshnessSeconds": 900,
+        "calculatedAt": "string",
+        "counts": {
+          "keys": [
+            "totalProducts",
+            "approvedProducts",
+            "productsWithoutMapping",
+            "unresolvedProducts",
+            "staleProducts",
+            "missingPriceProducts",
+            "uncertainStockProducts",
+            "missingFeeProducts",
+            "packConflictProducts"
+          ]
+        },
+        "retailers": {
+          "rows": 3,
+          "keys": [
+            "id",
+            "recordedUsableProducts",
+            "usableLiveProductsForCurrentAccount",
+            "lastSuccessfulRefresh"
+          ]
+        },
+        "rows": {
+          "rows": 30,
+          "keys": [
+            "productId",
+            "variantId",
+            "categoryId",
+            "name",
+            "brand",
+            "pack",
+            "retailer",
+            "nativeId",
+            "approved",
+            "status",
+            "missingFees",
+            "missingPrice",
+            "uncertainStock",
+            "packConflict",
+            "priceMinor",
+            "stock",
+            "observedAt",
+            "observationSource",
+            "origin",
+            "verification"
+          ]
+        },
+        "hasNext": true,
+        "events": {
+          "rows": 0,
+          "keys": []
+        },
+        "sample": false
+      },
+      "ms": 434
+    },
+    {
+      "dim": "390x844",
+      "step": "admin dashboard",
+      "method": "GET",
+      "url": "http://127.0.0.1:18080/api/admin/provider/mapping/decisions?variantId=milk&platform=blinkit&afterRevision=0",
+      "status": 200,
+      "requestId": "6a77969f-04be-4b35-9fa4-473a86d7ed0d",
+      "body": {
+        "rows": 0,
+        "keys": []
+      },
+      "ms": 16
+    },
+    {
+      "dim": "390x844",
+      "step": "admin dashboard",
+      "method": "POST",
+      "url": "http://127.0.0.1:18080/api/admin/provider/mapping/preview",
+      "status": 200,
+      "requestId": "705f9983-ba3e-4642-86d1-5b340b0f2f0d",
+      "body": {
+        "decisionId": "string",
+        "assessment": {
+          "keys": [
+            "variantId",
+            "canonicalPack",
+            "canonicalGtins",
+            "evidence",
+            "blockingReasons",
+            "canonicalIdentity"
+          ]
+        }
+      },
+      "ms": 12
+    }
+  ],
+  "consoleIssues": [
+    {
+      "dim": "1440x900",
+      "step": "launch",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/UnifiedShopping.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to remo"
+    },
+    {
+      "dim": "1440x900",
+      "step": "launch",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/ShoppingIntelligence.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to"
+    },
+    {
+      "dim": "1440x900",
+      "step": "launch",
+      "kind": "error",
+      "message": "Unexpected text node:  . A text node cannot be a child of a <View>."
+    },
+    {
+      "dim": "1440x900",
+      "step": "launch",
+      "kind": "error",
+      "message": "Unexpected text node: . A text node cannot be a child of a <View>."
+    },
+    {
+      "dim": "1440x900",
+      "step": "launch",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 401 ()"
+    },
+    {
+      "dim": "1440x900",
+      "step": "home catalogue",
+      "kind": "error",
+      "message": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "dim": "1440x900",
+      "step": "browser JWT refresh and profile",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/UnifiedShopping.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to remo"
+    },
+    {
+      "dim": "1440x900",
+      "step": "browser JWT refresh and profile",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/ShoppingIntelligence.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to"
+    },
+    {
+      "dim": "1440x900",
+      "step": "product details",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+      "dim": "1440x900",
+      "step": "cart update and reload",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/UnifiedShopping.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to remo"
+    },
+    {
+      "dim": "1440x900",
+      "step": "cart update and reload",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/ShoppingIntelligence.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to"
+    },
+    {
+      "dim": "1440x900",
+      "step": "pantry writes and reload",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/UnifiedShopping.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to remo"
+    },
+    {
+      "dim": "1440x900",
+      "step": "pantry writes and reload",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/ShoppingIntelligence.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to"
+    },
+    {
+      "dim": "1440x900",
+      "step": "recipes",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 503 ()"
+    },
+    {
+      "dim": "1440x900",
+      "step": "weekly shopping plan",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/UnifiedShopping.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to remo"
+    },
+    {
+      "dim": "1440x900",
+      "step": "weekly shopping plan",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/ShoppingIntelligence.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to"
+    },
+    {
+      "dim": "1440x900",
+      "step": "admin dashboard",
+      "kind": "error",
+      "message": "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — "
+    },
+    {
+      "dim": "1440x900",
+      "step": "admin dashboard",
+      "kind": "error",
+      "message": "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — "
+    },
+    {
+      "dim": "1440x900",
+      "step": "admin dashboard",
+      "kind": "error",
+      "message": "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — "
+    },
+    {
+      "dim": "1440x900",
+      "step": "admin dashboard",
+      "kind": "error",
+      "message": "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — "
+    },
+    {
+      "dim": "1440x900",
+      "step": "admin dashboard",
+      "kind": "error",
+      "message": "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — "
+    },
+    {
+      "dim": "1440x900",
+      "step": "admin dashboard",
+      "kind": "error",
+      "message": "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — "
+    },
+    {
+      "dim": "1366x768",
+      "step": "launch",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/UnifiedShopping.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to remo"
+    },
+    {
+      "dim": "1366x768",
+      "step": "launch",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/ShoppingIntelligence.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to"
+    },
+    {
+      "dim": "1366x768",
+      "step": "launch",
+      "kind": "error",
+      "message": "Unexpected text node:  . A text node cannot be a child of a <View>."
+    },
+    {
+      "dim": "1366x768",
+      "step": "launch",
+      "kind": "error",
+      "message": "Unexpected text node: . A text node cannot be a child of a <View>."
+    },
+    {
+      "dim": "1366x768",
+      "step": "home catalogue",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 401 ()"
+    },
+    {
+      "dim": "1366x768",
+      "step": "home catalogue",
+      "kind": "error",
+      "message": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "dim": "1366x768",
+      "step": "browser JWT refresh and profile",
+      "kind": "http-transport",
+      "path": "/api/me/cart",
+      "message": "net::ERR_ABORTED"
+    },
+    {
+      "dim": "1366x768",
+      "step": "browser JWT refresh and profile",
+      "kind": "http-transport",
+      "path": "/api/me/wishlist",
+      "message": "net::ERR_ABORTED"
+    },
+    {
+      "dim": "1366x768",
+      "step": "browser JWT refresh and profile",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/UnifiedShopping.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to remo"
+    },
+    {
+      "dim": "1366x768",
+      "step": "browser JWT refresh and profile",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/ShoppingIntelligence.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to"
+    },
+    {
+      "dim": "1366x768",
+      "step": "product details",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+      "dim": "1366x768",
+      "step": "cart update and reload",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/UnifiedShopping.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to remo"
+    },
+    {
+      "dim": "1366x768",
+      "step": "cart update and reload",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/ShoppingIntelligence.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to"
+    },
+    {
+      "dim": "1366x768",
+      "step": "pantry writes and reload",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/UnifiedShopping.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to remo"
+    },
+    {
+      "dim": "1366x768",
+      "step": "pantry writes and reload",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/ShoppingIntelligence.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to"
+    },
+    {
+      "dim": "1366x768",
+      "step": "recipes",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 503 ()"
+    },
+    {
+      "dim": "1366x768",
+      "step": "weekly shopping plan",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/UnifiedShopping.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to remo"
+    },
+    {
+      "dim": "1366x768",
+      "step": "weekly shopping plan",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/ShoppingIntelligence.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to"
+    },
+    {
+      "dim": "1366x768",
+      "step": "admin dashboard",
+      "kind": "http-transport",
+      "path": "/api/products/page",
+      "message": "net::ERR_ABORTED"
+    },
+    {
+      "dim": "1366x768",
+      "step": "admin dashboard",
+      "kind": "error",
+      "message": "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — "
+    },
+    {
+      "dim": "1366x768",
+      "step": "admin dashboard",
+      "kind": "error",
+      "message": "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — "
+    },
+    {
+      "dim": "1366x768",
+      "step": "admin dashboard",
+      "kind": "error",
+      "message": "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — "
+    },
+    {
+      "dim": "1366x768",
+      "step": "admin dashboard",
+      "kind": "error",
+      "message": "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — "
+    },
+    {
+      "dim": "390x844",
+      "step": "launch",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/UnifiedShopping.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to remo"
+    },
+    {
+      "dim": "390x844",
+      "step": "launch",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/ShoppingIntelligence.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to"
+    },
+    {
+      "dim": "390x844",
+      "step": "launch",
+      "kind": "error",
+      "message": "Unexpected text node:  . A text node cannot be a child of a <View>."
+    },
+    {
+      "dim": "390x844",
+      "step": "launch",
+      "kind": "error",
+      "message": "Unexpected text node: . A text node cannot be a child of a <View>."
+    },
+    {
+      "dim": "390x844",
+      "step": "home catalogue",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 401 ()"
+    },
+    {
+      "dim": "390x844",
+      "step": "home catalogue",
+      "kind": "error",
+      "message": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "dim": "390x844",
+      "step": "browser JWT refresh and profile",
+      "kind": "http-transport",
+      "path": "/api/me/cart",
+      "message": "net::ERR_ABORTED"
+    },
+    {
+      "dim": "390x844",
+      "step": "browser JWT refresh and profile",
+      "kind": "http-transport",
+      "path": "/api/me/wishlist",
+      "message": "net::ERR_ABORTED"
+    },
+    {
+      "dim": "390x844",
+      "step": "browser JWT refresh and profile",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/UnifiedShopping.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to remo"
+    },
+    {
+      "dim": "390x844",
+      "step": "browser JWT refresh and profile",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/ShoppingIntelligence.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to"
+    },
+    {
+      "dim": "390x844",
+      "step": "product details",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+      "dim": "390x844",
+      "step": "cart update and reload",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/UnifiedShopping.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to remo"
+    },
+    {
+      "dim": "390x844",
+      "step": "cart update and reload",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/ShoppingIntelligence.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to"
+    },
+    {
+      "dim": "390x844",
+      "step": "pantry writes and reload",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/UnifiedShopping.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to remo"
+    },
+    {
+      "dim": "390x844",
+      "step": "pantry writes and reload",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/ShoppingIntelligence.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to"
+    },
+    {
+      "dim": "390x844",
+      "step": "recipes",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 503 ()"
+    },
+    {
+      "dim": "390x844",
+      "step": "weekly shopping plan",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/UnifiedShopping.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to remo"
+    },
+    {
+      "dim": "390x844",
+      "step": "weekly shopping plan",
+      "kind": "warning",
+      "message": "Require cycle: src/screens/SmartHub.tsx -> src/screens/ShoppingIntelligence.tsx -> src/screens/SmartHub.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to"
+    },
+    {
+      "dim": "390x844",
+      "step": "admin dashboard",
+      "kind": "error",
+      "message": "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — "
+    },
+    {
+      "dim": "390x844",
+      "step": "admin dashboard",
+      "kind": "error",
+      "message": "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — "
+    },
+    {
+      "dim": "390x844",
+      "step": "admin dashboard",
+      "kind": "error",
+      "message": "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — "
+    },
+    {
+      "dim": "390x844",
+      "step": "admin dashboard",
+      "kind": "error",
+      "message": "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — "
+    }
+  ],
+  "blocked": {
+    "cdn.grofers.com": 127
+  },
+  "screens": [
+    {
+      "file": "1440x900-01-home.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "document": [
+        1440,
+        1440
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1440x900-02-login.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "document": [
+        1440,
+        1440
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1440x900-03-registration.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "document": [
+        1440,
+        1440
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1440x900-04-search.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "document": [
+        1440,
+        1440
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1440x900-05-details.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "document": [
+        1440,
+        1440
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1440x900-06-comparison.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "document": [
+        1440,
+        1440
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1440x900-07-cart.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "document": [
+        1440,
+        1440
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1440x900-08-cart-reloaded.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "document": [
+        1440,
+        1440
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1440x900-09-pantry.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "document": [
+        1440,
+        1440
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1440x900-10-recipes.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "document": [
+        1440,
+        1440
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1440x900-18-recipe-quantities.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "document": [
+        1440,
+        1440
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1440x900-11-shopping-plan.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "document": [
+        1440,
+        1440
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1440x900-12-assistant.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "document": [
+        1440,
+        1440
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1440x900-13-bulk-buy.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "document": [
+        1440,
+        1440
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1440x900-14-personalized.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "document": [
+        1440,
+        1440
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1440x900-15-price-trends.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "document": [
+        1440,
+        1440
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1440x900-20-empty-search.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "document": [
+        1440,
+        1440
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1440x900-16-admin.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "document": [
+        1440,
+        1440
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1440x900-17-admin-coverage.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "document": [
+        1440,
+        1440
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1440x900-19-mapping-review.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "document": [
+        1440,
+        1440
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1366x768-01-home.png",
+      "viewport": [
+        1366,
+        768
+      ],
+      "document": [
+        1366,
+        1366
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1366x768-02-login.png",
+      "viewport": [
+        1366,
+        768
+      ],
+      "document": [
+        1366,
+        1366
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1366x768-03-registration.png",
+      "viewport": [
+        1366,
+        768
+      ],
+      "document": [
+        1366,
+        1366
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1366x768-04-search.png",
+      "viewport": [
+        1366,
+        768
+      ],
+      "document": [
+        1366,
+        1366
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1366x768-05-details.png",
+      "viewport": [
+        1366,
+        768
+      ],
+      "document": [
+        1366,
+        1366
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1366x768-06-comparison.png",
+      "viewport": [
+        1366,
+        768
+      ],
+      "document": [
+        1366,
+        1366
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1366x768-07-cart.png",
+      "viewport": [
+        1366,
+        768
+      ],
+      "document": [
+        1366,
+        1366
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1366x768-08-cart-reloaded.png",
+      "viewport": [
+        1366,
+        768
+      ],
+      "document": [
+        1366,
+        1366
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1366x768-09-pantry.png",
+      "viewport": [
+        1366,
+        768
+      ],
+      "document": [
+        1366,
+        1366
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1366x768-10-recipes.png",
+      "viewport": [
+        1366,
+        768
+      ],
+      "document": [
+        1366,
+        1366
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1366x768-18-recipe-quantities.png",
+      "viewport": [
+        1366,
+        768
+      ],
+      "document": [
+        1366,
+        1366
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1366x768-11-shopping-plan.png",
+      "viewport": [
+        1366,
+        768
+      ],
+      "document": [
+        1366,
+        1366
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1366x768-12-assistant.png",
+      "viewport": [
+        1366,
+        768
+      ],
+      "document": [
+        1366,
+        1366
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1366x768-13-bulk-buy.png",
+      "viewport": [
+        1366,
+        768
+      ],
+      "document": [
+        1366,
+        1366
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1366x768-14-personalized.png",
+      "viewport": [
+        1366,
+        768
+      ],
+      "document": [
+        1366,
+        1366
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1366x768-15-price-trends.png",
+      "viewport": [
+        1366,
+        768
+      ],
+      "document": [
+        1366,
+        1366
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1366x768-20-empty-search.png",
+      "viewport": [
+        1366,
+        768
+      ],
+      "document": [
+        1366,
+        1366
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1366x768-16-admin.png",
+      "viewport": [
+        1366,
+        768
+      ],
+      "document": [
+        1366,
+        1366
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1366x768-17-admin-coverage.png",
+      "viewport": [
+        1366,
+        768
+      ],
+      "document": [
+        1366,
+        1366
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "1366x768-19-mapping-review.png",
+      "viewport": [
+        1366,
+        768
+      ],
+      "document": [
+        1366,
+        1366
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "390x844-01-home.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "document": [
+        390,
+        390
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "390x844-02-login.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "document": [
+        390,
+        390
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "390x844-03-registration.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "document": [
+        390,
+        390
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "390x844-04-search.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "document": [
+        390,
+        390
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "390x844-05-details.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "document": [
+        390,
+        390
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "390x844-06-comparison.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "document": [
+        390,
+        390
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "390x844-07-cart.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "document": [
+        390,
+        390
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "390x844-08-cart-reloaded.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "document": [
+        390,
+        390
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "390x844-09-pantry.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "document": [
+        390,
+        390
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "390x844-10-recipes.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "document": [
+        390,
+        390
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "390x844-18-recipe-quantities.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "document": [
+        390,
+        390
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "390x844-11-shopping-plan.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "document": [
+        390,
+        390
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "390x844-12-assistant.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "document": [
+        390,
+        390
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "390x844-13-bulk-buy.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "document": [
+        390,
+        390
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "390x844-14-personalized.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "document": [
+        390,
+        390
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "390x844-15-price-trends.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "document": [
+        390,
+        390
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "390x844-20-empty-search.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "document": [
+        390,
+        390
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "390x844-16-admin.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "document": [
+        390,
+        390
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "390x844-17-admin-coverage.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "document": [
+        390,
+        390
+      ],
+      "brokenImages": 0
+    },
+    {
+      "file": "390x844-19-mapping-review.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "document": [
+        390,
+        390
+      ],
+      "brokenImages": 0
+    }
+  ]
+}

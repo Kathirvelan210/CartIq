@@ -1,0 +1,1412 @@
+{
+  "title": "Cross-source grocery trade-item matching benchmark",
+  "labelledOn": "2026-11-14",
+  "protocol": "One manual annotation pass before execution. Same means corroborated exact trade item. Different means affirmative pack, flavour, formulation, brand or construction difference. Uncertain means evidence conflicts or leaves important fields missing. Independent sources refer to separate published records, with the possibility of common manufacturer data upstream.",
+  "limits": "India-market OFF sample and US product-label stress cases. No authorized Indian retailer feeds, independent second annotator, sampling representativeness or model training. Matcher inputs preserve observed source descriptions where possible, with dual metric quantities supplied in one consistent notation. Individual quantities are not inferred by dividing a rounded total.",
+  "sources": {
+    "OFF": "https://openfoodfacts.github.io/documentation/docs/Product-Opener/api/tutorials/license-be-on-the-legal-side/",
+    "USDA": "https://fdc.nal.usda.gov/api-guide/",
+    "GS1 identity": "https://ref.gs1.org/standards/gtin-management/"
+  },
+  "attribution": "Open Food Facts contributors (ODbL 1.0 / DbCL 1.0), USDA FoodData Central (CC0 1.0), and the identified brand-owner or public product page links. Manufacturer imagery and retailer prices are not redistributed.",
+  "items": {
+    "brand:034000002405": {
+      "family": "hershey-milk-chocolate",
+      "market": "US",
+      "sourceRecord": "smartlabel:034000002405",
+      "sourceUrl": "https://smartlabel.hersheys.com/034000002405-0059-en-US/index.html",
+      "evidence": "Label declares a single 43 g bar.",
+      "archive": "label-034000002405.html",
+      "archiveSha256": "ef4b33a3fdb1c7194ea1de04bcee71214167f14c4f26d8904fcb7da3029311fe",
+      "identity": {
+        "name": "Milk Chocolate",
+        "brand": "Hershey's",
+        "gtin": "034000002405",
+        "pack": "43 g",
+        "variant": null,
+        "formulation": "Milk chocolate"
+      }
+    },
+    "brand:034000290055": {
+      "family": "hershey-milk-chocolate",
+      "market": "US",
+      "sourceRecord": "smartlabel:034000290055",
+      "sourceUrl": "https://smartlabel.hersheys.com/034000290055-0051-en-US/index.html",
+      "evidence": "Label declares 6 full-size, 43 g bars. Total on label is rounded independently.",
+      "archive": "label-034000290055.html",
+      "archiveSha256": "c8b5e12dede56eb919bc5fca094450295c88cd2d871268e363aa4c38ae3e4d3e",
+      "identity": {
+        "name": "Milk Chocolate",
+        "brand": "Hershey's",
+        "gtin": "034000290055",
+        "pack": "6 x 43 g",
+        "variant": null,
+        "formulation": "Milk chocolate"
+      }
+    },
+    "brand:034000465989": {
+      "family": "kitkat-wafers",
+      "market": "US",
+      "sourceRecord": "smartlabel:034000465989",
+      "sourceUrl": "https://smartlabel.hersheys.com/034000465989-0050-en-US/index.html",
+      "evidence": "Label declares 24 individually wrapped 42 g bars.",
+      "archive": "label-034000465989.html",
+      "archiveSha256": "55e83326f2d1726d708df3f3b190b20b7a0c93e832f24d2d98422721a2f0a788",
+      "identity": {
+        "name": "Crisp Wafers",
+        "brand": "Kit Kat",
+        "gtin": "034000465989",
+        "pack": "24 x 42 g",
+        "variant": null,
+        "formulation": "Milk chocolate wafers"
+      }
+    },
+    "brand:034000297160": {
+      "family": "hershey-milk-chocolate",
+      "market": "US",
+      "sourceRecord": "smartlabel:034000297160",
+      "sourceUrl": "https://smartlabel.hersheys.com/034000297160-0050-en-US/index.html",
+      "evidence": "Label declares 43 g but prints another distinct code.",
+      "archive": "label-034000297160.html",
+      "archiveSha256": "4fbbb17786db6b5d946960d384671585592123a13541a542871068018f31bd56",
+      "identity": {
+        "name": "Milk Chocolate",
+        "brand": "Hershey's",
+        "gtin": "034000297160",
+        "pack": "43 g",
+        "variant": null,
+        "formulation": "Milk chocolate"
+      }
+    },
+    "usda:034000290055": {
+      "family": "hershey-milk-chocolate",
+      "market": "US",
+      "sourceRecord": "usda:2600810",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2600810/branded",
+      "evidence": "USDA branded product #2600810; published package weight 9.3 oz/263 g.",
+      "archive": "fdc-034000290055.json",
+      "archiveSha256": "30cb70003fefd4eea8560659494a9471ce02c133c469532c347243d519f45c77",
+      "identity": {
+        "name": "MILK CHOCOLATE BARS, MILK CHOCOLATE",
+        "brand": "HERSHEY'S",
+        "gtin": "034000290055",
+        "pack": "263 g",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "off-us:0034000290055": {
+      "family": "hershey-milk-chocolate",
+      "market": "US",
+      "sourceRecord": "off:00034000290055",
+      "sourceUrl": "https://world.openfoodfacts.org/product/0034000290055",
+      "evidence": "Open Food Facts independent archive response.",
+      "archive": "off-034000290055.json",
+      "archiveSha256": "64386263fcc331bcbb360d002e2cdb0da3baeb874b7a9d86ae0776547be63129",
+      "identity": {
+        "name": "",
+        "brand": "Hershey's",
+        "gtin": "0034000290055",
+        "pack": "263 g",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "off:8901719134845": {
+      "family": "parle-g",
+      "market": "India tag",
+      "sourceRecord": "off:08901719134845",
+      "sourceUrl": "https://world.openfoodfacts.org/product/8901719134845",
+      "evidence": "Open Food Facts archived source record. Field values retained as supplied.",
+      "archive": "prior-market.json",
+      "archiveSha256": "665a8b8e29221b331b642e49ee076fcfe89b8b597680c56e70175d35a8903ab6",
+      "identity": {
+        "name": "Parle-G Biscuit",
+        "brand": "Parle",
+        "gtin": "8901719134845",
+        "pack": "45gm",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "off:8901719134852": {
+      "family": "parle-g",
+      "market": "India tag",
+      "sourceRecord": "off:08901719134852",
+      "sourceUrl": "https://world.openfoodfacts.org/product/8901719134852",
+      "evidence": "Open Food Facts archived source record. Field values retained as supplied.",
+      "archive": "prior-market.json",
+      "archiveSha256": "665a8b8e29221b331b642e49ee076fcfe89b8b597680c56e70175d35a8903ab6",
+      "identity": {
+        "name": "Parle-G",
+        "brand": "Parle",
+        "gtin": "8901719134852",
+        "pack": "90g",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "off:8901719123870": {
+      "family": "parle-g",
+      "market": "India tag",
+      "sourceRecord": "off:08901719123870",
+      "sourceUrl": "https://world.openfoodfacts.org/product/8901719123870",
+      "evidence": "Open Food Facts archived source record. Field values retained as supplied.",
+      "archive": "cookies.json",
+      "archiveSha256": "ef53974043cc1932c404cb30311f68aa19d648cb06eac77ebaeef49b90523a3f",
+      "identity": {
+        "name": "Parle-G 250g",
+        "brand": "Parle",
+        "gtin": "8901719123870",
+        "pack": "250 g",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "sai:8901719134845": {
+      "family": "parle-g",
+      "market": "India",
+      "sourceRecord": "saisupermarket:3878",
+      "sourceUrl": "https://www.saisupermarket.in/product-detail.php?cat=3.1&mid=8901719134845",
+      "evidence": "Public one-off product page review. Exact code and 45GM in the product title; pricing information excluded.",
+      "archive": "parle-g-45.html",
+      "archiveSha256": "7fd914937df353a4c31dc2cfb1f1ff4ce8f890b1f0ee1c21878d36700efac135",
+      "identity": {
+        "name": "PARLE GLUCO BISCUITS",
+        "brand": "Parle",
+        "gtin": "8901719134845",
+        "pack": "45gm",
+        "variant": "Original",
+        "formulation": null
+      }
+    },
+    "off:8906010500764": {
+      "family": "balaji-chataka",
+      "market": "India tag",
+      "sourceRecord": "off:08906010500764",
+      "sourceUrl": "https://world.openfoodfacts.org/product/8906010500764",
+      "evidence": "Open Food Facts archived source record. Field values retained as supplied.",
+      "archive": "prior-market.json",
+      "archiveSha256": "665a8b8e29221b331b642e49ee076fcfe89b8b597680c56e70175d35a8903ab6",
+      "identity": {
+        "name": "balaji wafers chataka pataka",
+        "brand": "Balaji",
+        "gtin": "8906010500764",
+        "pack": "25g",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "off:8906010500627": {
+      "family": "balaji-chataka",
+      "market": "India tag",
+      "sourceRecord": "off:08906010500627",
+      "sourceUrl": "https://world.openfoodfacts.org/product/8906010500627",
+      "evidence": "Open Food Facts archived source record. Field values retained as supplied.",
+      "archive": "prior-market.json",
+      "archiveSha256": "665a8b8e29221b331b642e49ee076fcfe89b8b597680c56e70175d35a8903ab6",
+      "identity": {
+        "name": "Chataka Pataka Tangy Tomato",
+        "brand": "Balaji",
+        "gtin": "8906010500627",
+        "pack": null,
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "off:8901058017687": {
+      "family": "maggi-noodles",
+      "market": "India tag",
+      "sourceRecord": "off:08901058017687",
+      "sourceUrl": "https://world.openfoodfacts.org/product/8901058017687",
+      "evidence": "Open Food Facts archived source record. Field values retained as supplied.",
+      "archive": "prior-market.json",
+      "archiveSha256": "665a8b8e29221b331b642e49ee076fcfe89b8b597680c56e70175d35a8903ab6",
+      "identity": {
+        "name": "maggi",
+        "brand": "Maggi",
+        "gtin": "8901058017687",
+        "pack": "75",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "off:8901058000290": {
+      "family": "maggi-noodles",
+      "market": "India tag",
+      "sourceRecord": "off:08901058000290",
+      "sourceUrl": "https://world.openfoodfacts.org/product/8901058000290",
+      "evidence": "Open Food Facts archived source record. Field values retained as supplied.",
+      "archive": "prior-market.json",
+      "archiveSha256": "665a8b8e29221b331b642e49ee076fcfe89b8b597680c56e70175d35a8903ab6",
+      "identity": {
+        "name": "maggi",
+        "brand": "Nestlé",
+        "gtin": "8901058000290",
+        "pack": "70",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "brand:044000029098": {
+      "family": "belvita-crunchy",
+      "market": "US",
+      "sourceRecord": "smartlabel:044000029098",
+      "sourceUrl": "https://smartlabel.mondelez.info/044000029098-0002-en-US/index.html",
+      "evidence": "Owner lists eight 50 g packs.",
+      "archive": "label-044000029098.html",
+      "archiveSha256": "df47ae29b6eed9e289963905baa8b4c68b5e5fe97d226955d9592facf21bc122",
+      "identity": {
+        "name": "Crunchy Breakfast Biscuits",
+        "brand": "belVita",
+        "gtin": "044000029098",
+        "pack": "8 x 50 g",
+        "variant": "Blueberry",
+        "formulation": null
+      }
+    },
+    "brand:044000032739": {
+      "family": "belvita-crunchy",
+      "market": "US",
+      "sourceRecord": "smartlabel:044000032739",
+      "sourceUrl": "https://smartlabel.mondelez.info/044000032739-0002-en-US/index.html",
+      "evidence": "Owner lists eight 50 g packs.",
+      "archive": "label-044000032739.html",
+      "archiveSha256": "6aa49d4cbb67da23dcb35825f56f6f07907d5604d0dfc94cf56a7c8f80d1a2d9",
+      "identity": {
+        "name": "Crunchy Breakfast Biscuits",
+        "brand": "belVita",
+        "gtin": "044000032739",
+        "pack": "8 x 50 g",
+        "variant": "Cinnamon Brown Sugar",
+        "formulation": null
+      }
+    },
+    "brand:044000040840": {
+      "family": "belvita-crunchy",
+      "market": "US",
+      "sourceRecord": "smartlabel:044000040840",
+      "sourceUrl": "https://smartlabel.mondelez.info/044000040840-0003-en-US/index.html",
+      "evidence": "Owner lists 25 packs of four, 50 g each.",
+      "archive": "label-044000040840.html",
+      "archiveSha256": "79a313dee32b91feac6174b1ff09490e2e2a61ca75869cee7f96a62ea01731e8",
+      "identity": {
+        "name": "Crunchy Breakfast Biscuits",
+        "brand": "belVita",
+        "gtin": "044000040840",
+        "pack": "25 x 50 g",
+        "variant": "Blueberry",
+        "formulation": null
+      }
+    },
+    "brand:044000036096": {
+      "family": "belvita-crunchy",
+      "market": "US",
+      "sourceRecord": "smartlabel:044000036096",
+      "sourceUrl": "https://smartlabel.mondelez.info/044000036096-0004-en-US/index.html",
+      "evidence": "Owner lists 25 packs of four, 50 g each.",
+      "archive": "label-044000036096.html",
+      "archiveSha256": "27e324dada8a75ac5acb6f57d5d00a1c767b99fca45b3c8b197636599fa3fd42",
+      "identity": {
+        "name": "Crunchy Breakfast Biscuits",
+        "brand": "belVita",
+        "gtin": "044000036096",
+        "pack": "25 x 50 g",
+        "variant": "Cinnamon Brown Sugar",
+        "formulation": null
+      }
+    },
+    "brand:044000057251": {
+      "family": "belvita-crunchy",
+      "market": "US",
+      "sourceRecord": "smartlabel:044000057251",
+      "sourceUrl": "https://smartlabel.mondelez.info/044000057251-0003-en-US/index.html",
+      "evidence": "Owner lists 30 packs of four, 50 g each.",
+      "archive": "label-044000057251.html",
+      "archiveSha256": "b75f64d28e5f42aa6e3c73557761203963d4d6f519407e616a3dea309f8d265f",
+      "identity": {
+        "name": "Crunchy Breakfast Biscuits",
+        "brand": "belVita",
+        "gtin": "044000057251",
+        "pack": "30 x 50 g",
+        "variant": "Blueberry",
+        "formulation": null
+      }
+    },
+    "brand:044000057275": {
+      "family": "belvita-crunchy",
+      "market": "US",
+      "sourceRecord": "smartlabel:044000057275",
+      "sourceUrl": "https://smartlabel.mondelez.info/044000057275-0005-en-US/index.html",
+      "evidence": "Owner lists 30 packs of four, 50 g each.",
+      "archive": "label-044000057275.html",
+      "archiveSha256": "cc5e812393a1c10603d6651293850ee6d0b78e382caf0781a448044008679e49",
+      "identity": {
+        "name": "Crunchy Breakfast Biscuits",
+        "brand": "belVita",
+        "gtin": "044000057275",
+        "pack": "30 x 50 g",
+        "variant": "Cinnamon Brown Sugar",
+        "formulation": null
+      }
+    },
+    "brand:044000063214": {
+      "family": "belvita-crunchy",
+      "market": "US",
+      "sourceRecord": "smartlabel:044000063214",
+      "sourceUrl": "https://smartlabel.mondelez.info/044000063214-0003-en-US/index.html",
+      "evidence": "Owner lists eight 50 g packs on a separate UPC.",
+      "archive": "label-044000063214.html",
+      "archiveSha256": "d3cb464bedeee275e994ba16da427f533bc84ca9f966f867bbd5c09eb578d276",
+      "identity": {
+        "name": "Crunchy Breakfast Biscuits",
+        "brand": "belVita",
+        "gtin": "044000063214",
+        "pack": "8 x 50 g",
+        "variant": "Blueberry",
+        "formulation": null
+      }
+    },
+    "usda:044000029098": {
+      "family": "belvita-crunchy",
+      "market": "US",
+      "sourceRecord": "usda:2655798",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2655798/branded",
+      "evidence": "USDA branded product #2655798; published package weight 14.08 oz/400 g.",
+      "archive": "fdc-044000029098.json",
+      "archiveSha256": "2b541cc1a287696380b40af3f721ee780aed22128bea008f659cc2adc7497f35",
+      "identity": {
+        "name": "BLUEBERRY BREAKFAST BISCUITS, BLUEBERRY",
+        "brand": "BELVITA",
+        "gtin": "044000029098",
+        "pack": "400 g",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "usda:044000032739": {
+      "family": "belvita-crunchy",
+      "market": "US",
+      "sourceRecord": "usda:2655830",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2655830/branded",
+      "evidence": "USDA branded product #2655830; published package weight 14.08 oz/400 g.",
+      "archive": "fdc-044000032739.json",
+      "archiveSha256": "44e49b991f12bf8911904dad8ca1ddd47651d1645d8cf10ad7e8740c1174125e",
+      "identity": {
+        "name": "CINNAMON BROWN SUGAR BREAKFAST BISCUITS, CINNAMON BROWN SUGAR",
+        "brand": "BELVITA",
+        "gtin": "044000032739",
+        "pack": "400 g",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "usda:044000036096": {
+      "family": "belvita-crunchy",
+      "market": "US",
+      "sourceRecord": "usda:2577154",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2577154/branded",
+      "evidence": "USDA branded product #2577154; published package weight 2 lbs/12 oz/1.25 kg.",
+      "archive": "fdc-044000036096.json",
+      "archiveSha256": "ca07795686a5d2619286d10ee59332ad47df3391bd3ae39a31c6ca7ebebcea68",
+      "identity": {
+        "name": "CINNAMON BROWN SUGAR BREAKFAST BISCUITS, CINNAMON BROWN SUGAR",
+        "brand": "BELVITA",
+        "gtin": "044000036096",
+        "pack": "1.25 kg",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "usda:044000040840": {
+      "family": "belvita-crunchy",
+      "market": "US",
+      "sourceRecord": "usda:2655831",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2655831/branded",
+      "evidence": "USDA branded product #2655831; published package weight 1.25 kg/50 g.",
+      "archive": "fdc-044000040840.json",
+      "archiveSha256": "b2b517610c51861f578462459bf6a1072c80d6c7c6fb6abeb4f844aac0ca4b1f",
+      "identity": {
+        "name": "BLUEBERRY CRUNCHY BREAKFAST BISCUITS, BLUEBERRY",
+        "brand": "BELVITA",
+        "gtin": "044000040840",
+        "pack": "1.25 kg",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "usda:044000057251": {
+      "family": "belvita-crunchy",
+      "market": "US",
+      "sourceRecord": "usda:2577201",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2577201/branded",
+      "evidence": "USDA branded product #2577201; published package weight 3 lbs/4.8 oz/1.5 kg.",
+      "archive": "fdc-044000057251.json",
+      "archiveSha256": "d321ae61d613b4568dfb238ecd9290166040be41c70ba607278c3f1912c09220",
+      "identity": {
+        "name": "BLUEBERRY CRUNCHY BREAKFAST BISCUITS, BLUEBERRY",
+        "brand": "BELVITA BREAKFAST",
+        "gtin": "044000057251",
+        "pack": "1.5 kg",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "usda:044000057275": {
+      "family": "belvita-crunchy",
+      "market": "US",
+      "sourceRecord": "usda:2577202",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2577202/branded",
+      "evidence": "USDA branded product #2577202; published package weight 1.5 kg/50 g.",
+      "archive": "fdc-044000057275.json",
+      "archiveSha256": "81205cde9873b1f5518b7be69d787bb1a18acfea6c2707e0eaa522d0ca0e6fb9",
+      "identity": {
+        "name": "CINNAMON BROWN SUGAR CRUNCHY BREAKFAST BISCUITS, CINNAMON BROWN SUGAR",
+        "brand": "BELVITA",
+        "gtin": "044000057275",
+        "pack": "1.5 kg",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "usda:044000063214": {
+      "family": "belvita-crunchy",
+      "market": "US",
+      "sourceRecord": "usda:2655810",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2655810/branded",
+      "evidence": "USDA branded product #2655810; published package weight 14.08 oz/400 g.",
+      "archive": "fdc-044000063214.json",
+      "archiveSha256": "54ee99b9ff3dc29cd3e6af517c4632bc1506e6e5a82e95c33b55ad6832a12d14",
+      "identity": {
+        "name": "BLUEBERRY BREAKFAST BISCUITS, BLUEBERRY",
+        "brand": "BELVITA",
+        "gtin": "044000063214",
+        "pack": "400 g",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "brand:044000031138": {
+      "family": "ritz-fresh-stacks",
+      "market": "US",
+      "sourceRecord": "smartlabel:044000031138",
+      "sourceUrl": "https://smartlabel.mondelez.info/044000031138-0004-en-US/index.html",
+      "evidence": "Label declares 334 g in eight sleeves.",
+      "archive": "label-044000031138.html",
+      "archiveSha256": "e5246716b1a9ae1009d9b6e598968991028fe265eb526570eb1489b7a888d07f",
+      "identity": {
+        "name": "Fresh Stacks Crackers",
+        "brand": "Ritz",
+        "gtin": "044000031138",
+        "pack": "334 g",
+        "variant": "Original",
+        "formulation": null
+      }
+    },
+    "brand:044000055677": {
+      "family": "ritz-fresh-stacks",
+      "market": "US",
+      "sourceRecord": "smartlabel:044000055677",
+      "sourceUrl": "https://smartlabel.mondelez.info/044000055677-0001-en-US/index.html",
+      "evidence": "Label declares 83 g in two sleeves.",
+      "archive": "label-044000055677.html",
+      "archiveSha256": "79a6ea30601714387030bdbb93f73ecce9eac56f51e07aa15ab45fb3786d552f",
+      "identity": {
+        "name": "Fresh Stacks Crackers",
+        "brand": "Ritz",
+        "gtin": "044000055677",
+        "pack": "83 g",
+        "variant": "Original",
+        "formulation": null
+      }
+    },
+    "brand:044000034832": {
+      "family": "ritz-fresh-stacks",
+      "market": "US",
+      "sourceRecord": "smartlabel:044000034832",
+      "sourceUrl": "https://smartlabel.mondelez.info/044000034832-0004-en-US/index.html",
+      "evidence": "Label declares 328 g in eight sleeves.",
+      "archive": "label-044000034832.html",
+      "archiveSha256": "b0571b3d68515f63665699ff010c6ebe55683ce22f417fe962d542ee1cb00ea2",
+      "identity": {
+        "name": "Fresh Stacks Crackers",
+        "brand": "Ritz",
+        "gtin": "044000034832",
+        "pack": "328 g",
+        "variant": null,
+        "formulation": "Whole wheat"
+      }
+    },
+    "off:8901719135248": {
+      "family": "parle-krackjack",
+      "market": "India tag",
+      "sourceRecord": "off:08901719135248",
+      "sourceUrl": "https://world.openfoodfacts.org/product/8901719135248",
+      "evidence": "Open Food Facts archived source record. Field values retained as supplied.",
+      "archive": "cookies.json",
+      "archiveSha256": "ef53974043cc1932c404cb30311f68aa19d648cb06eac77ebaeef49b90523a3f",
+      "identity": {
+        "name": "Krackjack",
+        "brand": "Parle",
+        "gtin": "8901719135248",
+        "pack": "56.7g",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "off:8901725016838": {
+      "family": "aashirvaad-atta",
+      "market": "India tag",
+      "sourceRecord": "off:08901725016838",
+      "sourceUrl": "https://world.openfoodfacts.org/product/8901725016838",
+      "evidence": "Open Food Facts archived source record. Field values retained as supplied.",
+      "archive": "flour-alt.json",
+      "archiveSha256": "7f122f9bd36a40266a3f7364902eacc3ab074a35fb045aa8c4057ad9aad4b200",
+      "identity": {
+        "name": "Aashirvaad Superior MP Atta",
+        "brand": "Aashirvaad, ITC",
+        "gtin": "8901725016838",
+        "pack": "1kg",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "off:8901725121747": {
+      "family": "aashirvaad-atta",
+      "market": "India tag",
+      "sourceRecord": "off:08901725121747",
+      "sourceUrl": "https://world.openfoodfacts.org/product/8901725121747",
+      "evidence": "Open Food Facts archived source record. Field values retained as supplied.",
+      "archive": "flour-alt.json",
+      "archiveSha256": "7f122f9bd36a40266a3f7364902eacc3ab074a35fb045aa8c4057ad9aad4b200",
+      "identity": {
+        "name": "Superior MP Atta",
+        "brand": "Aashirvaad, ITC",
+        "gtin": "8901725121747",
+        "pack": "1 kg",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "off:8901725121228": {
+      "family": "aashirvaad-atta",
+      "market": "India tag",
+      "sourceRecord": "off:08901725121228",
+      "sourceUrl": "https://world.openfoodfacts.org/product/8901725121228",
+      "evidence": "Open Food Facts archived source record. Field values retained as supplied.",
+      "archive": "flour-alt.json",
+      "archiveSha256": "7f122f9bd36a40266a3f7364902eacc3ab074a35fb045aa8c4057ad9aad4b200",
+      "identity": {
+        "name": "Aashirvaad  select aata",
+        "brand": "Aashirvaad",
+        "gtin": "8901725121228",
+        "pack": "5kg",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "off:8901725019730": {
+      "family": "aashirvaad-atta",
+      "market": "India tag",
+      "sourceRecord": "off:08901725019730",
+      "sourceUrl": "https://world.openfoodfacts.org/product/8901725019730",
+      "evidence": "Open Food Facts archived source record. Field values retained as supplied.",
+      "archive": "flour-alt.json",
+      "archiveSha256": "7f122f9bd36a40266a3f7364902eacc3ab074a35fb045aa8c4057ad9aad4b200",
+      "identity": {
+        "name": "Aashirvaad Organic Whole Wheat Atta",
+        "brand": "Aashirvaad",
+        "gtin": "8901725019730",
+        "pack": "1kg",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "brand:044000060114": {
+      "family": "oreo-sandwich-cookies",
+      "market": "US",
+      "sourceRecord": "smartlabel:044000060114",
+      "sourceUrl": "https://smartlabel.mondelez.info/044000060114-0003-en-US/index.html",
+      "evidence": "Label identifies a 376 g package with standard-sized cookies.",
+      "archive": "label-044000060114.html",
+      "archiveSha256": "4f4955ab971329e5d20b38777f3281ad082b9ce7372a50fea2733be915f74c55",
+      "identity": {
+        "name": "Chocolate Sandwich Cookies",
+        "brand": "Oreo",
+        "gtin": "044000060114",
+        "pack": "376 g",
+        "variant": "Chocolate",
+        "formulation": null
+      }
+    },
+    "brand:044000044701": {
+      "family": "oreo-sandwich-cookies",
+      "market": "US",
+      "sourceRecord": "smartlabel:044000044701",
+      "sourceUrl": "https://smartlabel.mondelez.info/044000044701-0001-en-US/index.html",
+      "evidence": "Owner label identifies a 566 g family package.",
+      "archive": "label-044000044701.html",
+      "archiveSha256": "52c5f4f9eae8b54d840374adc9f236dfee2da8b4c6f35ec9571d22415991cc88",
+      "identity": {
+        "name": "Sandwich Cookies",
+        "brand": "Oreo",
+        "gtin": "044000044701",
+        "pack": "566 g",
+        "variant": "Golden Double Stuf",
+        "formulation": null
+      }
+    },
+    "brand:044000020286": {
+      "family": "oreo-sandwich-cookies",
+      "market": "US",
+      "sourceRecord": "smartlabel:044000020286",
+      "sourceUrl": "https://smartlabel.mondelez.info/044000020286-0003-en-US/index.html",
+      "evidence": "Label identifies 12 separate 28 g mini packs.",
+      "archive": "label-044000020286.html",
+      "archiveSha256": "3a75bfa86a6bf515bc2ecc67b8d7026a739c8a2c5b5d0462bb9398f9ccef48c6",
+      "identity": {
+        "name": "Chocolate Sandwich Cookies",
+        "brand": "Oreo",
+        "gtin": "044000020286",
+        "pack": "12 x 28 g",
+        "variant": "Mini",
+        "formulation": null
+      }
+    },
+    "brand:044000060626": {
+      "family": "oreo-sandwich-cookies",
+      "market": "US",
+      "sourceRecord": "smartlabel:044000060626",
+      "sourceUrl": "https://smartlabel.mondelez.info/044000060626-0002-en-US/index.html",
+      "evidence": "Owner label identifies 261 g Thin chocolate sandwich cookies.",
+      "archive": "label-044000060626.html",
+      "archiveSha256": "3d7063d091404fe3315591bac43da1c0fc1bd85df957165b838c8e9de1373aba",
+      "identity": {
+        "name": "Chocolate Sandwich Cookies",
+        "brand": "Oreo",
+        "gtin": "044000060626",
+        "pack": "261 g",
+        "variant": "Thins",
+        "formulation": null
+      }
+    },
+    "brand:044000077884": {
+      "family": "oreo-sandwich-cookies",
+      "market": "US",
+      "sourceRecord": "smartlabel:044000077884",
+      "sourceUrl": "https://smartlabel.mondelez.info/044000077884-0002-en-US/index.html",
+      "evidence": "Owner label identifies 261 g mint-filled Thin chocolate sandwich cookies.",
+      "archive": "label-044000077884.html",
+      "archiveSha256": "9aa165a751863054c9cf3bd2747d98f882b0cda9fb31a03e3b5ab4e3ca53e0aa",
+      "identity": {
+        "name": "Chocolate Sandwich Cookies",
+        "brand": "Oreo",
+        "gtin": "044000077884",
+        "pack": "261 g",
+        "variant": "Thins Mint",
+        "formulation": null
+      }
+    },
+    "usda:044000060114": {
+      "family": "oreo-sandwich-cookies",
+      "market": "US",
+      "sourceRecord": "usda:2655826",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2655826/branded",
+      "evidence": "USDA branded product #2655826; published package weight 13.29 oz/376 g.",
+      "archive": "fdc-044000060114.json",
+      "archiveSha256": "749e06c5e51690bdec55e60883b21f0837379bf64145cb2a2d07e49b2a329b11",
+      "identity": {
+        "name": "CHOCOLATE SANDWICH COOKIES, CHOCOLATE",
+        "brand": "OREO",
+        "gtin": "044000060114",
+        "pack": "376 g",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "off-us:0044000060114": {
+      "family": "oreo-sandwich-cookies",
+      "market": "US",
+      "sourceRecord": "off:00044000060114",
+      "sourceUrl": "https://world.openfoodfacts.org/product/0044000060114",
+      "evidence": "Open Food Facts independent archive response.",
+      "archive": "off-044000060114.json",
+      "archiveSha256": "c41a4e41db16ddb7cc16f7c4097046b44d7b98390ee1f264c450c95dbaef48f9",
+      "identity": {
+        "name": "Chocolate Sandwich Cookies",
+        "brand": "Oreo",
+        "gtin": "0044000060114",
+        "pack": "13.29 oz",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "brand:044000050986": {
+      "family": "triscuit-crackers",
+      "market": "US",
+      "sourceRecord": "smartlabel:044000050986",
+      "sourceUrl": "https://smartlabel.mondelez.info/044000050986-0002-en-US/index.html",
+      "evidence": "Manufacturer front says sea salt and 240 g.",
+      "archive": "label-044000050986.html",
+      "archiveSha256": "7ebc461739c992d26288831cbaac05acb28d6eb33bd0c32703703fe2e2101bea",
+      "identity": {
+        "name": "Crackers",
+        "brand": "Triscuit",
+        "gtin": "044000050986",
+        "pack": "240 g",
+        "variant": "Original",
+        "formulation": "Original"
+      }
+    },
+    "brand:044000071035": {
+      "family": "triscuit-crackers",
+      "market": "US",
+      "sourceRecord": "smartlabel:044000071035",
+      "sourceUrl": "https://smartlabel.mondelez.info/044000071035-0001-en-US/index.html",
+      "evidence": "Manufacturer front says 3 boxes of 240 g.",
+      "archive": "label-044000071035.html",
+      "archiveSha256": "f723497713574c4df862de6bbae4ceaaa71fd3bbc5024725c9f901cf55b152f3",
+      "identity": {
+        "name": "Crackers",
+        "brand": "Triscuit",
+        "gtin": "044000071035",
+        "pack": "3 x 240 g",
+        "variant": "Original",
+        "formulation": "Original"
+      }
+    },
+    "brand:044000051006": {
+      "family": "triscuit-crackers",
+      "market": "US",
+      "sourceRecord": "smartlabel:044000051006",
+      "sourceUrl": "https://smartlabel.mondelez.info/044000051006-0001-en-US/index.html",
+      "evidence": "Manufacturer front says hint of sea salt, low sodium and 240 g.",
+      "archive": "label-044000051006.html",
+      "archiveSha256": "72bafd76c0d51e35da46f970a959fba33caa93b4f21cd4f65b3963d9f5a1e4a0",
+      "identity": {
+        "name": "Crackers",
+        "brand": "Triscuit",
+        "gtin": "044000051006",
+        "pack": "240 g",
+        "variant": null,
+        "formulation": "Low sodium"
+      }
+    },
+    "brand:044000055509": {
+      "family": "triscuit-crackers",
+      "market": "US",
+      "sourceRecord": "smartlabel:044000055509",
+      "sourceUrl": "https://smartlabel.mondelez.info/044000055509-0001-en-US/index.html",
+      "evidence": "Manufacturer front says avocado, cilantro and lime, 240 g.",
+      "archive": "label-044000055509.html",
+      "archiveSha256": "b40ad348335906198205c2dc9c4b4b62d5193bf7a75b7ab547999c6054eb26dd",
+      "identity": {
+        "name": "Crackers",
+        "brand": "Triscuit",
+        "gtin": "044000055509",
+        "pack": "240 g",
+        "variant": "Avocado Cilantro Lime",
+        "formulation": null
+      }
+    },
+    "off:8906017290040": {
+      "family": "bisleri-drinking-water",
+      "market": "India tag",
+      "sourceRecord": "off:08906017290040",
+      "sourceUrl": "https://world.openfoodfacts.org/product/8906017290040",
+      "evidence": "Open Food Facts archived source record. Field values retained as supplied.",
+      "archive": "prior-market.json",
+      "archiveSha256": "665a8b8e29221b331b642e49ee076fcfe89b8b597680c56e70175d35a8903ab6",
+      "identity": {
+        "name": "Bisleri 1ltr MADE IN INDIA",
+        "brand": "Bisleri",
+        "gtin": "8906017290040",
+        "pack": "1",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "owner:8906017290040": {
+      "family": "bisleri-drinking-water",
+      "market": "India",
+      "sourceRecord": "bisleri:artwork:8906017290040",
+      "sourceUrl": "https://www.bisleri.com/on/demandware.static/-/Sites-Bis-Catalog/default/dwd81970a1/Product%20Images_Desktop/Bisleri/Bisleri1Litre/PDP/Bisleri_E-com_Web_Creative_PDP_Bisleri_1Ltr_03.png",
+      "evidence": "Package artwork prints barcode 8906017290040 and 1 L.",
+      "archive": "label-8906017290040.png",
+      "archiveSha256": "f8faa39f3004f08dfb76835bb306604564b268229787494f627e08fa7582c852",
+      "identity": {
+        "name": "Packaged Drinking Water",
+        "brand": "Bisleri",
+        "gtin": "8906017290040",
+        "pack": "1 L",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "off:8904043901015": {
+      "family": "tata-salt",
+      "market": "India tag",
+      "sourceRecord": "off:08904043901015",
+      "sourceUrl": "https://world.openfoodfacts.org/product/8904043901015",
+      "evidence": "Open Food Facts archived source record. Field values retained as supplied.",
+      "archive": "prior-market.json",
+      "archiveSha256": "665a8b8e29221b331b642e49ee076fcfe89b8b597680c56e70175d35a8903ab6",
+      "identity": {
+        "name": "Tata Salt",
+        "brand": "Tata",
+        "gtin": "8904043901015",
+        "pack": "1 kg",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "fetchnbuy:8904043901015": {
+      "family": "tata-salt",
+      "market": "India",
+      "sourceRecord": "fetchnbuy:TSI-1K",
+      "sourceUrl": "https://fetchnbuy.in/products/tata-salt-iodized-1-kg-pouch",
+      "evidence": "The publisher displays the exact barcode and 1 kg iodized pack. Brand and display name are normalized in the matcher input. This is a link-only reference.",
+      "archive": null,
+      "archiveSha256": null,
+      "identity": {
+        "name": "TATA SALT",
+        "brand": "Tata",
+        "gtin": "8904043901015",
+        "pack": "1 kg",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "off:8901725123123": {
+      "family": "aashirvaad-salt",
+      "market": "India tag",
+      "sourceRecord": "off:08901725123123",
+      "sourceUrl": "https://world.openfoodfacts.org/product/8901725123123",
+      "evidence": "Open Food Facts archived source record. Field values retained as supplied.",
+      "archive": "spices.json",
+      "archiveSha256": "9acfdcebb61852778e6af08fb4cc4db77a2d0b475448de3291773ace51d97ec5",
+      "identity": {
+        "name": "iodized salt",
+        "brand": "Aashirvaad",
+        "gtin": "8901725123123",
+        "pack": "1kg",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "off:8901764032912": {
+      "family": "sprite",
+      "market": "India tag",
+      "sourceRecord": "off:08901764032912",
+      "sourceUrl": "https://world.openfoodfacts.org/product/8901764032912",
+      "evidence": "Open Food Facts archived source record. Field values retained as supplied.",
+      "archive": "prior-market.json",
+      "archiveSha256": "665a8b8e29221b331b642e49ee076fcfe89b8b597680c56e70175d35a8903ab6",
+      "identity": {
+        "name": "Sprite",
+        "brand": "Coca-Cola, Sprite",
+        "gtin": "8901764032912",
+        "pack": "250 ml",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "off:3948764032912": {
+      "family": "sprite",
+      "market": "India tag",
+      "sourceRecord": "off:03948764032912",
+      "sourceUrl": "https://world.openfoodfacts.org/product/3948764032912",
+      "evidence": "Open Food Facts archived source record. Field values retained as supplied.",
+      "archive": "prior-market.json",
+      "archiveSha256": "665a8b8e29221b331b642e49ee076fcfe89b8b597680c56e70175d35a8903ab6",
+      "identity": {
+        "name": "Sprite",
+        "brand": "Coca-Cola, Sprite",
+        "gtin": "3948764032912",
+        "pack": "250ml",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "off:8901764032707": {
+      "family": "sprite",
+      "market": "India tag",
+      "sourceRecord": "off:08901764032707",
+      "sourceUrl": "https://world.openfoodfacts.org/product/8901764032707",
+      "evidence": "Open Food Facts archived source record. Field values retained as supplied.",
+      "archive": "beverages-alt.json",
+      "archiveSha256": "6091d83a8e3a51a567ab4e11bafa09b287aed4ff544d672a8e3416c700677dc9",
+      "identity": {
+        "name": "Sprite",
+        "brand": "Coca-Cola",
+        "gtin": "8901764032707",
+        "pack": "600 ml",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "off:3948764032707": {
+      "family": "sprite",
+      "market": "India tag",
+      "sourceRecord": "off:03948764032707",
+      "sourceUrl": "https://world.openfoodfacts.org/product/3948764032707",
+      "evidence": "Open Food Facts archived source record. Field values retained as supplied.",
+      "archive": "beverages-alt.json",
+      "archiveSha256": "6091d83a8e3a51a567ab4e11bafa09b287aed4ff544d672a8e3416c700677dc9",
+      "identity": {
+        "name": "Sprite",
+        "brand": "Coca-Cola Company",
+        "gtin": "3948764032707",
+        "pack": "740ml",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "off:8901764042911": {
+      "family": "thums-up",
+      "market": "India tag",
+      "sourceRecord": "off:08901764042911",
+      "sourceUrl": "https://world.openfoodfacts.org/product/8901764042911",
+      "evidence": "Open Food Facts archived source record. Field values retained as supplied.",
+      "archive": "prior-market.json",
+      "archiveSha256": "665a8b8e29221b331b642e49ee076fcfe89b8b597680c56e70175d35a8903ab6",
+      "identity": {
+        "name": "Thums up",
+        "brand": "Thums Up",
+        "gtin": "8901764042911",
+        "pack": "250 ml",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "off:3948764042911": {
+      "family": "thums-up",
+      "market": "India tag",
+      "sourceRecord": "off:03948764042911",
+      "sourceUrl": "https://world.openfoodfacts.org/product/3948764042911",
+      "evidence": "Open Food Facts archived source record. Field values retained as supplied.",
+      "archive": "prior-market.json",
+      "archiveSha256": "665a8b8e29221b331b642e49ee076fcfe89b8b597680c56e70175d35a8903ab6",
+      "identity": {
+        "name": "thums up",
+        "brand": "thumsup",
+        "gtin": "3948764042911",
+        "pack": "250ml",
+        "variant": null,
+        "formulation": null
+      }
+    },
+    "brand:012000018800": {
+      "family": "pepsi-cola",
+      "market": "US",
+      "sourceRecord": "smartlabel:012000018800",
+      "sourceUrl": "https://smartlabel.pepsico.info/012000018800-0019-en-US/index.html",
+      "evidence": "Manufacturer label prints 591 mL bottle and Zero Sugar.",
+      "archive": "label-012000018800.html",
+      "archiveSha256": "2b078ceda7e48154c848151713e49c8a6467b1fca7dfda11c176ee1576cda17a",
+      "identity": {
+        "name": "Pepsi",
+        "brand": "Pepsi",
+        "gtin": "012000018800",
+        "pack": "591 ml",
+        "variant": null,
+        "formulation": "Zero sugar"
+      }
+    },
+    "brand:012000001291": {
+      "family": "pepsi-cola",
+      "market": "US",
+      "sourceRecord": "smartlabel:012000001291",
+      "sourceUrl": "https://smartlabel.pepsico.info/012000001291-0016-en-US/index.html",
+      "evidence": "Manufacturer label prints 591 mL Pepsi bottle.",
+      "archive": "label-012000001291.html",
+      "archiveSha256": "204a52bfbaa91393570fa2d6fe478832aa81b84b4a614d9dfc7b61755c903ec0",
+      "identity": {
+        "name": "Pepsi",
+        "brand": "Pepsi",
+        "gtin": "012000001291",
+        "pack": "591 ml",
+        "variant": null,
+        "formulation": "Original"
+      }
+    }
+  },
+  "pairs": [
+    {
+      "split": "train",
+      "left": "brand:034000002405",
+      "right": "brand:034000290055",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "multipack_vs_single",
+      "reason": "Maker labels identify the single bar and six-bar package separately."
+    },
+    {
+      "split": "train",
+      "left": "brand:034000002405",
+      "right": "brand:034000297160",
+      "label": "UNCERTAIN",
+      "scenario": "ambiguous_listing",
+      "reason": "Both manufacturer pages name and weigh the same bar but the two valid GTINs identify different codes. The reason for the second code is undocumented."
+    },
+    {
+      "split": "train",
+      "left": "brand:034000290055",
+      "right": "brand:034000465989",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "similar_non_identical",
+      "reason": "Six plain chocolate bars and a 24-count chocolate wafer case are separate trade items."
+    },
+    {
+      "split": "train",
+      "left": "brand:034000290055",
+      "right": "usda:034000290055",
+      "label": "SAME_VARIANT",
+      "scenario": "exact_same",
+      "reason": "USDA agrees with the six-bar case total label and UPC."
+    },
+    {
+      "split": "train",
+      "left": "brand:034000290055",
+      "right": "off-us:0034000290055",
+      "label": "SAME_VARIANT",
+      "scenario": "exact_same",
+      "reason": "The independent OFF entry confirms the UPC, brand and maker's total net weight, with no internal count recorded."
+    },
+    {
+      "split": "train",
+      "left": "off:8901719134845",
+      "right": "sai:8901719134845",
+      "label": "SAME_VARIANT",
+      "scenario": "exact_same",
+      "reason": "Retail catalogue code and 45 g agree with the archived pack and recorded barcode."
+    },
+    {
+      "split": "train",
+      "left": "off:8901719134845",
+      "right": "off:8901719134852",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "pack_size",
+      "reason": "45 g and 90 g net packs are distinct."
+    },
+    {
+      "split": "train",
+      "left": "off:8901719134845",
+      "right": "off:8901719123870",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "pack_size",
+      "reason": "45 g and 250 g net packs are distinct."
+    },
+    {
+      "split": "train",
+      "left": "off:8901719134852",
+      "right": "off:8901719123870",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "pack_size",
+      "reason": "90 g and 250 g net packs are distinct."
+    },
+    {
+      "split": "train",
+      "left": "off:8906010500764",
+      "right": "off:8906010500627",
+      "label": "UNCERTAIN",
+      "scenario": "incomplete_listing",
+      "reason": "A flavour is missing on one page and a weight on the other."
+    },
+    {
+      "split": "train",
+      "left": "off:8901058017687",
+      "right": "off:8901058000290",
+      "label": "UNCERTAIN",
+      "scenario": "incomplete_listing",
+      "reason": "Both archival weights are unitless; package fronts do not verify the net weights."
+    },
+    {
+      "split": "validation",
+      "left": "brand:044000029098",
+      "right": "brand:044000032739",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "flavour",
+      "reason": "Eight packs each, with distinct blueberry and cinnamon flavours."
+    },
+    {
+      "split": "validation",
+      "left": "brand:044000040840",
+      "right": "brand:044000036096",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "flavour",
+      "reason": "25 packs each, with distinct blueberry and cinnamon flavours."
+    },
+    {
+      "split": "validation",
+      "left": "brand:044000057251",
+      "right": "brand:044000057275",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "flavour",
+      "reason": "30 packs each, with distinct blueberry and cinnamon flavours."
+    },
+    {
+      "split": "validation",
+      "left": "brand:044000029098",
+      "right": "brand:044000040840",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "pack_size",
+      "reason": "Eight and 25 packs of blueberry biscuits."
+    },
+    {
+      "split": "validation",
+      "left": "brand:044000040840",
+      "right": "brand:044000057251",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "pack_size",
+      "reason": "25 and 30 packs of blueberry biscuits."
+    },
+    {
+      "split": "validation",
+      "left": "brand:044000032739",
+      "right": "brand:044000036096",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "pack_size",
+      "reason": "Eight and 25 packs of cinnamon biscuits."
+    },
+    {
+      "split": "validation",
+      "left": "brand:044000036096",
+      "right": "brand:044000057275",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "pack_size",
+      "reason": "25 and 30 packs of cinnamon biscuits."
+    },
+    {
+      "split": "validation",
+      "left": "brand:044000029098",
+      "right": "brand:044000063214",
+      "label": "UNCERTAIN",
+      "scenario": "ambiguous_listing",
+      "reason": "Owner names the same blueberry flavour and count but specifies two sale-unit UPCs; relationship between codes is undocumented."
+    },
+    {
+      "split": "validation",
+      "left": "brand:044000029098",
+      "right": "usda:044000029098",
+      "label": "SAME_VARIANT",
+      "scenario": "exact_same",
+      "reason": "USDA and the owner specify the same printed code, flavour and package total. USDA representation omits some inner-pack details."
+    },
+    {
+      "split": "validation",
+      "left": "brand:044000032739",
+      "right": "usda:044000032739",
+      "label": "SAME_VARIANT",
+      "scenario": "exact_same",
+      "reason": "USDA and the owner specify the same printed code, flavour and package total. USDA representation omits some inner-pack details."
+    },
+    {
+      "split": "validation",
+      "left": "brand:044000036096",
+      "right": "usda:044000036096",
+      "label": "SAME_VARIANT",
+      "scenario": "exact_same",
+      "reason": "USDA and the owner specify the same printed code, flavour and package total. USDA representation omits some inner-pack details."
+    },
+    {
+      "split": "validation",
+      "left": "brand:044000040840",
+      "right": "usda:044000040840",
+      "label": "SAME_VARIANT",
+      "scenario": "exact_same",
+      "reason": "USDA and the owner specify the same printed code, flavour and package total. USDA representation omits some inner-pack details."
+    },
+    {
+      "split": "validation",
+      "left": "brand:044000057251",
+      "right": "usda:044000057251",
+      "label": "SAME_VARIANT",
+      "scenario": "exact_same",
+      "reason": "USDA and the owner specify the same printed code, flavour and package total. USDA representation omits some inner-pack details."
+    },
+    {
+      "split": "validation",
+      "left": "brand:044000057275",
+      "right": "usda:044000057275",
+      "label": "SAME_VARIANT",
+      "scenario": "exact_same",
+      "reason": "USDA and the owner specify the same printed code, flavour and package total. USDA representation omits some inner-pack details."
+    },
+    {
+      "split": "validation",
+      "left": "brand:044000063214",
+      "right": "usda:044000063214",
+      "label": "SAME_VARIANT",
+      "scenario": "exact_same",
+      "reason": "USDA and the owner specify the same printed code, flavour and package total. USDA representation omits some inner-pack details."
+    },
+    {
+      "split": "validation",
+      "left": "brand:044000031138",
+      "right": "brand:044000055677",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "pack_size",
+      "reason": "The same cracker formula in two-sleeve and eight-sleeve packages."
+    },
+    {
+      "split": "validation",
+      "left": "brand:044000031138",
+      "right": "brand:044000034832",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "formulation",
+      "reason": "Whole wheat and original recipes differ."
+    },
+    {
+      "split": "validation",
+      "left": "brand:044000031138",
+      "right": "off:8901719135248",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "different_brand_similar",
+      "reason": "Brand-labelled cracker biscuits are separate items from different product families."
+    },
+    {
+      "split": "validation",
+      "left": "off:8901725016838",
+      "right": "off:8901725121747",
+      "label": "UNCERTAIN",
+      "scenario": "ambiguous_listing",
+      "reason": "Two source codes claim the same Superior MP Atta 1 kg. Both label fields attribute the same mixed owner and brand."
+    },
+    {
+      "split": "validation",
+      "left": "off:8901725121228",
+      "right": "off:8901725019730",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "formulation",
+      "reason": "Select and Organic Whole Wheat are different formulations and sellable packages."
+    },
+    {
+      "split": "test",
+      "left": "brand:044000060114",
+      "right": "usda:044000060114",
+      "label": "SAME_VARIANT",
+      "scenario": "exact_same",
+      "reason": "USDA exact UPC, brand and metric net weight agree with the manufacturer label."
+    },
+    {
+      "split": "test",
+      "left": "brand:044000060114",
+      "right": "off-us:0044000060114",
+      "label": "SAME_VARIANT",
+      "scenario": "exact_same",
+      "reason": "Independent OFF entry has the same UPC, brand and 13.29 oz declaration."
+    },
+    {
+      "split": "test",
+      "left": "brand:044000060114",
+      "right": "brand:044000044701",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "formulation",
+      "reason": "Golden Double Stuf and regular chocolate cookies are different formulations."
+    },
+    {
+      "split": "test",
+      "left": "brand:044000020286",
+      "right": "brand:044000060114",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "multipack_vs_single",
+      "reason": "Twelve individually wrapped Mini packs and one retail package of standard-size cookies are distinct."
+    },
+    {
+      "split": "test",
+      "left": "brand:044000060626",
+      "right": "brand:044000077884",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "flavour",
+      "reason": "Original Thins and Mint Thins have equal displayed weight but different fillings."
+    },
+    {
+      "split": "test",
+      "left": "brand:044000060114",
+      "right": "brand:044000060626",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "similar_non_identical",
+      "reason": "Original and Thins differ in product construction and weight."
+    },
+    {
+      "split": "test",
+      "left": "brand:044000050986",
+      "right": "brand:044000071035",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "multipack_vs_single",
+      "reason": "Three boxes versus one 240 g box of original crackers."
+    },
+    {
+      "split": "test",
+      "left": "brand:044000050986",
+      "right": "brand:044000051006",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "formulation",
+      "reason": "Original versus marked low-sodium formulation at equal weight."
+    },
+    {
+      "split": "test",
+      "left": "brand:044000050986",
+      "right": "brand:044000055509",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "flavour",
+      "reason": "Original versus avocado, cilantro and lime flavoured crackers."
+    },
+    {
+      "split": "test",
+      "left": "off:8906017290040",
+      "right": "owner:8906017290040",
+      "label": "SAME_VARIANT",
+      "scenario": "exact_same",
+      "reason": "Owner artwork verifies barcode, identity and quantity. Archived OFF quantity is unitless."
+    },
+    {
+      "split": "test",
+      "left": "off:8904043901015",
+      "right": "fetchnbuy:8904043901015",
+      "label": "SAME_VARIANT",
+      "scenario": "exact_same",
+      "reason": "The independently published 1 kg item has the exact same barcode."
+    },
+    {
+      "split": "test",
+      "left": "off:8904043901015",
+      "right": "off:8901725123123",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "different_brand_similar",
+      "reason": "Different brands of 1 kg iodised salt retain separate UPCs."
+    },
+    {
+      "split": "test",
+      "left": "off:8901764032912",
+      "right": "off:3948764032912",
+      "label": "UNCERTAIN",
+      "scenario": "ambiguous_listing",
+      "reason": "Both source records show the same brand line and 250 mL under distinct codes; package reconciliation is missing."
+    },
+    {
+      "split": "test",
+      "left": "off:8901764032707",
+      "right": "off:3948764032707",
+      "label": "UNCERTAIN",
+      "scenario": "ambiguous_listing",
+      "reason": "Source code suffix and title are nearly identical but reported 600/740 mL quantities conflict. Exact labels have not reconciled ownership."
+    },
+    {
+      "split": "test",
+      "left": "off:8901764042911",
+      "right": "off:3948764042911",
+      "label": "UNCERTAIN",
+      "scenario": "ambiguous_listing",
+      "reason": "Both source records name the 250 mL Thums Up product under different codes."
+    },
+    {
+      "split": "test",
+      "left": "brand:012000018800",
+      "right": "brand:012000001291",
+      "label": "DIFFERENT_VARIANT",
+      "scenario": "formulation",
+      "reason": "Two equal-volume cola bottles have different sugar formulations."
+    }
+  ]
+}

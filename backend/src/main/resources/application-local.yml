@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:./.runtime/smartcart;MODE=MySQL;DATABASE_TO_LOWER=TRUE;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+smartcart:
+  quickcommerce:
+    enabled: ${QUICKCOMMERCE_ENABLED:false}
+    verified-start-balance: ${QUICKCOMMERCE_VERIFIED_START_BALANCE:0}
+    report-key-presence: ${QUICKCOMMERCE_REPORT_KEY_PRESENCE:false}
+

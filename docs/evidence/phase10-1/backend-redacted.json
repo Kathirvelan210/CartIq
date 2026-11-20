@@ -1,0 +1,58 @@
+[
+  {
+    "time": "2026-11-18T14:42:40.030Z",
+    "method": "PUT",
+    "path": "/api/me/shopping-position",
+    "status": 200,
+    "signedInTestAccount": true,
+    "latitudeInRange": true,
+    "longitudeInRange": true,
+    "accuracyMetres": 20,
+    "source": "gps",
+    "observedAtIsRecent": true,
+    "observedAtUnixMilliseconds": true,
+    "postcodeAbsent": true
+  },
+  {
+    "time": "2026-11-18T14:52:22.730Z",
+    "method": "PUT",
+    "path": "/api/me/shopping-position",
+    "status": 200,
+    "signedInTestAccount": true,
+    "latitudeInRange": true,
+    "longitudeInRange": true,
+    "accuracyMetres": 2000,
+    "source": "gps",
+    "observedAtIsRecent": true,
+    "observedAtUnixMilliseconds": true,
+    "postcodeAbsent": true
+  },
+  {
+    "time": "2026-11-18T14:56:39.759Z",
+    "method": "PUT",
+    "path": "/api/me/shopping-position",
+    "status": 200,
+    "signedInTestAccount": true,
+    "latitudeInRange": true,
+    "longitudeInRange": true,
+    "accuracyMetres": 25.573999404907227,
+    "source": "gps",
+    "observedAtIsRecent": true,
+    "observedAtUnixMilliseconds": true,
+    "postcodeAbsent": true
+  },
+  {
+    "time": "2026-11-18T15:00:58.676Z",
+    "method": "PUT",
+    "path": "/api/me/shopping-position",
+    "status": 200,
+    "signedInTestAccount": true,
+    "latitudeInRange": true,
+    "longitudeInRange": true,
+    "accuracyMetres": 25.381000518798828,
+    "source": "gps",
+    "observedAtIsRecent": true,
+    "observedAtUnixMilliseconds": true,
+    "postcodeAbsent": true
+  }
+]

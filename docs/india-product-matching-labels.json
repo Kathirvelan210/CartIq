@@ -1,0 +1,103 @@
+{
+  "title": "India catalogue matching benchmark seed",
+  "labelledOn": "2026-11-14",
+  "labelPolicy": "Human labels from observed names, brands, GTINs, labelled packs and category tags. SAME_VARIANT denotes a repeat observation of the same Open Food Facts entry. DIFFERENT_VARIANT denotes distinct trade items. UNCERTAIN requires packaging or brand-owner evidence before any merge.",
+  "limitations": "A small, source-biased regression seed with no independent cross-retailer positive pairs. Repeated-source positives share the same Open Food Facts row and must stay in the same split. Keep all pairs sharing a canonical GTIN or product family in the same split. Exclude UNCERTAIN from supervised training and report abstentions separately. No model was trained or evaluated.",
+  "attribution": "Open Food Facts contributors",
+  "productPagePrefix": "https://world.openfoodfacts.org/product/",
+  "licenses": {
+    "database": "ODbL-1.0",
+    "contents": "DbCL-1.0",
+    "images": "CC-BY-SA-3.0; no images redistributed"
+  },
+  "sources": {
+    "bulkPrior": {
+      "file": "prior.jsonl",
+      "sha256": "bb9d7de2cbbce1559c8024bbcee2731e951aeb83a2331ccce17f85806e8eab5c",
+      "url": "https://openfoodfacts-ds.s3.eu-west-3.amazonaws.com/openfoodfacts-products.jsonl.gz",
+      "version": "2026-11-14T05:33:45Z",
+      "range": "0-134217727",
+      "etag": "363e9064076f288fd3a2b7f0e17f42af-811"
+    },
+    "bulk": {
+      "file": "india.jsonl",
+      "sha256": "7ceeb4b7232ae624910efc402da6572ed222db840b31a6c5d4f877553b1dfdde",
+      "url": "https://openfoodfacts-ds.s3.eu-west-3.amazonaws.com/openfoodfacts-products.jsonl.gz",
+      "version": "2026-11-14T05:33:45Z",
+      "range": "0-536870911",
+      "etag": "363e9064076f288fd3a2b7f0e17f42af-811"
+    },
+    "api": {
+      "file": "india-api.jsonl",
+      "sha256": "1ef5bea85cb7e7e5d00564c6878b0361aaaf9bf4809ad5159c1df9d6aea08e01",
+      "url": "https://in.openfoodfacts.org/api/v2/search?countries_tags=en:india&page_size=40&page=1&sort_by=unique_scans_n",
+      "version": "2026-11-14T12:05:12Z"
+    }
+  },
+  "sourceFields": {
+    "bulkPrior": {
+      "00024907": {"name": "Teriyaki Dip Sauce Marinade", "brand": "Marks & Spencer", "pack": "305 g"}
+    },
+    "bulk": {
+      "00024907": {"name": "Teriyaki Dip Sauce Marinade", "brand": "Marks & Spencer", "pack": "305 g"}
+    },
+    "api": {
+      "8901719134845": {"name": "Parle-G Biscuit", "brand": "Parle", "pack": "45gm"},
+      "8901719134852": {"name": "Parle-G", "brand": "Parle", "pack": "90g"},
+      "8901063093522": {"name": "Good Day - Cashew Cookies", "brand": "Britannia", "pack": "52.5 g"},
+      "8901063092853": {"name": "Good Day cashew cookie", "brand": "Britannia", "pack": "30.2 g"},
+      "8906010502232": {"name": "Balaji wafers panjabi tadka", "brand": "Balaji", "pack": "22g"},
+      "8906010500900": {"name": "Wheelos Masala Flavour", "brand": "Balaji Wafers", "pack": "22 g"},
+      "8902080000227": {"name": "Sting Energy", "brand": "PepsiCo", "pack": "250 ml"},
+      "90162602": {"name": "Red Bull Energy Drink", "brand": "Red Bull", "pack": "250 ml"},
+      "8901764032912": {"name": "Sprite", "brand": "Coca-Cola, Sprite", "pack": "250 ml"},
+      "3948764032912": {"name": "Sprite", "brand": "Coca-Cola, Sprite", "pack": "250ml"},
+      "8901764042911": {"name": "Thums up", "brand": "Thums Up", "pack": "250 ml"},
+      "3948764042911": {"name": "thums up", "brand": "thumsup", "pack": "250ml"}
+    }
+  },
+  "pairs": [
+    {
+      "left": {"source": "bulkPrior", "gtin": "00024907"},
+      "right": {"source": "bulk", "gtin": "00024907"},
+      "label": "SAME_VARIANT",
+      "reason": "Same Marks & Spencer 305 g Teriyaki Dip Sauce Marinade entry reproduced in overlapping ranges of the same dump."
+    },
+    {
+      "left": {"source": "api", "gtin": "8901719134845"},
+      "right": {"source": "api", "gtin": "8901719134852"},
+      "label": "DIFFERENT_VARIANT",
+      "reason": "Parle-G with 45gm and 90g source pack labels and separate GTINs."
+    },
+    {
+      "left": {"source": "api", "gtin": "8901063093522"},
+      "right": {"source": "api", "gtin": "8901063092853"},
+      "label": "DIFFERENT_VARIANT",
+      "reason": "Britannia Good Day cashew cookies with 52.5 g and 30.2 g pack labels and separate GTINs."
+    },
+    {
+      "left": {"source": "api", "gtin": "8906010502232"},
+      "right": {"source": "api", "gtin": "8906010500900"},
+      "label": "DIFFERENT_VARIANT",
+      "reason": "Balaji Panjabi Tadka and Balaji Wafers Wheelos Masala Flavour have equal nominal 22 g packs but different named product lines and codes."
+    },
+    {
+      "left": {"source": "api", "gtin": "8902080000227"},
+      "right": {"source": "api", "gtin": "90162602"},
+      "label": "DIFFERENT_VARIANT",
+      "reason": "Sting Energy and Red Bull Energy Drink are both 250 ml but have distinct brands, names and codes."
+    },
+    {
+      "left": {"source": "api", "gtin": "8901764032912"},
+      "right": {"source": "api", "gtin": "3948764032912"},
+      "label": "UNCERTAIN",
+      "reason": "Sprite brand labels and normalized 250 ml pack agree, while GTINs and category details differ. Source labels alone cannot resolve a duplicate or reformulation."
+    },
+    {
+      "left": {"source": "api", "gtin": "8901764042911"},
+      "right": {"source": "api", "gtin": "3948764042911"},
+      "label": "UNCERTAIN",
+      "reason": "Thums Up and Thumsup normalize to the same brand on two 250 ml cola records with different GTINs. Confirm package evidence before merging."
+    }
+  ]
+}

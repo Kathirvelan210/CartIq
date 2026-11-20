@@ -1,5 +1,14 @@
 # CHANGELOG.md
 
+## GitHub repository publication · 20 November 2026
+
+- Initialized Git repository for CartIQ on `main` branch.
+- Sanitized directory before staging: removed stray transient cache/test files (`5ae*`, `856*`, `ai-service/%SystemDrive%`, `query`).
+- Verified `.gitignore` properly excludes `.env`, `node_modules/`, `backend/target/`, `ai-service/.venv/`, `.runtime/`, `*.log`, and all credentials. Added `.env.example` template.
+- Committed full CartIQ project (frontend, Spring Boot backend, FastAPI AI service, assets, test suites, and documentation).
+- Configured remote origin: `https://github.com/Kathirvelan210/CartIq.git`.
+- Successfully pushed `main` branch to GitHub remote `origin/main` with upstream tracking.
+
 ## Weekly recipe variety · 20 November 2026
 
 The Recipes screen checks AI suggestions against the selected catalogue filters. A single suggested dish occupies one day. With two or more selected dishes, the planner spaces repeats across seven days. Shoppers can include other matching catalogue recipes without another generation request. Replacing suggestions preserves manually added meals.

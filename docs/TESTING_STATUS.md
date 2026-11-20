@@ -1,5 +1,12 @@
 # TESTING_STATUS.md
 
+## GitHub repository verification · 20 November 2026
+
+- Git repository initialized on branch `main`.
+- Remote origin configured and verified: `https://github.com/Kathirvelan210/CartIq.git`.
+- Clean working tree verified with sanitized `.gitignore` (sensitive `.env`, `node_modules/`, `backend/target/`, `ai-service/.venv/`, `.runtime/`, and logs excluded).
+- Successfully pushed commit `3ccfe5e` to GitHub `origin/main` with upstream branch tracking.
+
 ## Weekly recipe variety · 20 November 2026
 
 Frontend tests passed (83/83), including identical suggestions, seven distinct suggestions and balanced rotation with smaller pools. TypeScript and Expo Web export passed. FastAPI recipe tests passed (36/36). Chrome on localhost:8092 used intercepted API responses with seven copies of Jeera rice. It displayed one meal, rotated seven days after a second recipe was included without another request, and preserved a manually added meal when suggestions were replaced. No live Gemini or retailer requests were used.
